@@ -20,26 +20,31 @@ My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small po
 ╰──────╮  App BSP  R  │ │  SPC RET nLk  ╭──────╯
        ╰──────────────╯ ╰───────────────╯
 ```
-### Definitions exist for:
-- [***Promethium***](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/) (*Alan's "bottom heavy" mod*)
-- [***Rhodium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.bv3bay1cp21z)
-- [***Titanium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.wc98dpulr54c)
-- [***Vibranium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.eyvjpfoqjy65) (mods *Vf, Vb, Vx, Vv*)
- 
-In the works (*I test the builds on several boards, with adaptives & combos*):
-- [***Neu***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.ze4kq734zl5w)
-- [***Gold***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.8i2msuo3butx)
+## [**Hands Down**](https://sites.google.com/alanreiser.com/handsdown) variations
 
-**Nearly everything is working**:
+| HD variation | Thumb Alpha<sup>[1]</sup> | H-Digraphs<sup>[2]</sup> | Adaptives<sup>[3]</sup> | Vim<sup>[4]</sup> | Avail? |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| [***Promethium***](https://github.com/moutis/zmk-config/blob/main/config/handsdown/pm-config.h) | R |   |   | ✔ | ✔ | 
+| [***Rhodium***](https://github.com/moutis/zmk-config/blob/main/config/handsdown/rh-config.h) | R |   |   |   | ✔ | 
+| [***Titanium***](https://github.com/moutis/zmk-config/blob/main/config/handsdown/ti-config.h) | R | ✔ | ✔ |   | ✔ | 
+| [***Vibranium***](https://github.com/moutis/zmk-config/blob/main/config/handsdown/vf-config.h) ([Vf](https://github.com/moutis/zmk-config/blob/main/config/handsdown/vf-config.h),[Vb](https://github.com/moutis/zmk-config/blob/main/config/handsdown/vb-config.h),[Vx](https://github.com/moutis/zmk-config/blob/main/config/handsdown/vx-config.h),[Vv](https://github.com/moutis/zmk-config/blob/main/config/handsdown/vv-config.h)) | R | ✔ | ✔ |   | ✔ | 
+| [***Neu***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.ze4kq734zl5w) | none |   | ✔ |   |   | 
+| [***Gold***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.8i2msuo3butx) | T | ✔ | ✔ |   |   | 
+
+ <sup>[1]</sup> Requires split keyboard with at least 2 thumb keys. <br>
+ <sup>[2]</sup> **H-digraph combos** (`TH`,`CH`,`WH`,`SH`,`GH`,`PH` bigrams) are expected in the design of this layout. It can be used without the H-digraph combos, but that would add more burden to the pinky. Layouts not designed expecting the H-digraphs can still work with them, and they are defined in the templates. <br>
+ <sup>[3]</sup> [*Adaptive Keys*](https://sites.google.com/alanreiser.com/handsdown#h.ps4itorhjiq9) are recommended for this layout. Adaptives in ZMK use urob's slick [behavior-adaptive-key](https://github.com/urob/zmk-adaptive-key/) module to further improve an already great layout (*removing more SFBs, scissors, etc.*). `WM` becomes `LM`, `GM`/`MG` -> `GL`/`LG` (\**Magic* keys are a type of Adaptive, restricted to one key. I have, effectivey, many \**Magic* keys at strategic locations around the keyboard.) <br>
+ <sup>[4]</sup> *Vim Friendly* variations were designed with VIM in mind, especially the navigation letters. Other layouts can work with VIM, especially with a separate nav layer. <br>
+
  - Many combos for less-used letters (`Qu`,`Z`,) editing (`Undo`, `Cut`, `Copy`, `Paste`, `Tab`, etc.), symbols and punctuation (`@`,`!`,`?`,`;`,`:`,`=` etc.).
- - **`H` digraph combos** *(* `TH`,`CH`,`WH`,`SH`,`GH`,`PH` *bigrams*), and pronouns (`I `, `I've `, `you'll`, `we'd`, etc. ).
- - [***Adaptive Keys***](https://sites.google.com/alanreiser.com/handsdown#h.ps4itorhjiq9) are now using urob's slick [behavior-adaptive-key](https://github.com/urob/zmk-adaptive-key/) module to further improve an already great layout (*removing more SFBs, scissors, etc.*), 
- - [***Comma-cap***](https://www.reddit.com/r/KeyboardLayouts/comments/1cc2yri/oneshot_shift_via_adaptive_keys/) is very snappy using Adaptive Keys. Comma immediately before a letter will capitalize it (deleting the comma). Linger/Hold on comma for CapsLk, Double-tap comma for CAPS_WORD. It's nearly perfect, and greatly reduces the need for home row shift (eliminating the most pesky HRM issue). It doesn't require a dedicated key for all this–It just works by exploiting a well-established pattern in how a comma is used, never immediatly preceding a letter.
+ - [***Comma Magic***](https://www.reddit.com/r/KeyboardLayouts/comments/1cc2yri/oneshot_shift_via_adaptive_keys/) is very snappy way of using Adaptive Keys to eliminate the shift misfires with home row mods. Simply type `COMMA` immediately before an alpha to capitalize it (*deleting the comma*). Linger/Hold on comma for CapsLk, Double-tap comma for CAPS_WORD. It doesn't require a dedicated key for all this. It just works by exploiting a well-established pattern in how a comma is used, never immediatly preceding a letter. It's nearly perfect.
+
  - [***Linger Keys***](https://sites.google.com/alanreiser.com/handsdown#h.w8doktr0rzce) (*via hold-tap behaviors and macros*) for things like paired symbols like `{([<>])}` and diacritics `éèôåō`, and more.
 
 Currently building only for Mac only (*hard coded for gui instead of ctrl, and some Mac specific keycodes*), because I use this mainly with my iPads and phone when I'm on the road. My [***Semantic Keys***](https://sites.google.com/alanreiser.com/handsdown#h.7mehnxbqcx2s) feature for platform independence works on my QMK implementations, but isn't yet fully fleshed out and will require more invasive work for ZMK, so this is for later. *I'll probably deal with this with a separate platform layer and macro parameters…this will take time. I'm stupid busy currently.*
 
-### Templates for many popular keyboards & form-factors:
+## Keyboards & form-factors:
+
 - [**Corne-ish** *Zen*](https://www.reddit.com/r/ErgoMechKeyboards/comments/reyulp/my_new_zen/) (*Sublime portable split 3x5+3*)
 - [**Zaphod**](https://www.reddit.com/r/ErgoMechKeyboards/comments/1130oor/zaphod_in_café_society/) (*Peak unibody 3x5+2 at the end of the world*)
 - [**Bad Wings** *Slim*](https://www.reddit.com/r/ErgoMechKeyboards/comments/16huy9s/thin_is_in/) (*Wafer thin unsplit 3x5+3*)

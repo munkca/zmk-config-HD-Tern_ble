@@ -36,6 +36,7 @@
             release-after-ms = <900>;
         };
 
+#define rst_btld reset_bootldr 0 0 // simple macro to keep the keymap uncluttered
          reset_bootldr: reset_bootldr { // tap for reset, hold for bootloader
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -43,7 +44,6 @@
             flavor = "tap-preferred";
             bindings = <&bootloader>, <&sys_reset>;
         };
-#define rst_btld reset_bootldr 0 0 // simple macro to keep the keymap uncluttered
 
 //
 // home row mods
@@ -116,12 +116,6 @@
  * modmorph behaviors
  * identified by the camel case of each of the keycodes
  */
-        CmmaSemi: CmmaSemi {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&ak_CMMA>, <&kp SEMI>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
         DotColn: DotColn {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -213,13 +207,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         
-        ak_CMMA: ak_CMMA {
-            compatible = "zmk,behavior-adaptive-key";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>;
-
-            ak_CMMA_cap { trigger-keys = <COMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &caps_word>; };
-        };
         ak_DOT: ak_DOT {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
@@ -233,6 +220,27 @@
             bindings = <&kp DQT>;
 
             ak_CMMA_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp QMARK>; };
+        };
+
+/* Comma Magic */
+#define CommaMagic CmmaMgc CAPSLOCK 0   // simple macro to keep the keymap uncluttered
+
+        CmmaSemi: CmmaSemi { // press = COMMA,shift = Semicolon
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&ak_CMMA>, <&kp SEMI>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        ak_CMMA: ak_CMMA { // double-tap comma = caps_word
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>;
+
+            ak_CMMA_cap { trigger-keys = <COMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &caps_word>; };
+        };
+        CmmaMgc: CmmaMgc {              // Hold for CAPSLOCK, tap for COMMA
+            my_lk_config;
+            bindings = <&kp>, <&CmmaSemi>;
         };
 
 /*
