@@ -64,17 +64,17 @@
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
 //
-// these are really layout dependent, maybe should be separated? for now...
+// maybe should be separated? but for now...
 //
         mt_S: mt_S {
             my_hrm_config;
             bindings = <&kp>, <&ak_S>;
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
-        mt_C: mt_C {
+        mt_C: mt_C {  // C is on RIGHT hand in Pm, so it has no restriction
             my_hrm_config;
             bindings = <&kp>, <&ak_C>;
-            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
+//            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
         mt_N: mt_N {
             my_hrm_config;
@@ -84,6 +84,11 @@
         mt_T: mt_T {
             my_hrm_config;
             bindings = <&kp>, <&ak_T>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
+        };
+        mt_D: mt_D {  // Onldy AU (Gold) has D on home
+            my_hrm_config;
+            bindings = <&kp>, <&ak_D>;
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
         mt_A: mt_A {
@@ -106,11 +111,15 @@
             bindings = <&kp>, <&ak_H>;
             hold-trigger-key-positions = <KEYS_L THUMBS>; // right hand allowed
         };
+        mt_M: mt_M {        // M on right pinky in Rhodium
+            my_hrm_config;
+            bindings = <&kp>, <&ak_M>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>; // left hand allowed
+        };
         lt_R: lt_R {
             my_lt_config;
             bindings = <&mo>, <&ak_R>;
         };
-
 
 /*
  * modmorph behaviors
@@ -152,54 +161,137 @@
             bindings = <&kp MINUS>, <&kp PLUS>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        DqtLT: DqtLT { // "<
+
+/*
+ * &DqtLT
+ *
+ * Double Quote key behaviors:
+ *      tap     = " double quote
+ *      shift   = < (less than)
+ *      alt     = « (French quote double chevron)
+ *      linger  = paired symbols w/insertion point between
+ *
+ * This set is used when the " appears to the left of ' in the keymap
+ * so the paired symbols <«  »> are spacially correct.
+ *
+ * To use, just put &DqtLT in the keymap. The other behaviors are
+ * so the paired symbols <«  »> are spacially correct.
+ *
+ * &SqtGT is the corresponding behavior.
+ *
+ */
+ 
+#define DqtLT lkDqt_lkLT 0 0  // simple macro to keep the keymap uncluttered
+
+        lkDqt_lkLT: lkDqt_lkLT {            // Hold for paired symbols
+            my_lk_config;
+            bindings = <&pairDquotLT>, <&leftDquotLT>;
+        };
+        pairDquotLT: pairDquotLT {          // SHFT for <>
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&ak_DQT>, <&kp LT>;
+            bindings = <&pairDquotDchev>, <&t_pairLtGt>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        DqtLbkt: DqtLbkt { // "[
+        pairDquotDchev: pairDquotDchev {    // "" or ALT for «»
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&DqtLT>, <&kp LA(BSLH)>;
+            bindings = <&t_pairDquo>, <&t_pairDchev>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
-        DqtGT: DqtGT { // ">
+        leftDquotLT: leftDquotLT {          // SHFT for <
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp DQT>, <&kp GT>;
+            bindings = <&leftDquotChev>, <&kp LT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        DqtRbkt: DqtRbkt { // "]
+        leftDquotChev: leftDquotLChev {     // " or ALT for «
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&DqtGT>, <&kp LS(LA(BSLH))>;
+            bindings = <&ak_DQT>, <&kp LDCHEV>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
-        SqtLT: SqtLT { // '<
+        SqtGT: SqtGT { // SHIFT = >
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp SQT>, <&kp LT>;
+            bindings = <&SqtRchev>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        SqtLbkt: SqtLbkt { // '[
+        SqtRchev: SqtRchev { // ' or ALT = »
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&SqtLT>, <&kp LA(BSLH)>;
+            bindings = <&t_pairSquo>, <&kp RDCHEV>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
-        SqtGT: SqtGT { // '>
+/*
+ * end of Double Quote key behaviors
+ */
+
+/*
+ * &SqtLT
+ *
+ * Single Quote key behaviors:
+ *      tap     = ' single quote
+ *      shift   = < (less than)
+ *      alt     = « (French quote double chevron)
+ *      linger  = paired symbols w/insertion point between
+ *
+ * This set is used when the ' appears to the left of " in the keymap
+ * so the paired symbols <«  »> are spacially correct. (i.e. Rhodium)
+ *
+ * To use, just put &SqtLT in the keymap. The other behaviors are
+ * referenced by this one.
+ *
+ * &DqtGT is the corresponding behavior.
+ *
+ */
+ 
+#define SqtLT lkSqt_lkLT 0 0  // simple macro to keep the keymap uncluttered
+
+        lkSqt_lkLT: lkSqt_lkLT {            // Hold for paired symbols
+            my_lk_config;
+            bindings = <&pairSquotLT>, <&leftSquotLT>;
+        };
+        pairSquotLT: pairSquotLT {          // SHFT for <>
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp SQT>, <&kp GT>;
+            bindings = <&pairSquotDchev>, <&t_pairLtGt>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        SqtRbkt: SqtRbkt { // ']
+        pairSquotDchev: pairSquotDchev {    // '' or ALT for «»
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&SqtGT>, <&kp LS(LA(BSLH))>;
+            bindings = <&t_pairSquo>, <&t_pairDchev>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
+        leftSquotLT: leftSquotLT {          // SHFT for <
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&leftSquotChev>, <&kp LT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        leftSquotChev: leftSquotLChev {     // ' or ALT for «
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LT>, <&kp LDCHEV>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+        DqtGT: DqtGT { // SHIFT = >
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&DqtRchev>, <&kp GT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        DqtRchev: DqtRchev { // " or ALT = »
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&t_pairDquo>, <&kp RDCHEV>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+/*
+ * end of Single Quote key behaviors
+ */
+
         lt_BspcDel: lt_BspcDel { // layer-tap mod-morph
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -302,24 +394,25 @@
             my_lk_config;
             bindings = <&t_ght>, <&t_Gh>;
         };
+
         lk_quote: lk_quote { // " on tap, “” on "linger" (curly quotes)
             my_lk_config;
-            bindings = <&pairDquo>, <&kp>;
+            bindings = <&t_pairDquo>, <&kp>;
         };
         lk_par: lk_par { // ( on tap, () on "linger"
             my_lk_config;
-            bindings = <&pairPar>, <&kp>;
+            bindings = <&t_pairPar>, <&kp>;
         };
         lk_bkt: lk_bkt { // [ on tap, [] on "linger"
             my_lk_config;
-            bindings = <&pairBkt>, <&kp>;
+            bindings = <&t_pairBkt>, <&kp>;
         };
         lk_brc: lk_brc {
             my_lk_config;
-            bindings = <&pairBrc>, <&kp>;
+            bindings = <&t_pairBrc>, <&kp>;
         };
         lk_ltgt: lk_ltgt { // < on tap, <|> on "linger"
             my_lk_config;
-            bindings = <&pairLtGt>, <&kp>;
+            bindings = <&t_pairLtGt>, <&kp>;
         };
 

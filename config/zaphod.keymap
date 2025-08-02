@@ -9,15 +9,17 @@
 #include <dt-bindings/zmk/bt.h>
 
 
+#include "moutis/moutis_config.dtsi"    // my add-on feature defs
+
 #include "keymaps/keynames_3x5_2.h"     // key name defs for this board topology
-#include "handsdown/vf-config.h"        // HD alpha keymap, adapt, combo definitions
-#include "moutis/moutis_config.dtsi"    // my common add-on feature defs
+#define HD_LAYOUT vf                    // HD variation 2 letter code from handsdown.h
+#include "layouts/hd/handsdown.h"       // include common HD defs after defining layout
 
 / {
     behaviors { // separating these allows us to add board specific behaviors here (if any)
 
 #include "moutis/moutis_behaviors.dtsi" // common behaviors (hold-taps, mod-morphs, lingers, adaptives)
-#include HD_adapt_file                  // HDalpha/mnemonic based adaptives
+#include HD_adapt_file                  // HDalpha layer based adaptives
 
     };
 

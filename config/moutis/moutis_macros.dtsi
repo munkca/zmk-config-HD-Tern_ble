@@ -10,86 +10,193 @@
  *
  */
  
+ // What am I doing wrong here? This doesn't seem to work.
+ #define RELEASE_ALL_MODS <&macro_release &kp LSHFT> \
+                        , <&macro_release &kp RSHFT> \
+                        , <&macro_release &kp LALT> \
+                        , <&macro_release &kp RALT> \
+                        , <&macro_release &kp LCTL> \
+                        , <&macro_release &kp RCTL> \
+                        , <&macro_release &kp LGUI> \
+                        , <&macro_release &kp RGUI> 
+
+
      ZMK_MACRO(m_alpha,
         bindings =
-            <&kp LANG2>,    // switch to Roman/Latin script (n_henk)
-            <&to l_alpha>; // make alpha layer default
+            <&kp LANG2>,    // switch to Roman/Latin script (m_henk/latin)
+            <&to l_hd>;     // make alpha layer default
        )
      ZMK_MACRO(m_japan,
         bindings =
-            <&kp LANG1>,    // switch to Japanese script (m_henk)
+            <&kp LANG1>,    // switch to Japanese script (henk/kana/romaji)
             <&to l_jp>;     // make Japanese layer default
        )
 
    ZMK_MACRO(SlAppy,        // "Sticky Layer App Switcher"
         wait-ms = <50>; tap-ms = <20>;
         bindings =
-                    <&macro_press &kp RGUI>    // leave GUI down to keep menu up
-                  , <&macro_tap &kp TAB>       // (use press for repeat)
-                  , <&tog l_nav>               // to navigate the app menu
-                  , <&macro_pause_for_release> // hold to keep menu up or for repeat ...
-                  , <&tog l_nav>               // done navigating
-                  , <&macro_tap &skapp LGUI>   // release other GUI after a timeout
-                  , <&macro_release &kp RGUI>  // release the previous hold
-                  ;
+                  <&macro_press &kp RGUI>    // leave GUI down to keep menu up
+                , <&macro_tap &kp TAB>       // (use press for repeat)
+                , <&tog l_nav>               // to navigate the app menu
+                , <&macro_pause_for_release> // hold to keep menu up or for repeat ...
+                , <&tog l_nav>               // done navigating
+                , <&macro_tap &skapp LGUI>   // release other GUI after a timeout
+                , <&macro_release &kp RGUI>  // release the previous hold
+                ;
         )
     ZMK_MACRO(SlApBack,        // "Sticky Layer App Switcher Backwards"
         wait-ms = <50>; tap-ms = <20>;
         bindings =
-                    <&macro_press &sk RGUI>     // leave GUI down to keep menu up
-                  , <&macro_press &kp LSHFT>    //
-                  , <&macro_tap &kp TAB>        // just tap for no repeat
-                  , <&macro_pause_for_release>  // hold for repeat ...
-                  , <&macro_release &kp LSHFT>  //
-                  , <&macro_tap &skapp LGUI>    // release other GUI after a timeout
-                  , <&macro_release &sk RGUI>   // now release the previous hold
-                  ;
+                  <&macro_press &sk RGUI>     // leave GUI down to keep menu up
+                , <&macro_press &kp LSHFT>    //
+                , <&macro_tap &kp TAB>        // just tap for no repeat
+                , <&macro_pause_for_release>  // hold for repeat ...
+                , <&macro_release &kp LSHFT>  //
+                , <&macro_tap &skapp LGUI>    // release other GUI after a timeout
+                , <&macro_release &sk RGUI>   // now release the previous hold
+                ;
         )
 
     ZMK_MACRO(m_selword,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp LA(LEFT)>
-                    , <&macro_tap &kp LS(LA(RIGHT))>
+        tap-ms = <my_tapping_speed>;
+        bindings =  <&macro_tap &kp LA(LEFT)>
+                , <&macro_tap &kp LS(LA(RIGHT))>
                 ;
         )
     ZMK_MACRO(m_findsel,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp LG(C)>
-                    , <&macro_tap &kp LG(F)>
-                    , <&macro_tap &kp LG(V)>
-                    , <&macro_tap &kp RETURN>
-                    , <&macro_tap &kp LG(G)>
+        tap-ms = <my_tapping_speed>;
+        bindings =  <&macro_tap &kp LG(C)>
+                , <&macro_tap &kp LG(F)>
+                , <&macro_tap &kp LG(V)>
+                , <&macro_tap &kp RETURN>
+                , <&macro_tap &kp LG(G)>
                 ;
         )
 
-    ZMK_MACRO(pairDquo,
-        wait-ms = <50>; // need to slow this down for some systems.
-        bindings = <&kp LA(LBKT) &kp LS(LA(LBKT)) &kp LEFT>
+    ZMK_MACRO(t_pairDquo,   // type "" put insertion between
+        tap-ms = <my_tapping_speed>;
+        bindings =  <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp RALT>
+                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp RGUI>
+                , <&macro_tap &kp LDQUO>
+                , <&macro_tap &kp RDQUO>
+                , <&macro_tap &kp LEFT>
                 ;
         )
-    ZMK_MACRO(pairSquo,
-        wait-ms = <50>; // need to slow this down for some systems.
-        bindings = <&kp LA(RBKT) &kp LS(LA(RBKT)) &kp LEFT>
+    ZMK_MACRO(t_pairSquo,   // type '' put insertion between
+        tap-ms = <my_tapping_speed>;
+        bindings =  <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp RALT>
+                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp RGUI>
+                , <&macro_tap &kp LSQUO>
+                , <&macro_tap &kp RSQUO>
+                , <&macro_tap &kp LEFT>
                 ;
         )
-    ZMK_MACRO(pairLtGt,
-        wait-ms = <50>; // need to slow this down for some systems.
-        bindings = <&kp LT &kp GT &kp LEFT>
+    ZMK_MACRO(t_pairLtGt,   // type <> put insertion between
+        tap-ms = <my_tapping_speed>;
+        bindings =  <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp RALT>
+                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp RGUI>
+                , <&macro_tap &kp LT>
+                , <&macro_tap &kp GT>
+                , <&macro_tap &kp LEFT>
                 ;
         )
-    ZMK_MACRO(pairPar,
-        wait-ms = <50>; // need to slow this down for some systems.
-        bindings = <&kp LPAR &kp RPAR &kp LEFT>
+    ZMK_MACRO(t_pairPar,    // type () put insertion between
+        tap-ms = <my_tapping_speed>;
+        bindings =  <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp RALT>
+                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp RGUI>
+                , <&macro_tap &kp LPAR>
+                , <&macro_tap &kp RPAR>
+                , <&macro_tap &kp LEFT>
                 ;
         )
-    ZMK_MACRO(pairBrc,
-        wait-ms = <50>; // need to slow this down for some systems.
-        bindings = <&kp LBRC &kp RBRC &kp LEFT>
+    ZMK_MACRO(t_pairBrc,    // type {} put insertion between
+        tap-ms = <my_tapping_speed>;
+        bindings =  <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp RALT>
+                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp RGUI>
+                , <&macro_tap &kp LBRC>
+                , <&macro_tap &kp RBRC>
+                , <&macro_tap &kp LEFT>
                 ;
         )
-    ZMK_MACRO(pairBkt,
-        wait-ms = <50>; // need to slow this down for some systems.
-        bindings = <&kp LBKT &kp RBKT &kp LEFT>
+    ZMK_MACRO(t_pairBkt,    // type [] put insertion between
+        tap-ms = <my_tapping_speed>;
+        bindings =  <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp RALT>
+                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp RGUI>
+                , <&macro_tap &kp LBKT>
+                , <&macro_tap &kp RBKT>
+                , <&macro_tap &kp LEFT>
+                ;
+        )
+    ZMK_MACRO(t_pairDchev,  // type «  » put insertion between
+        tap-ms = <my_tapping_speed>;
+        bindings =  <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp RALT>
+                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp RGUI>
+                , <&macro_tap &kp LDCHEV>
+                , <&macro_tap &kp SPC>
+                , <&macro_tap &kp RDCHEV>
+                , <&macro_tap &kp LEFT>     // avoid dbl space interpreting by host
+                , <&macro_tap &kp SPC>
+                , <&macro_tap &kp LEFT>
+                ;
+        )
+    ZMK_MACRO(t_pairSchev,  // type ‹  › put insertion between
+        tap-ms = <my_tapping_speed>;
+        bindings =  <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp RALT>
+                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp RGUI>
+                , <&macro_tap &kp LSCHEV>
+                , <&macro_tap &kp SPC>
+                , <&macro_tap &kp LEFT>     // avoid dbl space interpreting by host
+                , <&macro_tap &kp SPC>
+                , <&macro_tap &kp RSCHEV>
+                , <&macro_tap &kp LEFT>
                 ;
         )
 
