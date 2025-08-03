@@ -325,7 +325,7 @@
 
             ak_DQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp QMARK>; };
         };
-        ak_SQT: ak_DQT {
+        ak_SQT: ak_SQT {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp SQT>;
