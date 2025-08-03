@@ -286,7 +286,7 @@
 
         lkDqt_GT: lkDqt_GT {                // Hold for paired symbols
             my_lk_config;
-            bindings = <&t_pairDqt>, <&leftDqtGT>;
+            bindings = <&t_pairDquo>, <&leftDqtGT>;
         };
         leftDqtGT: leftDqtGT {              // SHIFT = >
             compatible = "zmk,behavior-mod-morph";
