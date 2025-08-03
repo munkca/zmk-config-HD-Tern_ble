@@ -11,8 +11,8 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp C_VOL_UP>, <&kp TAB>;
-            keep-mods = <(MOD_LCTRL|MOD_RCTRL)>;
-            mods = <(MOD_LCTRL|MOD_RCTRL)>;
+            keep-mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
         };
         WinApp: WinApp {
             compatible = "zmk,behavior-mod-morph";
@@ -25,8 +25,8 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp C_VOL_DN>, <&kp LS(TAB)>;
-            keep-mods = <(MOD_LCTRL|MOD_RCTRL)>;
-            mods = <(MOD_LCTRL|MOD_RCTRL)>;
+            keep-mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
         };
         SWinSApp: SWinSApp {
             compatible = "zmk,behavior-mod-morph";
