@@ -90,6 +90,8 @@
 #define S_SBLT  LA(LS(N9))          // · Small Bullet
 #define S_TM    LA(N2)              // ™ Trademark
 #define S_REG   LA(R)               // ® Registered
+#define S_INVQ  LA(LS(FSLH))        // ¿ inverted Question
+#define S_INVX  LA(N1)              // ¡ inverted Exclamation
 
 // Math Symbols
 #define S_NEQL  LA(EQUAL)           // ≠ Not Equal

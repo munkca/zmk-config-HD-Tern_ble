@@ -226,7 +226,7 @@
         SqtRchev: SqtRchev {                // ' or ALT = »
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp GT>, <&kp RDCHEV>;
+            bindings = <&ak_SQT>, <&kp RDCHEV>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 /*
@@ -323,7 +323,14 @@
             #binding-cells = <0>;
             bindings = <&kp DQT>;
 
-            ak_CMMA_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp QMARK>; };
+            ak_DQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp QMARK>; };
+        };
+        ak_SQT: ak_DQT {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>;
+
+            ak_SQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp S_INVQ>; };
         };
 
 /* Comma Magic */
