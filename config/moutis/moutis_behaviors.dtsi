@@ -215,9 +215,21 @@
 
         lkSqt_GT: lkSqt_GT {                // Hold for paired symbols
             my_lk_config;
-            bindings = <&t_pairSquo>, <&leftSquotGT>;
+            bindings = <&pairSquotGT>, <&rightSquotGT>;
         };
-        leftSquotGT: leftSquotGT {          // SHIFT = >
+        pairSquotGT: pairSquotGT {          // SHIFT = >
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&pairSquotChev>, <&kp GT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        pairSquotChev: pairSquotChev {          // SHIFT = >
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&t_pairSquo>, <&kp RDCHEV>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+        rightSquotGT: rightSquotGT {          // SHIFT = >
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&SqtRchev>, <&kp GT>;
