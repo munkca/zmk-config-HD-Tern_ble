@@ -179,8 +179,9 @@
             bindings = <&kp V>;
 
             akV_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(V)>; };
-            akW_t_t { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp T>; };
+            akV_t_t { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp T>; };
             akV_b_lv { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &kp V>; };
+            akV_t_n { trigger-keys = <W>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp N>; };
         };
         ak_W: ak_W {
             compatible = "zmk,behavior-adaptive-key";
