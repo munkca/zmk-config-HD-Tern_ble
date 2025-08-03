@@ -298,9 +298,21 @@
 
         lkDqt_GT: lkDqt_GT {                // Hold for paired symbols
             my_lk_config;
-            bindings = <&t_pairDquo>, <&leftDqtGT>;
+            bindings = <&pairDquotGT>, <&rightDqtGT>;
         };
-        leftDqtGT: leftDqtGT {              // SHIFT = >
+        pairDquotGT: pairDquotGT {          // SHIFT = >
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&pairDquotChev>, <&kp GT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        pairDquotChev: pairDquotChev {          // SHIFT = >
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&t_pairDquo>, <&kp RDCHEV>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+        rightDqtGT: leftDqtGT {              // SHIFT = >
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&DqtRchev>, <&kp GT>;
