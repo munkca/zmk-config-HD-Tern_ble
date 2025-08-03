@@ -181,7 +181,8 @@
  *
  */
  
-#define DqtLT lkDqt_lkLT 0 0  // simple macro to keep the keymap uncluttered
+#define DqtLT lkDqt_lkLT 0 0  // simple macros to keep the keymap uncluttered
+#define SqtGT lkSqt_GT 0 0
 
         lkDqt_lkLT: lkDqt_lkLT {            // Hold for paired symbols
             my_lk_config;
@@ -211,16 +212,33 @@
             bindings = <&ak_DQT>, <&kp LDCHEV>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
-        SqtGT: SqtGT { // SHIFT = >
+
+        lkSqt_GT: lkSqt_GT {                // Hold for paired symbols
+            my_lk_config;
+            bindings = <&pairSquotGT>, <&rightSquotGT>;
+        };
+        pairSquotGT: pairSquotGT {          // SHIFT = >
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&pairSquotChev>, <&kp GT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        pairSquotChev: pairSquotChev {          // SHIFT = >
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&t_pairSquo>, <&kp RDCHEV>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+        rightSquotGT: rightSquotGT {          // SHIFT = >
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&SqtRchev>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        SqtRchev: SqtRchev { // ' or ALT = »
+        SqtRchev: SqtRchev {                // ' or ALT = »
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&t_pairSquo>, <&kp RDCHEV>;
+            bindings = <&ak_SQT>, <&kp RDCHEV>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 /*
@@ -246,7 +264,8 @@
  *
  */
  
-#define SqtLT lkSqt_lkLT 0 0  // simple macro to keep the keymap uncluttered
+#define SqtLT lkSqt_lkLT 0 0  // simple macros to keep the keymap uncluttered
+#define DqtGT lkDqt_GT 0 0
 
         lkSqt_lkLT: lkSqt_lkLT {            // Hold for paired symbols
             my_lk_config;
@@ -276,16 +295,33 @@
             bindings = <&kp LT>, <&kp LDCHEV>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
-        DqtGT: DqtGT { // SHIFT = >
+
+        lkDqt_GT: lkDqt_GT {                // Hold for paired symbols
+            my_lk_config;
+            bindings = <&pairDquotGT>, <&rightDqtGT>;
+        };
+        pairDquotGT: pairDquotGT {          // SHIFT = >
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&pairDquotChev>, <&kp GT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        pairDquotChev: pairDquotChev {          // SHIFT = >
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&t_pairDquo>, <&kp RDCHEV>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+        rightDqtGT: leftDqtGT {              // SHIFT = >
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&DqtRchev>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        DqtRchev: DqtRchev { // " or ALT = »
+        DqtRchev: DqtRchev {                // " or ALT = »
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&t_pairDquo>, <&kp RDCHEV>;
+            bindings = <&kp GT>, <&kp RDCHEV>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 /*
@@ -311,7 +347,14 @@
             #binding-cells = <0>;
             bindings = <&kp DQT>;
 
-            ak_CMMA_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp QMARK>; };
+            ak_DQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp QMARK>; };
+        };
+        ak_SQT: ak_SQT {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>;
+
+            ak_SQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp S_INVQ>; };
         };
 
 /* Comma Magic */

@@ -11,8 +11,8 @@ on:
       - config/*.h
       - config/keymaps/*.h
       - config/keymaps/*.dtsi
-      - config/handsdown/*.h
-      - config/handsdown/*.dtsi
+      - config/handsdown/hd/*.h
+      - config/handsdown/hd/*.dtsi
       - config/moutis/*.h
       - config/moutis/*.dtsi
       - build.yaml

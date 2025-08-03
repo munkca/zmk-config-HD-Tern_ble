@@ -23,8 +23,8 @@
                 bindings = <
                                         HD_LT                                       HD_RT
                                         HD_LM                                       HD_RM
-                                        HD_LB   _______ _______  _______ _______    HD_RB
-                &kp C_MUTE  &SlAppy     HD_LH   &kp LS(LC(N3))  &kp LS(LC(N4))      HD_RH   &tog l_num &kp C_PP
+                                        HD_LB   _______ _______     _______ _______ HD_RB
+                &kp C_MUTE  &SlAppy     HD_LH   &kp LS(LC(N3))  &kp LS(LC(N4))      HD_RH       &tog l_num &kp C_PP
                 >;
                 sensor-bindings = <&e_VolApp &e_PGApp>;
             };
@@ -34,7 +34,7 @@
                                         JP_LT                                       JP_RT
                                         JP_LM                                       JP_RM
                                         JP_LB   _______ _______     _______ _______ JP_RB
-                _______     _______     JP_LH   _______                  _______    JP_RH   _______     _______
+                _______     _______     JP_LH   _______                     _______ JP_RH       _______     _______
                 >;
                 sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
             };
@@ -87,7 +87,7 @@
                                         l_nav_LT                                    l_nav_RT
                                         l_nav_LM                                    l_nav_RM
                                         l_nav_LB _______ _______    _______ _______ l_nav_RB
-                _______     _______     l_nav_LH _______                    _______ l_nav_RH    _______     _______
+                &kp S_ZMRST _______     l_nav_LH _______                    _______ l_nav_RH    _______     _______
                 >;
                 sensor-bindings = <&inc_dec_kp S_ZMIN S_ZMOUT &inc_dec_kp S_BBACK S_BFWD>;
             };
