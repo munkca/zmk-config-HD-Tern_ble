@@ -6,7 +6,7 @@
  * See handsdown/handsdown.h for HD variation codes
  *
  */
-
+#define HD_LAYOUT pm        // HD variation 2 letter code from handsdown.h
 #include "handsdown.h"      // load header now for HD common defs
 
 #define _______  &trans
