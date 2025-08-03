@@ -11,6 +11,13 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp C_VOL_UP>, <&kp TAB>;
+            keep-mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        WinApp: WinApp {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&C_VOL_UPApp>, <&kp TAB>;
             keep-mods = <(MOD_LGUI|MOD_RGUI)>;
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
@@ -18,13 +25,20 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp C_VOL_DN>, <&kp LS(TAB)>;
+            keep-mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        SWinSApp: SWinSApp {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&C_VOL_DNSApp>, <&kp LS(TAB)>;
             keep-mods = <(MOD_LGUI|MOD_RGUI)>;
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
         e_VolApp: e_VolApp {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&C_VOL_DNSApp>, <&C_VOL_UPApp>;
+            bindings = <&SWinSApp>, <&WinApp>;
         };
 
         PG_DNApp: PG_DNApp {
