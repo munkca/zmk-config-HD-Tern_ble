@@ -530,7 +530,7 @@
 
 #ifdef JP_YOUON_COMBOS     // Major Japanese contracted sounds as combos
 #define JP_YOUON_MACRO(_a, _b, _c) \
-        jp ## _a ## _b ## _c: jp ## _a ## _b ## _c { \
+        jp_ stringy(_a _b _c) : jp_ stringy(_a _b _c) { \
         compatible = "zmk,behavior-macro"; \
         #binding-cells = <0>; tap-ms = <my_tapping_speed>; \
         bindings = \
