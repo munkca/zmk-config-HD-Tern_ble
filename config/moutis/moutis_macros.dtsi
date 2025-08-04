@@ -516,6 +516,7 @@
 
 
 #ifdef JP_MODE_ENABLE      // JP layer combos, etc.
+
     ZMK_MACRO(t_wo,
         tap-ms = <my_tapping_speed>;
         bindings = <&kp W &kp O>
@@ -526,5 +527,23 @@
         bindings = <&kp W &kp A &kp T &kp A &kp S &kp I>
                 ;
         )
-#endif
 
+#ifdef JP_YOUON_COMBOS     // Major Japanese contracted sounds as combos
+#define JP_YOUON_MACRO(_a, _b, _c) \
+jp ## _a ## _b ## _c: jp ## _a ## _b ## _c {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>; tap-ms = <my_tapping_speed>; \
+        bindings =
+              <&macro_tap &kp _a> \
+            , <&macro_tap &kp _b> \
+            , <&macro_tap &kp _c> \
+            ;
+    };
+JP_YOUON_MACRO(k, y, a)          // kya
+JP_YOUON_MACRO(k, y, u)          // kya
+JP_YOUON_MACRO(k, y, u)          // kya
+
+
+#endif //  JP_YOUON_COMBOS     // Major Japanese contracted sounds as combos
+
+#endif // JP_MODE_ENABLE      // JP layer combos, etc.
