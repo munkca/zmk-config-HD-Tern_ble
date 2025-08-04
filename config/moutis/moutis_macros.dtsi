@@ -534,10 +534,12 @@
 #define jp_macro_name (_a, _b, _c) jp_stringy(jp_t_, _a, _b, _c)
 
 #define JP_YOUON_MACRO(name, _A, _B, _C) \
-    name : name { \
-        compatible = "zmk,behavior-macro"; \
-        #binding-cells = <0>; tap-ms = <my_tapping_speed>; \
-        bindings = <&kp _A &kp _B &kp _C>; \
+    {
+        name : name { \
+            compatible = "zmk,behavior-macro"; \
+            #binding-cells = <0>; tap-ms = <my_tapping_speed>; \
+            bindings = <&kp _A &kp _B &kp _C>; \
+        };
     };
 
 JP_YOUON_MACRO(t_kya, K, Y, A)          // kya
