@@ -142,7 +142,7 @@
         SlshStar: SlshStar {  // shift = *, alt = \
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp SlshBslh>, <&kp STAR>;
+            bindings = <&SlshBslh>, <&kp STAR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         SlshBslh: SlshBslh {
