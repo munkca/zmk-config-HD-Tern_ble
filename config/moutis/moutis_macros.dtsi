@@ -517,12 +517,12 @@
 
 #ifdef JP_MODE_ENABLE      // JP layer combos, etc.
 
-    ZMK_MACRO(t_wo,
+    ZMK_MACRO(jp_t_wo,
         tap-ms = <my_tapping_speed>;
         bindings = <&kp W &kp O>
                 ;
         )
-    ZMK_MACRO(t_shi,
+    ZMK_MACRO(jp_t_watashi,
         tap-ms = <my_tapping_speed>;
         bindings = <&kp W &kp A &kp T &kp A &kp S &kp I>
                 ;
