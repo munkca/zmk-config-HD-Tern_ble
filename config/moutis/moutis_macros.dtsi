@@ -537,7 +537,7 @@ jp ## _a ## _b ## _c: jp ## _a ## _b ## _c {
               <&macro_tap &kp _a> \
             , <&macro_tap &kp _b> \
             , <&macro_tap &kp _c> \
-            ;
+            ; \
     };
 JP_YOUON_MACRO(k, y, a)          // kya
 JP_YOUON_MACRO(k, y, u)          // kya
