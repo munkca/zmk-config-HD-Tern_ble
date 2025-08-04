@@ -535,7 +535,7 @@
 
 #define JP_YOUON_MACRO(name, _A, _B, _C) \
 //        jp_macro_name(_A, _B, _C) : jp_macro_name(_A, _B, _C) { \
-        name : name
+        name : name \
         compatible = "zmk,behavior-macro"; \
         #binding-cells = <0>; tap-ms = <my_tapping_speed>; \
         bindings = <&kp _A &kp _B &kp _C>; \
