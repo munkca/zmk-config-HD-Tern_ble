@@ -6,47 +6,58 @@
  * e_ = EC11 sensor behavior
  *
  */
+ 
+/*
+ * e_VolApp & e_PGApp
+ *
+ * Encoder behaviors for Volume or PgUp/PgNd
+ * and app/window selector with Gui/Ctl held.
+ *
+ * App selector behaves almost identically to
+ * SLAppy/SLAppBack keys (defined in "moutis_behaviors")
+ * but uses ecnoder rather than nav keys
+ *
+ *
+ */
 
-        C_VOL_UPApp: C_VOL_UPApp {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp C_VOL_UP>, <&kp TAB>;
-            keep-mods = <(MOD_LCTL|MOD_RCTL)>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+        e_VolApp: e_VolApp {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&SWinSApp>, <&WinApp>;
         };
         WinApp: WinApp {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&C_VOL_UPApp>, <&kp TAB>;
-            keep-mods = <(MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_RGUI)>;  // leaves the app selector up
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
-        C_VOL_DNSApp: C_VOL_DNSApp {
+        C_VOL_UPApp: C_VOL_UPApp {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp C_VOL_DN>, <&kp LS(TAB)>;
-            keep-mods = <(MOD_LCTL|MOD_RCTL)>;
+            bindings = <&kp C_VOL_UP>, <&kp TAB>;
+            keep-mods = <(MOD_LCTL|MOD_RCTL)>;  // leaves the app selector up
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
         SWinSApp: SWinSApp {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&C_VOL_DNSApp>, <&kp LS(TAB)>;
-            keep-mods = <(MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_RGUI)>;  // leaves the app selector up
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
-        e_VolApp: e_VolApp {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&SWinSApp>, <&WinApp>;
-        };
-
-        PG_DNApp: PG_DNApp {
+        C_VOL_DNSApp: C_VOL_DNSApp {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp PG_DN>, <&kp TAB>;
-            keep-mods = <(MOD_LGUI|MOD_RGUI)>;
-            mods = <(MOD_LGUI|MOD_RGUI)>;
+            bindings = <&kp C_VOL_DN>, <&kp LS(TAB)>;
+            keep-mods = <(MOD_LCTL|MOD_RCTL)>;  // leaves the app selector up
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+
+        e_PGApp: e_PGApp {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&PG_UPSApp>, <&PG_DNApp>;
         };
         PG_UPSApp: PG_UPSApp {
             compatible = "zmk,behavior-mod-morph";
@@ -55,8 +66,10 @@
             keep-mods = <(MOD_LGUI|MOD_RGUI)>;
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
-        e_PGApp: e_PGApp {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&PG_UPSApp>, <&PG_DNApp>;
+        PG_DNApp: PG_DNApp {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PG_DN>, <&kp TAB>;
+            keep-mods = <(MOD_LGUI|MOD_RGUI)>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
         };

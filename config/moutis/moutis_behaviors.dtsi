@@ -64,7 +64,9 @@
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
 //
-// maybe should be separated? but for now...
+// maybe should be separated? but here for now...
+//
+// these because we can't use macro/behavior in mt parameter?
 //
         mt_S: mt_S {
             my_hrm_config;

@@ -211,14 +211,6 @@
                 ;
         )
 
-    ZMK_MACRO(t_l,
-        tap-ms = <my_tapping_speed>;
-        bindings = <&macro_release &kp LSHFT>
-                , <&macro_release &kp RSHFT>
-                , <&macro_tap &kp L>
-                ;
-        )
-
     ZMK_MACRO(t_Qu,
         tap-ms = <my_tapping_speed>;
         bindings = <&ak_Q>

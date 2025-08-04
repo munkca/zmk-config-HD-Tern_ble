@@ -105,7 +105,6 @@
             bindings = <&kp L>;
 
             akL_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(L)>; };
-            akL_l { trigger-keys = <F P>; max-prior-idle-ms = <my_ak_term>; bindings = <&t_l>; };
         };
         ak_M: ak_M {
             compatible = "zmk,behavior-adaptive-key";
