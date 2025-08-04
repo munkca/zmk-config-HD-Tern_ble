@@ -79,12 +79,11 @@ COMBO_LAYER(shi, &t_shi,            RM3 RM4, l_jp)          // "わたし "
 COMBO_LAYER(j_kya,  &t_kya,             LM0 RM1, l_jp)          // kya
 COMBO_LAYER(j_kyu,  &t_kyu,             LM0 RB1, l_jp)          // kyu
 COMBO_LAYER(j_kyo,  &t_kyo,             LM0 RB2, l_jp)          // kyo
-
-#ifdef comments
 COMBO_LAYER(j_gya,  &t_gya,             LT1 RM1, l_jp)          // gya
 COMBO_LAYER(j_gyu,  &t_gyu,             LT1 RB1, l_jp)          // gyu
 COMBO_LAYER(j_gyo,  &t_gyo,             LT1 RB2, l_jp)          // gyo
 
+#ifdef comments
 COMBO_LAYER(j_sya,  &t_sya,             LM4 RM1, l_jp)          // sya
 COMBO_LAYER(j_syu,  &t_syu,             LM4 RB1, l_jp)          // syu
 COMBO_LAYER(j_sye,  &t_sye,             LM4 RM2, l_jp)          // sye
