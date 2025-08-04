@@ -530,7 +530,7 @@
 
 #ifdef JP_YOUON_COMBOS     // Major Japanese contracted sounds as combos
 
-#define jp_stringy(n, _a, _b, _c) t_##_a##_b##_c
+#define jp_stringy(_a, _b, _c) t_##_a##_b##_c
 #define jp_macro_name (_a, _b, _c) jp_stringy(_a, _b, _c)
 
 #define JP_YOUON_MACRO(_a, _b, _c) \
