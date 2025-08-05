@@ -4,7 +4,7 @@
 //
 //  Created by Alan on 7/31/25.
 //
-
+#pragma once
 
 /*
  * #define compound keycodes
@@ -20,8 +20,8 @@
  * with something like my Symantic Keys in QMK.
  * (S_ = "Symantic key")
  *
- * Consider the unicode chars approach in urob's
- * ZMK helpers: include/zmk-helpers/unicode-chars
+ * Consider the unicode chars approach in urob's ZMK helpers:
+ * https://github.com/urob/zmk-helpers/blob/main/include/zmk-helpers/helper.h
  *
  * Below is for Mac US extended (ABC - Extended) keyboard layout
  */
