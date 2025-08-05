@@ -553,6 +553,148 @@
         bindings = <&kp G &kp Y &kp O>;
         )
 
+    ZMK_MACRO(t_sya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp S &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_sye,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp S &kp Y &kp E>;
+        )
+    ZMK_MACRO(t_syu,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp S &kp Y &kp U>;
+        )
+    ZMK_MACRO(t_syo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp S &kp Y &kp O>;
+        )
+    ZMK_MACRO(t_jya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp J &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_jye,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp J &kp Y &kp E>;
+        )
+    ZMK_MACRO(t_jyu,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp J &kp Y &kp U>;
+        )
+    ZMK_MACRO(t_jyo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp J &kp Y &kp O>;
+        )
+
+    ZMK_MACRO(t_tya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp T &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_tyi,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp T &kp Y &kp I>;
+        )
+    ZMK_MACRO(t_tyu,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp T &kp Y &kp U>;
+        )
+    ZMK_MACRO(t_tyo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp T &kp Y &kp O>;
+        )
+    ZMK_MACRO(t_dya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp D &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_dyi,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp D &kp Y &kp I>;
+        )
+    ZMK_MACRO(t_dyu,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp D &kp Y &kp U>;
+        )
+    ZMK_MACRO(t_jyo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp D &kp Y &kp O>;
+        )
+
+    ZMK_MACRO(t_nya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp N &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_nye,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp N &kp Y &kp E>;
+        )
+    ZMK_MACRO(t_nyo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp N &kp Y &kp O>;
+        )
+
+    ZMK_MACRO(t_hya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp H &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_hyu,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp H &kp Y &kp U>;
+        )
+    ZMK_MACRO(t_hyo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp H &kp Y &kp O>;
+        )
+    ZMK_MACRO(t_dya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp B &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_dyu,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp B &kp Y &kp U>;
+        )
+    ZMK_MACRO(t_jyo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp B &kp Y &kp O>;
+        )
+    ZMK_MACRO(t_pya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp P &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_pyu,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp P &kp Y &kp U>;
+        )
+    ZMK_MACRO(t_pyo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp P &kp Y &kp O>;
+        )
+
+    ZMK_MACRO(t_mya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp M &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_mye,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp M &kp Y &kp E>;
+        )
+    ZMK_MACRO(t_myo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp M &kp Y &kp O>;
+        )
+
+    ZMK_MACRO(t_rya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp R &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_rye,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp R &kp Y &kp E>;
+        )
+    ZMK_MACRO(t_ryo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp R &kp Y &kp O>;
+        )
+
 #endif //  JP_YOUON_COMBOS     // Major Japanese contracted sounds as combos
 
 #endif // JP_MODE_ENABLE      // JP layer combos, etc.
