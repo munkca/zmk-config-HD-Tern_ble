@@ -483,7 +483,7 @@
     };
     lk_R_textJ: lk_R_textJ { //
             my_lk_config;
-            bindings = <&Rt_RHoldJ>, <&t_RTapJ>;
+            bindings = <&t_RHoldJ>, <&t_RTapJ>;
     };
 #endif
 
