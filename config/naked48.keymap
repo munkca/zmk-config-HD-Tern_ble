@@ -33,7 +33,7 @@
 #include "moutis/moutis_macros.dtsi"    // common macros (superset)
 
 #ifdef H_DIGRAPH_COMBOS                 // H-digraphs? (Th, Ch, Wh, Sh, Gh, Ph)
-#include "moutis/moutis_m_digraph.dtsi"
+#include "moutis/moutis_m_h_digraph.dtsi"
 #endif // H_DIGRAPH_COMBOS
 #ifdef EN_PRONOUN_COMBOS                // Pronoun macros?
 #include "moutis/moutis_m_pronoun.dtsi"
