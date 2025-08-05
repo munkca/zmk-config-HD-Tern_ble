@@ -24,6 +24,7 @@
  */
     behaviors {
 
+#include "moutis/moutis_sensors.dtsi"   // EC11 & other sensor behaviors
 #include "moutis/moutis_behaviors.dtsi" // common behaviors (hold-taps, mod-morphs, lingers, adaptives)
 #include HD_adapt_file                  // HDalpha/mnemonic based adaptives (most of them)
 
