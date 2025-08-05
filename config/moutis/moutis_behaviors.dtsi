@@ -379,7 +379,7 @@
             #binding-cells = <0>;
             bindings = <&kp CMMA>;
 
-            ak_CMMA_cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term * 2>; bindings = <&kp BSPC  &caps_word>; };
+            ak_CMMA_cap { trigger-keys = <CMMA>; max-prior-idle-ms = <(my_ak_term * 2)>; bindings = <&kp BSPC  &caps_word>; };
         };
         CmmaMgc: CmmaMgc {              // Hold for CAPSLOCK, tap for COMMA
             my_lk_config;
