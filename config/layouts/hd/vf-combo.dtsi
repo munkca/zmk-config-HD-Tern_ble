@@ -28,8 +28,8 @@
 // type a glyph (tiny board accommodation)
 //
 
-COMBO_LAYER(t_Q,     &lk_qu Q U,    LT3 LT1, l_hd)       // type Qu, linger deletes u
-COMBO_LAYER(t_Z,     &ak_Z,         LM3 LM1, l_hd)       // Z is typically off map
+COMBO_LAYER(jp_t_Q,     &lk_qu Q U,    LT3 LT1, l_hd)       // type Qu, linger deletes u
+COMBO_LAYER(jp_t_Z,     &ak_Z,         LM3 LM1, l_hd)       // Z is typically off map
 
 #ifdef H_DIGRAPH_COMBOS
 //
@@ -71,59 +71,59 @@ COMBO_LAYER(pnWhere, &t_PnWhere,    LT4 LH1, l_hd)  // "Where "
 #endif // EN_PRONOUN_COMBOS
 
 #ifdef JP_MODE_ENABLE      // JP layer combos, etc.
-COMBO_LAYER(wo,  &jp_t_wo,          LT3 LT2, l_jp)  // を
-COMBO_LAYER(shi, &jp_t_watashi,     RM3 RM4, l_jp)  // わたし
+COMBO_LAYER(wo,  &t_wo,          LT3 LT2, l_jp)  // を
+COMBO_LAYER(shi, &t_watashi,     RM3 RM4, l_jp)  // わたし
 
 #ifdef JP_YOUON_COMBOS     // Major Japanese contracted sounds as combos
 
-COMBO_LAYER(t_kya,  &jp_t_kya,      LM0 RM1, l_jp)  // kya
-COMBO_LAYER(t_kyu,  &jp_t_kyu,      LM0 RB1, l_jp)  // kyu
-COMBO_LAYER(t_kyo,  &jp_t_kyo,      LM0 RB2, l_jp)  // kyo
+COMBO_LAYER(jp_t_kya,  &t_kya,      LM0 RM1, l_jp)  // kya
+COMBO_LAYER(jp_t_kyu,  &t_kyu,      LM0 RB1, l_jp)  // kyu
+COMBO_LAYER(jp_t_kyo,  &t_kyo,      LM0 RB2, l_jp)  // kyo
 
-COMBO_LAYER(t_gya,  &jp_t_gya,      LT1 RM1, l_jp)  // gya
-COMBO_LAYER(t_gyu,  &jp_t_gyu,      LT1 RB1, l_jp)  // gyu
-COMBO_LAYER(t_gyo,  &jp_t_gyo,      LT1 RB2, l_jp)  // gyo
+COMBO_LAYER(jp_t_gya,  &t_gya,      LT1 RM1, l_jp)  // gya
+COMBO_LAYER(jp_t_gyu,  &t_gyu,      LT1 RB1, l_jp)  // gyu
+COMBO_LAYER(jp_t_gyo,  &t_gyo,      LT1 RB2, l_jp)  // gyo
 
 #ifdef comments
-COMBO_LAYER(t_sya,  &jp_t_sya,      LM4 RM1, l_jp)  // sya
-COMBO_LAYER(t_syu,  &jp_t_syu,      LM4 RB1, l_jp)  // syu
-COMBO_LAYER(t_sye,  &jp_t_sye,      LM4 RM2, l_jp)  // sye
-COMBO_LAYER(t_syo,  &jp_t_syo,      LM4 RB2, l_jp)  // syo
-COMBO_LAYER(t_jya,  &jp_t_jya,      LT0 RM1, l_jp)  // jya
-COMBO_LAYER(t_jyu,  &jp_t_jyu,      LM0 RB1, l_jp)  // jyu
-COMBO_LAYER(t_jye,  &jp_t_jye,      LT0 RM2, l_jp)  // sye
-COMBO_LAYER(t_jyo,  &jp_t_jyo,      LM0 RB2, l_jp)  // jyo
+COMBO_LAYER(jp_t_sya,  &t_sya,      LM4 RM1, l_jp)  // sya
+COMBO_LAYER(jp_t_syu,  &t_syu,      LM4 RB1, l_jp)  // syu
+COMBO_LAYER(jp_t_sye,  &t_sye,      LM4 RM2, l_jp)  // sye
+COMBO_LAYER(jp_t_syo,  &t_syo,      LM4 RB2, l_jp)  // syo
+COMBO_LAYER(jp_t_jya,  &t_jya,      LT0 RM1, l_jp)  // jya
+COMBO_LAYER(jp_t_jyu,  &t_jyu,      LM0 RB1, l_jp)  // jyu
+COMBO_LAYER(jp_t_jye,  &t_jye,      LT0 RM2, l_jp)  // sye
+COMBO_LAYER(jp_t_jyo,  &t_jyo,      LM0 RB2, l_jp)  // jyo
 
-COMBO_LAYER(t_tya,  &jp_t_tya,      LM1 RM1, l_jp)  // tya
-COMBO_LAYER(t_tyi,  &jp_t_tyi,      LM1 RM3, l_jp)  // tya
-COMBO_LAYER(t_tyu,  &jp_t_tyu,      LM1 RB1, l_jp)  // tyu
-COMBO_LAYER(t_tyo,  &jp_t_tyo,      LM1 RB2, l_jp)  // tyo
-COMBO_LAYER(t_dya,  &jp_t_dya,      LB1 RM1, l_jp)  // dya
-COMBO_LAYER(t_dyi,  &jp_t_dyi,      LB1 RM3, l_jp)  // dya
-COMBO_LAYER(t_dyu,  &jp_t_dyu,      LB1 RB1, l_jp)  // dyu
-COMBO_LAYER(t_dyo,  &jp_t_dyo,      LB1 RB2, l_jp)  // dyo
+COMBO_LAYER(jp_t_tya,  &t_tya,      LM1 RM1, l_jp)  // tya
+COMBO_LAYER(jp_t_tyi,  &t_tyi,      LM1 RM3, l_jp)  // tya
+COMBO_LAYER(jp_t_tyu,  &t_tyu,      LM1 RB1, l_jp)  // tyu
+COMBO_LAYER(jp_t_tyo,  &t_tyo,      LM1 RB2, l_jp)  // tyo
+COMBO_LAYER(jp_t_dya,  &t_dya,      LB1 RM1, l_jp)  // dya
+COMBO_LAYER(jp_t_dyi,  &t_dyi,      LB1 RM3, l_jp)  // dya
+COMBO_LAYER(jp_t_dyu,  &t_dyu,      LB1 RB1, l_jp)  // dyu
+COMBO_LAYER(jp_t_dyo,  &t_dyo,      LB1 RB2, l_jp)  // dyo
 
-COMBO_LAYER(t_nya,  &jp_t_nya,      LM2 RM1, l_jp)  // nya
-COMBO_LAYER(t_nyu,  &jp_t_nyu,      LM2 RB1, l_jp)  // nyu
-COMBO_LAYER(t_nyo,  &jp_t_nyo,      LM2 RB2, l_jp)  // nyo
+COMBO_LAYER(jp_t_nya,  &t_nya,      LM2 RM1, l_jp)  // nya
+COMBO_LAYER(jp_t_nyu,  &t_nyu,      LM2 RB1, l_jp)  // nyu
+COMBO_LAYER(jp_t_nyo,  &t_nyo,      LM2 RB2, l_jp)  // nyo
 
-COMBO_LAYER(t_hya,  &jp_t_hya,      RM4 RM1, l_jp)  // hya
-COMBO_LAYER(t_hyu,  &jp_t_hyu,      RM4 RB1, l_jp)  // hyu
-COMBO_LAYER(t_hyo,  &jp_t_hyo,      RM4 RB2, l_jp)  // hyo
-COMBO_LAYER(t_bya,  &jp_t_bya,      RB4 RM1, l_jp)  // bya
-COMBO_LAYER(t_byu,  &jp_t_byu,      RB4 RB1, l_jp)  // byu
-COMBO_LAYER(t_byo,  &jp_t_byo,      RB4 RB2, l_jp)  // byo
-COMBO_LAYER(t_pya,  &jp_t_pya,      LB3 RM1, l_jp)  // pya
-COMBO_LAYER(t_pyu,  &jp_t_pyu,      LB3 RB1, l_jp)  // pyu
-COMBO_LAYER(t_pyo,  &jp_t_pyo,      LB3 RB2, l_jp)  // pyo
+COMBO_LAYER(jp_t_hya,  &t_hya,      RM4 RM1, l_jp)  // hya
+COMBO_LAYER(jp_t_hyu,  &t_hyu,      RM4 RB1, l_jp)  // hyu
+COMBO_LAYER(jp_t_hyo,  &t_hyo,      RM4 RB2, l_jp)  // hyo
+COMBO_LAYER(jp_t_bya,  &t_bya,      RB4 RM1, l_jp)  // bya
+COMBO_LAYER(jp_t_byu,  &t_byu,      RB4 RB1, l_jp)  // byu
+COMBO_LAYER(jp_t_byo,  &t_byo,      RB4 RB2, l_jp)  // byo
+COMBO_LAYER(jp_t_pya,  &t_pya,      LB3 RM1, l_jp)  // pya
+COMBO_LAYER(jp_t_pyu,  &t_pyu,      LB3 RB1, l_jp)  // pyu
+COMBO_LAYER(jp_t_pyo,  &t_pyo,      LB3 RB2, l_jp)  // pyo
 
-COMBO_LAYER(t_mya,  &jp_t_mya,      LT2 RM1, l_jp)  // mya
-COMBO_LAYER(t_myu,  &jp_t_myu,      LT2 RB1, l_jp)  // myu
-COMBO_LAYER(t_myo,  &jp_t_myo,      LT2 RB2, l_jp)  // myo
+COMBO_LAYER(jp_t_mya,  &t_mya,      LT2 RM1, l_jp)  // mya
+COMBO_LAYER(jp_t_myu,  &t_myu,      LT2 RB1, l_jp)  // myu
+COMBO_LAYER(jp_t_myo,  &t_myo,      LT2 RB2, l_jp)  // myo
 
-COMBO_LAYER(t_rya,  &jp_t_rya,      LH1 RM1, l_jp)  // rya
-COMBO_LAYER(t_ryu,  &jp_t_ryu,      LH1 RB1, l_jp)  // ryu
-COMBO_LAYER(t_ryo,  &jp_t_ryo,      LH1 RB2, l_jp)  // ryo
+COMBO_LAYER(jp_t_rya,  &t_rya,      LH1 RM1, l_jp)  // rya
+COMBO_LAYER(jp_t_ryu,  &t_ryu,      LH1 RB1, l_jp)  // ryu
+COMBO_LAYER(jp_t_ryo,  &t_ryo,      LH1 RB2, l_jp)  // ryo
 #endif // comments
 
 #endif //  JP_YOUON_COMBOS     // Major Japanese contracted sounds as combos
