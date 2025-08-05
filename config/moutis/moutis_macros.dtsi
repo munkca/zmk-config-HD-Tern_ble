@@ -531,20 +531,20 @@
 #define jp_stringy(_n, _a, _b, _c) _n##_a##_b##_c
 #define jp_macro_name (_a, _b, _c) jp_stringy(jp_t_, _a, _b, _c)
 
-#define JP_YOUON_MACRO(name, _A, _B, _C) \
+#define JP_YOUON_MACRO(name, _A_, _B_, _C_) \
 name: name { \
     compatible = "zmk,behavior-macro"; \
     #binding-cells = <0>; \
     tap-ms = <my_tapping_speed>; \
-    bindings = <&kp _A &kp _B &kp _C>; \
+    bindings = <&kp _A_ &kp _B_ &kp _C_>; \
 };
 
-JP_YOUON_MACRO(t_kya, K, Y, A)          // kya
-JP_YOUON_MACRO(t_kyu, K, Y, U)          // kyu
-JP_YOUON_MACRO(t_kyo, K, Y, O)          // kyo
-JP_YOUON_MACRO(t_gya, G, Y, A)          // gya
-JP_YOUON_MACRO(t_gyu, G, Y, U)          // gyu
-JP_YOUON_MACRO(t_gyo, G, Y, O)          // gyo
+JP_YOUON_MACRO(jp_t_kya, K, Y, A)   // kya
+JP_YOUON_MACRO(jp_t_kyu, K, Y, U)   // kyu
+JP_YOUON_MACRO(jp_t_kyo, K, Y, O)   // kyo
+JP_YOUON_MACRO(jp_t_gya, G, Y, A)   // gya
+JP_YOUON_MACRO(jp_t_gyu, G, Y, U)   // gyu
+JP_YOUON_MACRO(jp_t_gyo, G, Y, O)   // gyo
 
 #endif //  JP_YOUON_COMBOS     // Major Japanese contracted sounds as combos
 
