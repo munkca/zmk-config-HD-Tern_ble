@@ -31,23 +31,19 @@
 
     ZMK_MACRO(t_LTapJ,
         tap-ms = <(my_tapping_speed / 2)>;
-        bindings = <&macro_tap &kp A &kp R &kp I &kp G &kp A &kp T &kp O &kp U>
-                ;
+        bindings = <&macro_tap &kp A &kp R &kp I &kp G &kp A &kp T &kp O &kp U>;
         )
     ZMK_MACRO(t_LHoldJ,
         tap-ms = <(my_tapping_speed / 2)>;
-        bindings = <&macro_tap Y &kp O &kp R &kp S &kp I &kp K &kp U>
-                ;
+        bindings = <&macro_tap &kp Y &kp O &kp R &kp S &kp I &kp K &kp U>;
         )
     ZMK_MACRO(t_RTapJ,
         tap-ms = <(my_tapping_speed / 2)>;
-        bindings = <&macro_tap G &kp O &kp Z &kp A &kp I &kp M &kp A &kp S &kp U &kp DOT>
-                ;
+        bindings = <&macro_tap &kp G &kp O &kp Z &kp A &kp I &kp M &kp A &kp S &kp U &kp DOT>;
         )
     ZMK_MACRO(t_RHoldJ,
         tap-ms = <(my_tapping_speed / 2)>;
-        bindings = <&macro_tap O &kp N &kp E &kp G &kp A &kp I &kp S &kp I &kp M &kp A &kp S &kp U &kp DOT>
-                ;
+        bindings = <&macro_tap &kp O &kp N &kp E &kp G &kp A &kp I &kp S &kp I &kp M &kp A &kp S &kp U &kp DOT>;
         )
 /*
  *
