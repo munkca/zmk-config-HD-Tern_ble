@@ -124,12 +124,14 @@ COMBO_LAYER(numBPND,    &kp LA(N3),         RT1 RT3, l_num) // £
  * Three finger text macros (tap & hold varieties)
  *
  */
-// On teh English layer it's one thing
-COMBO_LAYER(l_HD_LTextCombo, &lk_L_textE,   LT3 LT2 LT1, l_num)
-COMBO_LAYER(l_HD_RTextCombo, &lk_R_textE,   RT1 RT2 RT3, l_num)
+// On the English layer it's one thing
+COMBO_LAYER(l_HD_LText, &lk t_LHoldE t_LTapE,   LT3 LT2 LT1, l_num)
+//COMBO_LAYER(l_HD_LText, &lk_L_textE 0 0,   LT3 LT2 LT1, l_num)
+
+COMBO_LAYER(l_HD_RText, &lk_R_textE 0 0,   RT1 RT2 RT3, l_num)
 
 #ifdef JP_MODE_ENABLE
 // On the Japanese layer it's another
- COMBO_LAYER(l_jp_LTextCombo, &lk_L_textJ,   LT3 LT2 LT1, l_jp)
-COMBO_LAYER(l_jp_RTextCombo, &lk_R_textJ,   RT1 RT2 RT3, l_jp)
+ COMBO_LAYER(l_jp_LText, &lk_L_textJ 0 0,   LT3 LT2 LT1, l_jp)
+COMBO_LAYER(l_jp_RText, &lk_R_textJ 0 0,   RT1 RT2 RT3, l_jp)
 #endif
