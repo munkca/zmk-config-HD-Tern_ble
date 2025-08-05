@@ -348,12 +348,12 @@
         )
 
 #ifdef H_DIGRAPH_COMBOS                 // H-digraphs? (Th, Ch, Wh, Sh, Gh, Ph)
-#include "moutis/moutis_m_h_digraph.dtsi"
+#include "moutis_m_h_digraph.dtsi"
 #endif // H_DIGRAPH_COMBOS
 #ifdef EN_PRONOUN_COMBOS                // Pronoun macros?
-#include "moutis/moutis_m_pronoun.dtsi"
+#include "moutis_m_pronoun.dtsi"
 #endif // EN_PRONOUN_COMBOS
 #ifdef JP_MODE_ENABLE                   // Japanese macros?
-#include "moutis/moutis_m_japanese.dtsi"
+#include "moutis_m_japanese.dtsi"
 #endif // JP_MODE_ENABLE
 
