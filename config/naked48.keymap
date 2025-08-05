@@ -53,7 +53,7 @@
 #include "moutis/moutis_combos.dtsi"    // common/location based combos (cut/copy/paste, esc, app, etc.)
 #include HD_combo_file                  // HD alpha/mnemonic based combos (h-digraphs, etc.)
 
-/*
+/* These should be separatide from the main HD files, but that's starting to get crazy
 #ifdef H_DIGRAPH_COMBOS                 // H-digraph combos? (Th, Ch, Wh, Sh, Gh, Ph)
 #include "moutis/moutis_c_digraph.dtsi"
 #endif // H_DIGRAPH_COMBOS
