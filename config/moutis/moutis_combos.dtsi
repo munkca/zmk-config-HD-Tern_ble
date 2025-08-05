@@ -118,3 +118,16 @@ COMBO_LAYER(numCENT,    &kp LA(N4),         RT0 RT1, l_num) // ¢
 COMBO_LAYER(numEURO,    &kp LS(LA(N2)),     RT2 RT3, l_num) // €
 COMBO_LAYER(numYEN,     &kp LA(Y),          RT3 RT4, l_num) // ¥
 COMBO_LAYER(numBPND,    &kp LA(N3),         RT1 RT3, l_num) // £
+
+/*
+ *
+ * Three finger text macros (tap & hold varieties)
+ *
+ */
+COMBO_LAYER(l_HD_LTextCombo, &lk_L_textE,   LT3 LT2 LT1, l_num)
+COMBO_LAYER(l_HD_RTextCombo, &lk_R_textE,   RT1 RT2 RT3, l_num)
+
+#ifdef JP_MODE_ENABLE
+COMBO_LAYER(l_jp_LTextCombo, &lk_L_textJ,   LT3 LT2 LT1, l_jp)
+COMBO_LAYER(l_jp_RTextCombo, &lk_R_textJ,   RT1 RT2 RT3, l_jp)
+#endif
