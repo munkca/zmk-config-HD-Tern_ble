@@ -221,7 +221,7 @@
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
-        lkSqt_GT: lkSqt_GT {                // Hold for paired symbols
+        lkSqt_GT: lkSqt_GT {                // Hold for paired ’’
             my_lk_config;
             bindings = <&pairSquotGT>, <&rightSquotGT>;
         };
@@ -231,7 +231,7 @@
             bindings = <&pairSquotChev>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        pairSquotChev: pairSquotChev {          // SHIFT = >
+        pairSquotChev: pairSquotChev {          // ALT = »
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&t_pairSquo>, <&kp RDCHEV>;
@@ -304,7 +304,7 @@
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
-        lkDqt_GT: lkDqt_GT {                // Hold for paired symbols
+        lkDqt_GT: lkDqt_GT {                // Hold for paired “”
             my_lk_config;
             bindings = <&pairDquotGT>, <&rightDqtGT>;
         };
@@ -314,22 +314,10 @@
             bindings = <&pairDquotChev>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        pairDquotChev: pairDquotChev {          // SHIFT = >
+        pairDquotChev: pairDquotChev {          // ALT = »
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&t_pairDquo>, <&kp RDCHEV>;
-            mods = <(MOD_LALT|MOD_RALT)>;
-        };
-        rightDqtGT: leftDqtGT {              // SHIFT = >
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&pairDquotChev>, <&kp GT>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        pairDquotChev: pairDquotChev {          // SHIFT = >
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp GT>, <&kp RDCHEV>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
         rightDqtGT: leftDqtGT {              // SHIFT = >
@@ -341,7 +329,7 @@
         DqtRchev: DqtRchev {                // " or ALT = »
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp GT>, <&kp RDCHEV>;
+            bindings = <&ak_DQT>, <&kp RDCHEV>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 /*
@@ -368,13 +356,6 @@
             bindings = <&kp DQT>;
 
             ak_DQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp QMARK>; };
-        };
-        ak_SQT: ak_SQT {
-            compatible = "zmk,behavior-adaptive-key";
-            #binding-cells = <0>;
-            bindings = <&kp SQT>;
-
-            ak_SQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp S_INVQ>; };
         };
         ak_SQT: ak_SQT {
             compatible = "zmk,behavior-adaptive-key";
