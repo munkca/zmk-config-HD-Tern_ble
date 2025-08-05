@@ -519,13 +519,11 @@
 
     ZMK_MACRO(jp_t_wo,
         tap-ms = <my_tapping_speed>;
-        bindings = <&kp W &kp O>
-                ;
+        bindings = <&kp W &kp O>;
         )
     ZMK_MACRO(jp_t_watashi,
         tap-ms = <my_tapping_speed>;
-        bindings = <&kp W &kp A &kp T &kp A &kp S &kp I>
-                ;
+        bindings = <&kp W &kp A &kp T &kp A &kp S &kp I>;
         )
 
 #ifdef JP_YOUON_COMBOS     // Major Japanese contracted sounds as combos
@@ -538,7 +536,7 @@ name: name { \
     compatible = "zmk,behavior-macro"; \
     #binding-cells = <0>; \
     tap-ms = <my_tapping_speed>; \
-    bindings = <&kp _A &kp _B &kp _C> \
+    bindings = <&kp _A &kp _B &kp _C>; \
 };
 
 JP_YOUON_MACRO(t_kya, K, Y, A)          // kya
