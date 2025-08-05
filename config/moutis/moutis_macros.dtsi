@@ -312,10 +312,9 @@
  
     ZMK_MACRO(t_LTapE,
         tap-ms = <(my_tapping_speed / 2)>;
-        bindings = <&kp LS(E)>
-                , <&macro_release &kp LSHFT>
+        bindings = <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
-                , <&macro_tap &kp N &kp G &kp L &kp I &kp S &kp H>
+                , <&macro_tap &kp A &kp L &kp A &kp N &kp R &kp E &kp I &kp S &kp E &kp R &kp DOT &kp C &kp O &kp M>
                 ;
         )
     ZMK_MACRO(t_LHoldE,  // demonstrate what's possible w/macros

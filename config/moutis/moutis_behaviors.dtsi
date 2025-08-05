@@ -364,6 +364,14 @@
 
             ak_SQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp S_INVQ>; };
         };
+        ak_HASH: ak_HASH {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp HASH>;
+
+        ak_HASH_INVX { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp S_INVS>; };
+        };
+
 
 /* Comma Magic */
 #define CommaMagic CmmaMgc CAPSLOCK 0   // simple macro to keep the keymap uncluttered
