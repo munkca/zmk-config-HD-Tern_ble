@@ -125,7 +125,7 @@ COMBO_LAYER(numBPND,    &kp LA(N3),         RT1 RT3, l_num) // £
  *
  */
 // On the English layer it's one thing
-COMBO_LAYER(l_HD_LText, &lk t_LHoldE t_LTapE,   LT3 LT2 LT1, l_num)
+COMBO_LAYER(l_HD_LText, &lk &t_LHoldE &t_LTapE,   LT3 LT2 LT1, l_num)
 //COMBO_LAYER(l_HD_LText, &lk_L_textE 0 0,   LT3 LT2 LT1, l_num)
 
 COMBO_LAYER(l_HD_RText, &lk_R_textE 0 0,   RT1 RT2 RT3, l_num)
