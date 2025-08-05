@@ -318,7 +318,7 @@
                 , <&macro_tap &kp N &kp G &kp L &kp I &kp S &kp H>
                 ;
         )
-    ZMK_MACRO(t_LHoldE,
+    ZMK_MACRO(t_LHoldE,  // demonstrate what's possible w/macros
         tap-ms = <(my_tapping_speed / 2)>;
         bindings = <&macro_tap &kp E>
                 , <&macro_release &kp LSHFT>
@@ -328,5 +328,21 @@
                 , <&macro_tap &kp T &kp I &kp M &kp E &kp S &kp SPACE>
                 , <&macro_tap &kp I &kp N &kp SPACE>
                 , <&macro_tap &kp N2 &kp N0 &kp N2 &kp N0 &kp RETURN>
+                ;
+        )
+    ZMK_MACRO(t_RTapE,
+        tap-ms = <(my_tapping_speed / 2)>;
+        bindings = <&macro_tap &kp J>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_tap &kp A &kp P &kp A &kp N>
+                ;
+        )
+    ZMK_MACRO(t_RHoldE,
+        tap-ms = <(my_tapping_speed / 2)>;
+        bindings = <&macro_tap &kp J>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_tap &kp A &kp P &kp A &kp N &kp E &kp S &kp E >
                 ;
         )
