@@ -73,8 +73,8 @@ COMBO_LAYER(pnWhere, &t_PnWhere,    LT4 LH1, l_hd)  // "Where "
 #endif // EN_PRONOUN_COMBOS
 
 #ifdef JP_MODE_ENABLE      // JP layer combos, etc.
-COMBO_LAYER(wo,  &t_wo,             LT3 LT2, l_jp)  // を
-COMBO_LAYER(shi, &t_shi,            RM3 RM4, l_jp)  // "わたし "
+COMBO_LAYER(wo,  &jp_t_wo,             LT3 LT2, l_jp)  // を
+COMBO_LAYER(shi, &jp_t_shi,            RM3 RM4, l_jp)  // "わたし "
 
 #ifdef JP_YOUON_COMBOS     // Major Japanese contracted sounds as combos
 #endif
