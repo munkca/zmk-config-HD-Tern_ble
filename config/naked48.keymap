@@ -32,16 +32,6 @@
     
 #include "moutis/moutis_macros.dtsi"    // common macros (superset)
 
-#ifdef H_DIGRAPH_COMBOS                 // H-digraphs? (Th, Ch, Wh, Sh, Gh, Ph)
-#include "moutis/moutis_m_h_digraph.dtsi"
-#endif // H_DIGRAPH_COMBOS
-#ifdef EN_PRONOUN_COMBOS                // Pronoun macros?
-#include "moutis/moutis_m_pronoun.dtsi"
-#endif // EN_PRONOUN_COMBOS
-#ifdef JP_MODE_ENABLE                   // Japanese macros?
-#include "moutis/moutis_m_japanese.dtsi"
-#endif // JP_MODE_ENABLE
-
     };
 
 /*
@@ -52,18 +42,6 @@
 
 #include "moutis/moutis_combos.dtsi"    // common/location based combos (cut/copy/paste, esc, app, etc.)
 #include HD_combo_file                  // HD alpha/mnemonic based combos (h-digraphs, etc.)
-
-/* These should be separatide from the main HD files, but that's starting to get crazy
-#ifdef H_DIGRAPH_COMBOS                 // H-digraph combos? (Th, Ch, Wh, Sh, Gh, Ph)
-#include "moutis/moutis_c_digraph.dtsi"
-#endif // H_DIGRAPH_COMBOS
-#ifdef EN_PRONOUN_COMBOS                // Pronoun combos?
-#include "moutis/moutis_c_pronoun.dtsi"
-#endif // EN_PRONOUN_COMBOS
-#ifdef JP_MODE_ENABLE                   // Japanese combos?
-#include "moutis/moutis_c_japanese.dtsi"
-#endif // JP_MODE_ENABLE
-*/
 
     };
 /*

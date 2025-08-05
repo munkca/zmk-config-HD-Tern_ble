@@ -35,7 +35,7 @@
         )
     ZMK_MACRO(t_LHoldJ,
         tap-ms = <(my_tapping_speed / 2)>;
-        bindings = <&macro_tap &kp Y &kp O &kp R &kp S &kp I &kp K &kp U>;
+        bindings = <&macro_tap &kp Y &kp O &kp R &kp O &kp S &kp I &kp K &kp U>;
         )
     ZMK_MACRO(t_RTapJ,
         tap-ms = <(my_tapping_speed / 2)>;
