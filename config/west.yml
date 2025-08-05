@@ -11,7 +11,7 @@ manifest:
   projects:
     - name: zmk
 #      remote: zmkfirmware
-#      revision: main
+#      revision: v0.3
 
 #      remote: caksoylar
 #      revision: caksoylar/zen-v1+v2

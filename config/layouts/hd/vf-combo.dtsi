@@ -1,14 +1,19 @@
 /*
-*
-* SPDX-License-Identifier: MIT
-*
-*/
+ * vf-combo.dtsi
+ *
+ * SPDX-License-Identifier: MIT
+ *
+ */
 
 
 /*
- Some combos need to be in specific places depending on
- the underlying alpha, esp H-Digraph combos. They are defined here.
-*/
+ * These are all alpha combos that need to be in specific places
+ * depending on the underlying alpha. Q and Z are typically
+ * off the primary alpha layer, so they are required.
+ * Most of the rest are very optional, and are thus conditionally
+ * compiled.
+ *
+ */
 
 
 /*                       UNIVERSAL KEY POSITION NAMES
@@ -33,7 +38,7 @@ COMBO_LAYER(t_Z,     &ak_Z,         LM3 LM1, l_hd)       // Z is typically off m
 
 #ifdef H_DIGRAPH_COMBOS
 //
-// H Digraphs REQUIRE macros/behaviors (defined earlier) to process
+// H Digraphs macros/behaviors (defined earlier) to process
 //
 COMBO_LAYER(sch,    &t_Sch,         LM4 LM3 LM2, l_hd)   // Sch
 COMBO_LAYER(tch,    &t_Tch,         LM4 LM3 LM1, l_hd)   // Tch
@@ -47,33 +52,86 @@ COMBO_LAYER(ph,     &t_Ph,          LB3 LB1, l_hd)       // Ph
 
 #ifdef EN_PRONOUN_COMBOS
 
-/* Pronoun combos REQUIRE macros (define paired macros in moutis_config.dtsi) */
+/* Pronoun combos macros (define paired macros in moutis_config.dtsi) */
 
-COMBO_LAYER(pnI,     &t_PnI,        RM3 RM4, l_hd)       // "I "
-COMBO_LAYER(pnIm,    &t_PnIm,       RM3 LT2, l_hd)       // "I'm "
-COMBO_LAYER(pnIll,   &t_PnIll,      RM3 LB2, l_hd)       // "I'll "
-COMBO_LAYER(pnId,    &t_PnId,       RM3 LB1, l_hd)       // "I'd "
-COMBO_LAYER(pnIve,   &t_PnIve,      RM3 LB0, l_hd)       // "I've "
+COMBO_LAYER(pnI,        &t_PnI,     RM3 RM4, l_hd)  // "I "
+COMBO_LAYER(pnIm,       &t_PnIm,    RM3 LT2, l_hd)  // "I'm "
+COMBO_LAYER(pnIll,      &t_PnIll,   RM3 LB2, l_hd)  // "I'll "
+COMBO_LAYER(pnId,       &t_PnId,    RM3 LB1, l_hd)  // "I'd "
+COMBO_LAYER(pnIve,      &t_PnIve,   RM3 LB0, l_hd)  // "I've "
 
-COMBO_LAYER(pnYoure, &t_PnYoure,    RB3 LB4, l_hd)       // "You're "
-COMBO_LAYER(pnYour,  &t_PnYour,     RB3 LB3, l_hd)       // "Your "
-COMBO_LAYER(pnYoull, &t_PnYoull,    RB3 LB2, l_hd)       // "You'll "
-COMBO_LAYER(pnYoud,  &t_PnYoud,     RB3 LB1, l_hd)       // "You'd "
-COMBO_LAYER(pnYouve, &t_PnYouve,    RB3 LB0, l_hd)       // "You've "
+COMBO_LAYER(pnYoure,    &t_PnYoure, RB3 LB4, l_hd)  // "You're "
+COMBO_LAYER(pnYour,     &t_PnYour,  RB3 LB3, l_hd)  // "Your "
+COMBO_LAYER(pnYoull,    &t_PnYoull, RB3 LB2, l_hd)  // "You'll "
+COMBO_LAYER(pnYoud,     &t_PnYoud,  RB3 LB1, l_hd)  // "You'd "
+COMBO_LAYER(pnYouve,    &t_PnYouve, RB3 LB0, l_hd)  // "You've "
 
-COMBO_LAYER(pnWere,  &t_PnWere,     LT4 RT4, l_hd)       // "We're "
-COMBO_LAYER(pnWell,  &t_PnWell,     LT4 LT2, l_hd)       // "We'll "
-COMBO_LAYER(pnWed,   &t_PnWed,      LT4 LT1, l_hd)       // "We'd "
-COMBO_LAYER(pnWeve,  &t_PnWeve,     LT4 LT0, l_hd)       // "We've "
+COMBO_LAYER(pnWere,     &t_PnWere,  LT4 RT4, l_hd)  // "We're "
+COMBO_LAYER(pnWell,     &t_PnWell,  LT4 LT2, l_hd)  // "We'll "
+COMBO_LAYER(pnWed,      &t_PnWed,   LT4 LT1, l_hd)  // "We'd "
+COMBO_LAYER(pnWeve,     &t_PnWeve,  LT4 LT0, l_hd)  // "We've "
 
-COMBO_LAYER(pnWhere, &t_PnWhere,    LT4 LH1, l_hd)       // "Where "
+COMBO_LAYER(pnWhere,    &t_PnWhere, LT4 LH1, l_hd)  // "Where "
 
 #endif // EN_PRONOUN_COMBOS
 
 #ifdef JP_MODE_ENABLE      // JP layer combos, etc.
-COMBO_LAYER(wo,  &t_wo,             LT3 LT2, l_jp)          // を
-COMBO_LAYER(shi, &t_shi,            RM3 RM4, l_jp)          // "わたし "
+COMBO_LAYER(jp_t_Q,     &kp Q,      LT3 LT1, l_jp)  // type Q
+COMBO_LAYER(jp_t_Z,     &kp Z,      LM3 LM1, l_jp)  // type Z
+
+COMBO_LAYER(jp_t_wo,    &t_wo,      LT3 LT2, l_jp)  // を
+COMBO_LAYER(jp_t_shi,   &t_watashi, RM3 RM4, l_jp)  // わたし
 
 #ifdef JP_YOUON_COMBOS     // Major Japanese contracted sounds as combos
-#endif
-#endif
+
+COMBO_LAYER(jp_t_kya,   &t_kya,     LM0 RM1, l_jp)  // kya
+COMBO_LAYER(jp_t_kyu,   &t_kyu,     LM0 RB1, l_jp)  // kyu
+COMBO_LAYER(jp_t_kyo,   &t_kyo,     LM0 RB2, l_jp)  // kyo
+
+COMBO_LAYER(jp_t_gya,   &t_gya,     LT1 RM1, l_jp)  // gya
+COMBO_LAYER(jp_t_gyu,   &t_gyu,     LT1 RB1, l_jp)  // gyu
+COMBO_LAYER(jp_t_gyo,   &t_gyo,     LT1 RB2, l_jp)  // gyo
+
+COMBO_LAYER(jp_t_sya,   &t_sya,     LM4 RM1, l_jp)  // sya
+COMBO_LAYER(jp_t_syu,   &t_syu,     LM4 RB1, l_jp)  // syu
+COMBO_LAYER(jp_t_sye,   &t_sye,     LM4 RM2, l_jp)  // sye
+COMBO_LAYER(jp_t_syo,   &t_syo,     LM4 RB2, l_jp)  // syo
+COMBO_LAYER(jp_t_jya,   &t_jya,     LT0 RM1, l_jp)  // jya
+COMBO_LAYER(jp_t_jyu,   &t_jyu,     LM0 RB1, l_jp)  // jyu
+COMBO_LAYER(jp_t_jye,   &t_jye,     LT0 RM2, l_jp)  // sye
+COMBO_LAYER(jp_t_jyo,   &t_jyo,     LM0 RB2, l_jp)  // jyo
+
+COMBO_LAYER(jp_t_tya,   &t_tya,     LM1 RM1, l_jp)  // tya
+COMBO_LAYER(jp_t_tyi,   &t_tyi,     LM1 RM3, l_jp)  // tyi
+COMBO_LAYER(jp_t_tyu,   &t_tyu,     LM1 RB1, l_jp)  // tyu
+COMBO_LAYER(jp_t_tyo,   &t_tyo,     LM1 RB2, l_jp)  // tyo
+COMBO_LAYER(jp_t_dya,   &t_dya,     LB1 RM1, l_jp)  // dya
+COMBO_LAYER(jp_t_dyi,   &t_dyi,     LB1 RM3, l_jp)  // dyi
+COMBO_LAYER(jp_t_dyu,   &t_dyu,     LB1 RB1, l_jp)  // dyu
+COMBO_LAYER(jp_t_dyo,   &t_dyo,     LB1 RB2, l_jp)  // dyo
+
+COMBO_LAYER(jp_t_nya,   &t_nya,     LM2 RM1, l_jp)  // nya
+COMBO_LAYER(jp_t_nyu,   &t_nyu,     LM2 RB1, l_jp)  // nyu
+COMBO_LAYER(jp_t_nyo,   &t_nyo,     LM2 RB2, l_jp)  // nyo
+
+COMBO_LAYER(jp_t_hya,   &t_hya,     RM4 RM1, l_jp)  // hya
+COMBO_LAYER(jp_t_hyu,   &t_hyu,     RM4 RB1, l_jp)  // hyu
+COMBO_LAYER(jp_t_hyo,   &t_hyo,     RM4 RB2, l_jp)  // hyo
+COMBO_LAYER(jp_t_bya,   &t_bya,     RB4 RM1, l_jp)  // bya
+COMBO_LAYER(jp_t_byu,   &t_byu,     RB4 RB1, l_jp)  // byu
+COMBO_LAYER(jp_t_byo,   &t_byo,     RB4 RB2, l_jp)  // byo
+COMBO_LAYER(jp_t_pya,   &t_pya,     LB3 RM1, l_jp)  // pya
+COMBO_LAYER(jp_t_pyu,   &t_pyu,     LB3 RB1, l_jp)  // pyu
+COMBO_LAYER(jp_t_pyo,   &t_pyo,     LB3 RB2, l_jp)  // pyo
+
+COMBO_LAYER(jp_t_mya,   &t_mya,     LT2 RM1, l_jp)  // mya
+COMBO_LAYER(jp_t_myu,   &t_myu,     LT2 RB1, l_jp)  // myu
+COMBO_LAYER(jp_t_myo,   &t_myo,     LT2 RB2, l_jp)  // myo
+
+COMBO_LAYER(jp_t_rya,   &t_rya,     LH1 RM1, l_jp)  // rya
+COMBO_LAYER(jp_t_ryu,   &t_ryu,     LH1 RB1, l_jp)  // ryu
+COMBO_LAYER(jp_t_ryo,   &t_ryo,     LH1 RB2, l_jp)  // ryo
+
+#endif //  JP_YOUON_COMBOS     // Major Japanese contracted sounds as combos
+
+#endif // JP_MODE_ENABLE      // JP layer combos, etc.

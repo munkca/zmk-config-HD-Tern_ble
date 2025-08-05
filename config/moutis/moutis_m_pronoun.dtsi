@@ -1,0 +1,133 @@
+/*
+ * moutis_m_pronoun.dtsi
+ *
+ * SPDX-License-Identifier: MIT
+ *
+ * t_  = type text
+ * b_  = backspace then type text (often for "adaptive key")
+ * m_  = macro (performs commands/behaviors, incl. typing).
+ * ak_ = type a letter as an adaptive key (consider the prior key).
+ *
+ */
+ 
+    ZMK_MACRO(t_PnI,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&macro_tap &kp LS(I)>
+                    , <&macro_tap &kp SPACE>
+                ;
+        )
+    ZMK_MACRO(t_PnIm,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&macro_tap &kp LS(I)>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp RSHFT>
+                    , <&macro_tap &kp APOS &kp M &kp SPACE>
+                ;
+        )
+    ZMK_MACRO(t_PnId,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&macro_tap &kp LS(I)>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp RSHFT>
+                    , <&macro_tap &kp APOS &kp D &kp SPACE>
+                ;
+        )
+    ZMK_MACRO(t_PnIll,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&macro_tap &kp LS(I)>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp RSHFT>
+                    , <&macro_tap &kp APOS &kp L &kp L &kp SPACE>
+                ;
+        )
+    ZMK_MACRO(t_PnIve,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&macro_tap &kp LS(I)>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp RSHFT>
+                    , <&macro_tap &kp APOS &kp V &kp E &kp SPACE>
+                ;
+        )
+// YOU
+    ZMK_MACRO(t_PnYour,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&macro_tap &kp Y>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp RSHFT>
+                    , <&macro_tap &kp O &kp U &kp R &kp SPACE>
+                ;
+        )
+    ZMK_MACRO(t_PnYoure,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&macro_tap &kp Y>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp RSHFT>
+                    , <&macro_tap &kp O &kp U &kp APOS &kp R &kp E &kp SPACE>
+                ;
+        )
+    ZMK_MACRO(t_PnYoud,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&macro_tap &kp Y>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp RSHFT>
+                    , <&macro_tap &kp O &kp U &kp APOS &kp D &kp SPACE>
+                ;
+        )
+    ZMK_MACRO(t_PnYoull,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&macro_tap &kp Y>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp RSHFT>
+                    , <&macro_tap &kp O &kp U &kp APOS &kp L &kp L &kp SPACE>
+                ;
+        )
+    ZMK_MACRO(t_PnYouve,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&macro_tap &kp Y>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp RSHFT>
+                    , <&macro_tap &kp O &kp U &kp APOS &kp V &kp E &kp SPACE>
+                ;
+        )
+// WE
+    ZMK_MACRO(t_PnWere,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&macro_tap &kp W>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp RSHFT>
+                    , <&macro_tap &kp E &kp APOS &kp R &kp E &kp SPACE>
+                ;
+        )
+    ZMK_MACRO(t_PnWed,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&macro_tap &kp W>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp RSHFT>
+                    , <&macro_tap &kp E &kp APOS &kp D &kp SPACE>
+                ;
+        )
+    ZMK_MACRO(t_PnWell,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&macro_tap &kp W>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp RSHFT>
+                    , <&macro_tap &kp E &kp APOS &kp L &kp L &kp SPACE>
+                ;
+        )
+    ZMK_MACRO(t_PnWeve,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&macro_tap &kp W>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp RSHFT>
+                    , <&macro_tap &kp E &kp APOS &kp V &kp E &kp SPACE>
+                ;
+        )
+    ZMK_MACRO(t_PnWhere,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&macro_tap &kp W>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp RSHFT>
+                    , <&macro_tap &kp H &kp E &kp R &kp E &kp SPACE>
+                ;
+        )
+

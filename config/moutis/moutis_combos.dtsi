@@ -118,3 +118,18 @@ COMBO_LAYER(numCENT,    &kp LA(N4),         RT0 RT1, l_num) // ¢
 COMBO_LAYER(numEURO,    &kp LS(LA(N2)),     RT2 RT3, l_num) // €
 COMBO_LAYER(numYEN,     &kp LA(Y),          RT3 RT4, l_num) // ¥
 COMBO_LAYER(numBPND,    &kp LA(N3),         RT1 RT3, l_num) // £
+
+/*
+ *
+ * Three finger text macros (tap & hold varieties)
+ *
+ */
+// On the English layer it's one thing
+COMBO_LAYER(l_hd_LText, &lk_L_textE 0 0,    LT3 LT2 LT1, l_hd)
+COMBO_LAYER(l_hd_RText, &lk_R_textE 0 0,    RT1 RT2 RT3, l_hd)
+
+#ifdef JP_MODE_ENABLE
+// On the Japanese layer it's another
+COMBO_LAYER(l_jp_LText, &lk_L_textJ 0 0,    LT3 LT2 LT1, l_jp)
+COMBO_LAYER(l_jp_RText, &lk_R_textJ 0 0,    RT1 RT2 RT3, l_jp)
+#endif

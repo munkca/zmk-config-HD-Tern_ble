@@ -64,7 +64,9 @@
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
 //
-// maybe should be separated? but for now...
+// maybe should be separated? but here for now...
+//
+// these because we can't use macro/behavior in mt parameter?
 //
         mt_S: mt_S {
             my_hrm_config;
@@ -137,11 +139,17 @@
             bindings = <&kp DOT>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        SlshStar: SlshStar {
+        SlshStar: SlshStar {  // shift = *, alt = backslash
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp STAR>;
+            bindings = <&SlshBslh>, <&kp STAR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        SlshBslh: SlshBslh {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH>, <&kp BSLH>;
+            mods = <(MOD_LALT|MOD_RALT)>;
         };
         SlshStarJ: SlshStarJ { // no adaptive Japanese
             compatible = "zmk,behavior-mod-morph";
@@ -152,7 +160,7 @@
         HashDllr: HashDllr {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp HASH>, <&kp DLLR>;
+            bindings = <&ak_HASH>, <&kp DLLR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         MinusPlus: MinusPlus {
@@ -315,6 +323,18 @@
         rightDqtGT: leftDqtGT {              // SHIFT = >
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
+            bindings = <&pairDquotChev>, <&kp GT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        pairDquotChev: pairDquotChev {          // SHIFT = >
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp GT>, <&kp RDCHEV>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+        rightDqtGT: leftDqtGT {              // SHIFT = >
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
             bindings = <&DqtRchev>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -356,6 +376,21 @@
 
             ak_SQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp S_INVQ>; };
         };
+        ak_SQT: ak_SQT {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>;
+
+            ak_SQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp S_INVQ>; };
+        };
+        ak_HASH: ak_HASH {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp HASH>;
+
+        ak_HASH_INVX { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp S_INVX>; };
+        };
+
 
 /* Comma Magic */
 #define CommaMagic CmmaMgc CAPSLOCK 0   // simple macro to keep the keymap uncluttered
@@ -369,9 +404,9 @@
         ak_CMMA: ak_CMMA { // double-tap comma = caps_word
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>;
+            bindings = <&kp CMMA>;
 
-            ak_CMMA_cap { trigger-keys = <COMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &caps_word>; };
+            ak_CMMA_cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC  &caps_word>; };
         };
         CmmaMgc: CmmaMgc {              // Hold for CAPSLOCK, tap for COMMA
             my_lk_config;
@@ -391,6 +426,28 @@
             my_lk_config;
             bindings = <&kp>, <&t_Qu>;
         };
+
+        lk_quote: lk_quote { // " on tap, “” on "linger" (curly quotes)
+            my_lk_config;
+            bindings = <&t_pairDquo>, <&kp>;
+        };
+        lk_par: lk_par { // ( on tap, () on "linger"
+            my_lk_config;
+            bindings = <&t_pairPar>, <&kp>;
+        };
+        lk_bkt: lk_bkt { // [ on tap, [] on "linger"
+            my_lk_config;
+            bindings = <&t_pairBkt>, <&kp>;
+        };
+        lk_brc: lk_brc {
+            my_lk_config;
+            bindings = <&t_pairBrc>, <&kp>;
+        };
+        lk_ltgt: lk_ltgt { // < on tap, <|> on "linger"
+            my_lk_config;
+            bindings = <&t_pairLtGt>, <&kp>;
+        };
+
         lk_E_accent: lk_E_accent { // ´, é on "linger"
             my_lk_config;
             bindings = <&t_Eaccent>, <&kp>;
@@ -420,11 +477,6 @@
             bindings = <&t_Cedille>, <&kp>;
         };
 
-
-        lk_Japan: lk_Japan { // Japan on tap, Japanese on "linger"
-            my_lk_config;
-            bindings = <&t_Japanese>, <&t_Japan>;
-        };
         lk_th: lk_th { // Th on tap, tion on "linger"
             my_lk_config;
             bindings = <&t_tion>, <&t_Th>;
@@ -438,24 +490,27 @@
             bindings = <&t_ght>, <&t_Gh>;
         };
 
-        lk_quote: lk_quote { // " on tap, “” on "linger" (curly quotes)
+/*
+ *
+ * Three finger text macros (tap & hold varieties)
+ *
+ */
+    lk_L_textE: lk_L_textE { //
             my_lk_config;
-            bindings = <&t_pairDquo>, <&kp>;
-        };
-        lk_par: lk_par { // ( on tap, () on "linger"
+            bindings = <&t_LHoldE>, <&t_LTapE>;
+    };
+    lk_R_textE: lk_R_textE { //
             my_lk_config;
-            bindings = <&t_pairPar>, <&kp>;
-        };
-        lk_bkt: lk_bkt { // [ on tap, [] on "linger"
+            bindings = <&t_RHoldE>, <&t_RTapE>;
+    };
+#ifdef JP_MODE_ENABLE
+    lk_L_textJ: lk_L_textJ { //
             my_lk_config;
-            bindings = <&t_pairBkt>, <&kp>;
-        };
-        lk_brc: lk_brc {
+            bindings = <&t_LHoldJ>, <&t_LTapJ>;
+    };
+    lk_R_textJ: lk_R_textJ { //
             my_lk_config;
-            bindings = <&t_pairBrc>, <&kp>;
-        };
-        lk_ltgt: lk_ltgt { // < on tap, <|> on "linger"
-            my_lk_config;
-            bindings = <&t_pairLtGt>, <&kp>;
-        };
+            bindings = <&t_RHoldJ>, <&t_RTapJ>;
+    };
+#endif
 

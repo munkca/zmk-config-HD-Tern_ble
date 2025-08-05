@@ -26,6 +26,7 @@
  *  xx = experimental
  *
  */
+#pragma once
 
 #define HD_DIR layouts/hd/
 #define HD_CONF -config.h

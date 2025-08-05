@@ -1,0 +1,224 @@
+/*
+ * moutis_m_macros.dtsi
+ *
+ * SPDX-License-Identifier: MIT
+ *
+ * t_  = type text
+ * b_  = backspace then type text (often for "adaptive key")
+ * m_  = macro (performs commands/behaviors, incl. typing).
+ * ak_ = type a letter as an adaptive key (consider the prior key).
+ *
+ */
+
+    ZMK_MACRO(t_nn, // from the Japanese layer, L=ん
+        tap-ms = <my_tapping_speed>;
+        bindings = <&macro_tap &kp N &kp N>
+                ;
+        )
+    ZMK_MACRO(t_wo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp W &kp O>;
+        )
+    ZMK_MACRO(t_watashi,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp W &kp A &kp T &kp A &kp S &kp I>;
+        )
+/*
+ *
+ * Three finger text macros (tap & hold varieties)
+ *
+ */
+
+    ZMK_MACRO(t_LTapJ,
+        tap-ms = <(my_tapping_speed / 2)>;
+        bindings = <&macro_tap &kp A &kp R &kp I &kp G &kp A &kp T &kp O &kp U>;
+        )
+    ZMK_MACRO(t_LHoldJ,
+        tap-ms = <(my_tapping_speed / 2)>;
+        bindings = <&macro_tap &kp Y &kp O &kp R &kp O &kp S &kp I &kp K &kp U>;
+        )
+    ZMK_MACRO(t_RTapJ,
+        tap-ms = <(my_tapping_speed / 2)>;
+        bindings = <&macro_tap &kp G &kp O &kp Z &kp A &kp I &kp M &kp A &kp S &kp U &kp DOT>;
+        )
+    ZMK_MACRO(t_RHoldJ,
+        tap-ms = <(my_tapping_speed / 2)>;
+        bindings = <&macro_tap &kp O &kp N &kp E &kp G &kp A &kp I &kp S &kp I &kp M &kp A &kp S &kp U &kp DOT>;
+        )
+/*
+ *
+ * Major Japanese contracted sounds as combos
+ *
+ */
+
+#ifdef JP_YOUON_COMBOS
+
+    ZMK_MACRO(t_kya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp K &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_kyu,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp K &kp Y &kp U>;
+        )
+    ZMK_MACRO(t_kyo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp K &kp Y &kp O>;
+        )
+    ZMK_MACRO(t_gya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp G &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_gyu,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp G &kp Y &kp U>;
+        )
+    ZMK_MACRO(t_gyo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp G &kp Y &kp O>;
+        )
+
+    ZMK_MACRO(t_sya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp S &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_sye,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp S &kp Y &kp E>;
+        )
+    ZMK_MACRO(t_syu,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp S &kp Y &kp U>;
+        )
+    ZMK_MACRO(t_syo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp S &kp Y &kp O>;
+        )
+    ZMK_MACRO(t_jya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp J &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_jye,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp J &kp Y &kp E>;
+        )
+    ZMK_MACRO(t_jyu,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp J &kp Y &kp U>;
+        )
+    ZMK_MACRO(t_jyo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp J &kp Y &kp O>;
+        )
+
+    ZMK_MACRO(t_tya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp T &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_tyi,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp T &kp Y &kp I>;
+        )
+    ZMK_MACRO(t_tyu,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp T &kp Y &kp U>;
+        )
+    ZMK_MACRO(t_tyo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp T &kp Y &kp O>;
+        )
+    ZMK_MACRO(t_dya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp D &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_dyi,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp D &kp Y &kp I>;
+        )
+    ZMK_MACRO(t_dyu,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp D &kp Y &kp U>;
+        )
+    ZMK_MACRO(t_dyo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp D &kp Y &kp O>;
+        )
+
+    ZMK_MACRO(t_nya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp N &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_nyu,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp N &kp Y &kp U>;
+        )
+    ZMK_MACRO(t_nyo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp N &kp Y &kp O>;
+        )
+
+    ZMK_MACRO(t_hya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp H &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_hyu,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp H &kp Y &kp U>;
+        )
+    ZMK_MACRO(t_hyo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp H &kp Y &kp O>;
+        )
+    ZMK_MACRO(t_bya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp B &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_byu,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp B &kp Y &kp U>;
+        )
+    ZMK_MACRO(t_byo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp B &kp Y &kp O>;
+        )
+    ZMK_MACRO(t_pya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp P &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_pyu,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp P &kp Y &kp U>;
+        )
+    ZMK_MACRO(t_pyo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp P &kp Y &kp O>;
+        )
+
+    ZMK_MACRO(t_mya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp M &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_myu,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp M &kp Y &kp U>;
+        )
+    ZMK_MACRO(t_myo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp M &kp Y &kp O>;
+        )
+
+    ZMK_MACRO(t_rya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp R &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_ryu,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp R &kp Y &kp U>;
+        )
+    ZMK_MACRO(t_ryo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp R &kp Y &kp O>;
+        )
+
+#endif //  JP_YOUON_COMBOS     // Major Japanese contracted sounds as combos
+

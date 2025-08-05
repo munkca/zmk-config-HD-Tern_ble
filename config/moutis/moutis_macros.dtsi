@@ -36,6 +36,13 @@
             <&to l_jp>;     // make Japanese layer default
        )
 
+/*
+ *
+ * App switcher "SlAppy" & "SlApBack"
+ * holds up the app menu, allows L/R navigation
+ *
+ */
+
    ZMK_MACRO(SlAppy,        // "Sticky Layer App Switcher"
         wait-ms = <50>; tap-ms = <20>;
         bindings =
@@ -60,6 +67,11 @@
                 , <&macro_release &sk RGUI>   // now release the previous hold
                 ;
         )
+/*
+ *
+ * basic editing macros
+ *
+ */
 
     ZMK_MACRO(m_selword,
         tap-ms = <my_tapping_speed>;
@@ -76,6 +88,13 @@
                 , <&macro_tap &kp LG(G)>
                 ;
         )
+
+/*
+ *
+ * paired symbols [({<« “‘|’” »>})]
+ * leaving insertion point between
+ *
+ */
 
     ZMK_MACRO(t_pairDquo,   // type "" put insertion between
         tap-ms = <my_tapping_speed>;
@@ -212,7 +231,7 @@
         )
 
     ZMK_MACRO(t_Qu,
-        tap-ms = <40>;
+        tap-ms = <my_tapping_speed>;
         bindings = <&ak_Q>
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
@@ -220,48 +239,53 @@
                 ;
         )
     ZMK_MACRO(t_Semi,
-        tap-ms = <40>;
+        tap-ms = <my_tapping_speed>;
         bindings = <&macro_release &kp LSHFT>
                 , <&macro_tap &kp SEMICOLON>
                 ;
         )
+/*
+ *
+ * accented chars (evetually move to Semantic Keys)
+ *
+ */
     ZMK_MACRO(t_Eaccent,
-        tap-ms = <40>;
+        tap-ms = <my_tapping_speed>;
         bindings = <&kp LA(E) &kp E>
                 ;
         )
     ZMK_MACRO(t_Egrave,
-        tap-ms = <40>;
+        tap-ms = <my_tapping_speed>;
         bindings = <&kp LA(GRAVE) &kp E>
                 ;
         )
     ZMK_MACRO(t_Eacute,
-        tap-ms = <40>;
+        tap-ms = <my_tapping_speed>;
         bindings = <&kp LA(N6) &kp E>
                 ;
         )
     ZMK_MACRO(t_Omacron,
-        tap-ms = <40>;
+        tap-ms = <my_tapping_speed>;
         bindings = <&kp LA(A) &kp O>
                 ;
         )
     ZMK_MACRO(t_Aring,
-        tap-ms = <40>;
+        tap-ms = <my_tapping_speed>;
         bindings = <&kp LA(K) &kp A>
                 ;
         )
     ZMK_MACRO(t_Uumlaut,
-        tap-ms = <40>;
+        tap-ms = <my_tapping_speed>;
         bindings = <&kp LA(U) &kp U>
                 ;
         )
     ZMK_MACRO(t_Cedille,
-        tap-ms = <40>;
+        tap-ms = <my_tapping_speed>;
         bindings = <&kp LA(C) &kp C>
                 ;
         )
     ZMK_MACRO(t_pg,
-        tap-ms = <40>;
+        tap-ms = <my_tapping_speed>;
         bindings = <&kp P &kp G>;
         )
     ZMK_MACRO(t_dotcom,
@@ -280,251 +304,55 @@
                 ;
         )
 
-    ZMK_MACRO(t_Japan,
-        tap-ms = <40>;
-        bindings = <&macro_press &kp LSHFT>
-                    , <&macro_tap &kp J>
-                    , <&macro_release &kp LSHFT>
-                    , <&macro_release &kp RSHFT>
-                    , <&macro_tap &kp A &kp P &kp A &kp N &kp SPACE>
+/*
+ *
+ * Three finger text macros (tap & hold varieties)
+ *
+ */
+ 
+    ZMK_MACRO(t_LTapE,
+        tap-ms = <(my_tapping_speed / 2)>;
+        bindings = <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_tap &kp A &kp L &kp A &kp N &kp R &kp E &kp I &kp S &kp E &kp R &kp DOT &kp C &kp O &kp M>
                 ;
         )
-    ZMK_MACRO(t_Japanese,
-        tap-ms = <40>;
-        bindings = <&macro_press &kp LSHFT>
-                    , <&macro_tap &kp J>
-                    , <&macro_release &kp LSHFT>
-                    , <&macro_release &kp RSHFT>
-                    , <&macro_tap &kp A &kp P &kp A &kp N &kp E &kp S &kp E &kp SPACE>
+    ZMK_MACRO(t_LHoldE,  // demonstrate what's possible w/macros
+        tap-ms = <(my_tapping_speed / 2)>;
+        bindings = <&kp LS(E)>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_tap &kp N &kp D &kp SPACE>
+                , <&macro_tap &kp O &kp F &kp SPACE>
+                , <&macro_tap &kp T &kp I &kp M &kp E &kp S &kp SPACE>
+                , <&macro_tap &kp I &kp N &kp SPACE>
+                , <&macro_tap &kp N2 &kp N0 &kp N2 &kp N0 &kp RETURN>
+                ;
+        )
+    ZMK_MACRO(t_RTapE,
+        tap-ms = <(my_tapping_speed / 2)>;
+        bindings = <&kp LS(J)>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_tap &kp A &kp P &kp A &kp N>
+                ;
+        )
+    ZMK_MACRO(t_RHoldE,
+        tap-ms = <(my_tapping_speed / 2)>;
+        bindings = <&kp LS(J)>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_tap &kp A &kp P &kp A &kp N &kp E &kp S &kp E &kp SPACE>
                 ;
         )
 
-    ZMK_MACRO(t_nn, // from the Japanese layer, L=ん
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp N>
-                , <&macro_tap &kp N>
-                ;
-        )
-
-#ifdef H_DIGRAPH_COMBOS
-    ZMK_MACRO(t_Th,
-        tap-ms = <40>;
-        bindings = <&ak_T>
-            , <&macro_release &kp LSHFT>
-            , <&macro_release &kp RSHFT>
-            , <&macro_tap &kp H>
-            ;
-        )
-    ZMK_MACRO(t_tion,
-        tap-ms = <40>;
-        bindings = <&kp T &kp I &kp O &kp N>
-                ;
-        )
-    ZMK_MACRO(t_Ch,
-        tap-ms = <40>;
-        bindings = <&ak_C>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp RSHFT>
-                , <&macro_tap &kp H>
-                ;
-        )
-    ZMK_MACRO(t_Wh,
-        tap-ms = <40>;
-        bindings = <&ak_W>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp RSHFT>
-                , <&macro_tap &kp H>
-                ;
-        )
-    ZMK_MACRO(t_Sh,
-        tap-ms = <40>;
-        bindings = <&ak_S>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp RSHFT>
-                , <&macro_tap &kp H>
-                ;
-        )
-    ZMK_MACRO(t_sion,
-        tap-ms = <40>;
-        bindings = <&kp S &kp I &kp O &kp N>
-                ;
-        )
-    ZMK_MACRO(t_Gh,
-        tap-ms = <40>;
-        bindings = <&ak_G>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp RSHFT>
-                , <&macro_tap &kp H>
-                ;
-        )
-    ZMK_MACRO(t_ght,
-        tap-ms = <40>;
-        bindings = <&kp G &kp H &kp T>
-                ;
-        )
-    ZMK_MACRO(t_Ph,
-        tap-ms = <40>;
-        bindings = <&ak_P>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp RSHFT>
-                , <&macro_tap &kp H>
-                ;
-        )
-
-    ZMK_MACRO(t_Sch,
-        tap-ms = <40>;
-        bindings = <&ak_S>
-                    , <&macro_release &kp LSHFT>
-                    , <&macro_release &kp RSHFT>
-                    , <&macro_tap &kp C &kp H>
-                ;
-        )
-    ZMK_MACRO(t_Tch,
-        tap-ms = <40>;
-        bindings = <&ak_T>
-                    , <&macro_release &kp LSHFT>
-                    , <&macro_release &kp RSHFT>
-                    , <&macro_tap &kp C &kp H>
-                ;
-        )
-#endif
-
-#ifdef EN_PRONOUN_COMBOS
-// Pronouns
-    ZMK_MACRO(t_PnI,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp LS(I)>
-                    , <&macro_tap &kp SPACE>
-                ;
-        )
-    ZMK_MACRO(t_PnIm,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp LS(I)>
-                    , <&macro_release &kp LSHFT>
-                    , <&macro_release &kp RSHFT>
-                    , <&macro_tap &kp APOS &kp M &kp SPACE>
-                ;
-        )
-    ZMK_MACRO(t_PnId,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp LS(I)>
-                    , <&macro_release &kp LSHFT>
-                    , <&macro_release &kp RSHFT>
-                    , <&macro_tap &kp APOS &kp D &kp SPACE>
-                ;
-        )
-    ZMK_MACRO(t_PnIll,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp LS(I)>
-                    , <&macro_release &kp LSHFT>
-                    , <&macro_release &kp RSHFT>
-                    , <&macro_tap &kp APOS &kp L &kp L &kp SPACE>
-                ;
-        )
-    ZMK_MACRO(t_PnIve,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp LS(I)>
-                    , <&macro_release &kp LSHFT>
-                    , <&macro_release &kp RSHFT>
-                    , <&macro_tap &kp APOS &kp V &kp E &kp SPACE>
-                ;
-        )
-// YOU
-    ZMK_MACRO(t_PnYour,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp Y>
-                    , <&macro_release &kp LSHFT>
-                    , <&macro_release &kp RSHFT>
-                    , <&macro_tap &kp O &kp U &kp R &kp SPACE>
-                ;
-        )
-    ZMK_MACRO(t_PnYoure,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp Y>
-                    , <&macro_release &kp LSHFT>
-                    , <&macro_release &kp RSHFT>
-                    , <&macro_tap &kp O &kp U &kp APOS &kp R &kp E &kp SPACE>
-                ;
-        )
-    ZMK_MACRO(t_PnYoud,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp Y>
-                    , <&macro_release &kp LSHFT>
-                    , <&macro_release &kp RSHFT>
-                    , <&macro_tap &kp O &kp U &kp APOS &kp D &kp SPACE>
-                ;
-        )
-    ZMK_MACRO(t_PnYoull,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp Y>
-                    , <&macro_release &kp LSHFT>
-                    , <&macro_release &kp RSHFT>
-                    , <&macro_tap &kp O &kp U &kp APOS &kp L &kp L &kp SPACE>
-                ;
-        )
-    ZMK_MACRO(t_PnYouve,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp Y>
-                    , <&macro_release &kp LSHFT>
-                    , <&macro_release &kp RSHFT>
-                    , <&macro_tap &kp O &kp U &kp APOS &kp V &kp E &kp SPACE>
-                ;
-        )
-// WE
-    ZMK_MACRO(t_PnWere,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp W>
-                    , <&macro_release &kp LSHFT>
-                    , <&macro_release &kp RSHFT>
-                    , <&macro_tap &kp E &kp APOS &kp R &kp E &kp SPACE>
-                ;
-        )
-    ZMK_MACRO(t_PnWed,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp W>
-                    , <&macro_release &kp LSHFT>
-                    , <&macro_release &kp RSHFT>
-                    , <&macro_tap &kp E &kp APOS &kp D &kp SPACE>
-                ;
-        )
-    ZMK_MACRO(t_PnWell,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp W>
-                    , <&macro_release &kp LSHFT>
-                    , <&macro_release &kp RSHFT>
-                    , <&macro_tap &kp E &kp APOS &kp L &kp L &kp SPACE>
-                ;
-        )
-    ZMK_MACRO(t_PnWeve,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp W>
-                    , <&macro_release &kp LSHFT>
-                    , <&macro_release &kp RSHFT>
-                    , <&macro_tap &kp E &kp APOS &kp V &kp E &kp SPACE>
-                ;
-        )
-    ZMK_MACRO(t_PnWhere,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp W>
-                    , <&macro_release &kp LSHFT>
-                    , <&macro_release &kp RSHFT>
-                    , <&macro_tap &kp H &kp E &kp R &kp E &kp SPACE>
-                ;
-        )
-
+#ifdef H_DIGRAPH_COMBOS                 // H-digraphs? (Th, Ch, Wh, Sh, Gh, Ph)
+#include "moutis_m_h_digraph.dtsi"
+#endif // H_DIGRAPH_COMBOS
+#ifdef EN_PRONOUN_COMBOS                // Pronoun macros?
+#include "moutis_m_pronoun.dtsi"
 #endif // EN_PRONOUN_COMBOS
-
-
-#ifdef JP_MODE_ENABLE      // JP layer combos, etc.
-    ZMK_MACRO(t_wo,
-        tap-ms = <40>;
-        bindings = <&kp W &kp O>
-                ;
-        )
-    ZMK_MACRO(t_shi,
-        tap-ms = <40>;
-        bindings = <&kp W &kp A &kp T &kp A &kp S &kp I>
-                ;
-        )
-#endif
+#ifdef JP_MODE_ENABLE                   // Japanese macros?
+#include "moutis_m_japanese.dtsi"
+#endif // JP_MODE_ENABLE
 

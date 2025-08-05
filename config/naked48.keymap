@@ -11,30 +11,42 @@
 
 #include "moutis/moutis_config.dtsi"    // my add-on feature defs
 
-#include "keymaps/keynames_4x12_wide.h"     // key name defs for this board topology
+#include "keymaps/keynames_4x12_wide.h" // key name defs for this board topology
 #include "layouts/hd/vf-config.h"       // HD alpha keymap, adapt, and combo definitions
 
 / {
-    behaviors { // separating these allows us to add board specific behaviors here (if any)
+/*
+ * Behaviors
+ */
+    behaviors {
 
 #include "moutis/moutis_behaviors.dtsi" // common behaviors (hold-taps, mod-morphs, lingers, adaptives)
-#include HD_adapt_file                  // HDalpha/mnemonic based adaptives
+#include HD_adapt_file                  // HDalpha/mnemonic based adaptives (most of them)
 
     };
 
-    macros {    // separating these allows us to add board specific macros here (if any)
+/*
+ * Macros
+ */
+    macros {
     
 #include "moutis/moutis_macros.dtsi"    // common macros (superset)
 
     };
 
-    combos {    // separating these allows us to add board specific combos here (if any)
+/*
+ * Combos
+ */
+    combos {
         compatible = "zmk,combos";
 
 #include "moutis/moutis_combos.dtsi"    // common/location based combos (cut/copy/paste, esc, app, etc.)
 #include HD_combo_file                  // HD alpha/mnemonic based combos (h-digraphs, etc.)
 
     };
+/*
+ * Keymap (all layers w/references to all the above)
+ */
 
 #include "keymaps/keymap_4x12_wide.dtsi"    // consolidated keymap
 
