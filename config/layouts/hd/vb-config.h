@@ -41,16 +41,16 @@
 #define JP_LB &kp B           &kp P           &t_nn           &kp D           &kp V
 #define JP_LH                                                 _______         &lt l_nav R
 
-#define JP_RT _______         &DotColnJ       &SlshStarJ      &kp LBKT        &kp RBKT
+#define JP_RT _______         &DotColnJ       &SlshStarJ      &lk_LRbkt       &kp RBKT
 #define JP_RM _______         &hmr LSHFT A    &hmr LGUI E     &hmr LALT I     &hmr LCTRL H
 #define JP_RB _______         &kp U           &kp O           &kp Y           &kp F
 #define JP_RH _______         _______
 
 
-#define l_akDOT_label "l_akDOT"
-#define DOT_LT _______        _______         _______         _______         _______
+#define l_akDOT_label "l_akDOT" // adaptive grabbag sticky layer.
+#define DOT_LT &kp T          &kp L           &kp L           &kp L           _______
 #define DOT_LM _______        _______         _______         _______         _______
-#define DOT_LB _______        _______         _______         _______         _______
+#define DOT_LB _______        _______         _______         &b_wd           _______
 #define DOT_LH                                                _______         _______
 
 #define DOT_RT &kp DLLR       &kp DOT         &t_dotcom       &t_dotedu       &t_dotorg

@@ -189,8 +189,8 @@
  *
  */
  
-#define DqtLT lkDqt_lkLT 0 0  // simple macros to keep the keymap uncluttered
-#define SqtGT lkSqt_GT 0 0
+#define DqtLT lkDqt_lkLT 0 0    // simple macros to keep the keymap uncluttered
+#define SqtGT lkSqt_GT 0 0      // simply put &DqtLT or &SqtGT in the keymap
 
         lkDqt_lkLT: lkDqt_lkLT {            // Hold for paired symbols
             my_lk_config;
@@ -272,8 +272,8 @@
  *
  */
  
-#define SqtLT lkSqt_lkLT 0 0  // simple macros to keep the keymap uncluttered
-#define DqtGT lkDqt_GT 0 0
+#define SqtLT lkSqt_lkLT 0 0    // simple macros to keep the keymap uncluttered
+#define DqtGT lkDqt_GT 0 0      // simply put &SqtLT or &DqtGT in the keymap
 
         lkSqt_lkLT: lkSqt_lkLT {            // Hold for paired symbols
             my_lk_config;
@@ -408,25 +408,40 @@
             bindings = <&kp>, <&t_Qu>;
         };
 
-        lk_quote: lk_quote { // " on tap, “” on "linger" (curly quotes)
+#define lk_LRDquote lk_Dquot RBRC LBRC   // simply put &lk_LRDquote in the keymap
+        lk_Dquot: lk_Dquot {            // " on tap, “” on "linger" (curly quotes)
             my_lk_config;
             bindings = <&t_pairDquo>, <&kp>;
         };
-        lk_par: lk_par { // ( on tap, () on "linger"
+#define lk_LRpar lk_par RPAR LPAR       // simply put &lk_LRpar in the keymap
+        lk_par: lk_par {                // ( on tap, () on "linger"
             my_lk_config;
             bindings = <&t_pairPar>, <&kp>;
         };
-        lk_bkt: lk_bkt { // [ on tap, [] on "linger"
+#define lk_LRbkt lk_bkt RBKT LBKT       // simply put &lk_LRbkt in the keymap
+        lk_bkt: lk_bkt {                // [ on tap, [] on "linger"
             my_lk_config;
             bindings = <&t_pairBkt>, <&kp>;
         };
-        lk_brc: lk_brc {
+#define lk_LRbrc lk_brc RBRC LBRC       // simply put &lk_LRbrc in the keymap
+        lk_brc: lk_brc {                //
             my_lk_config;
             bindings = <&t_pairBrc>, <&kp>;
         };
-        lk_ltgt: lk_ltgt { // < on tap, <|> on "linger"
+#define lk_LRltgt lk_ltgt GT LT         // simply put &lk_LRltgt in the keymap
+        lk_ltgt: lk_ltgt {              // < on tap, <|> on "linger"
             my_lk_config;
             bindings = <&t_pairLtGt>, <&kp>;
+        };
+#define lk_LRques lk_QMARK S_INVQ QMARK // simply put &lk_LRques in the keymap
+        lk_QMARK: lk_QMARK {            // ¿ on tap, ¿|? on "linger"
+            my_lk_config;
+            bindings = <&t_pairQmark>, <&kp>;
+        };
+#define lk_LRexcl lk_EXCL S_INVX EXCL   // simply put &lk_LRexcl in the keymap
+        lk_EXCL: lk_EXCL {              // ¡ on tap, ¡|! on "linger"
+            my_lk_config;
+            bindings = <&t_pairExcl>, <&kp>;
         };
 
         lk_E_accent: lk_E_accent { // ´, é on "linger"

@@ -36,7 +36,7 @@
 
 // Japanese "mode" (no adaptives, & L, C, X not used so repurpose to ん, Z, -)
 #define JP_Layer_label "HD-JP"
-#define JP_LT &kp MINUS       &kp W           &kp M           &kp G           &kp LBKT
+#define JP_LT &kp MINUS       &kp W           &kp M           &kp G           &lk_LRbkt
 #define JP_LM &hml RCTRL S    &hml RALT Z     &hml RGUI N     &hml RSHFT T    &kp K
 #define JP_LB &kp V           &kp P           &t_nn           &kp D           _______
 #define JP_LH                                                 _______         &lt l_nav R
@@ -47,10 +47,10 @@
 #define JP_RH _______         _______
 
 
-#define l_akDOT_label "l_akDOT"
-#define DOT_LT _______        _______         _______         _______         _______
+#define l_akDOT_label "l_akDOT" // adaptive grabbag sticky layer.
+#define DOT_LT &kp T          &kp L           &kp L           &kp L           _______
 #define DOT_LM _______        _______         _______         _______         _______
-#define DOT_LB _______        _______         _______         _______         _______
+#define DOT_LB _______        _______         _______         &b_wd           _______
 #define DOT_LH                                                _______         _______
 
 #define DOT_RT &kp DLLR       &kp DOT         &t_dotcom       &t_dotedu       &t_dotorg
