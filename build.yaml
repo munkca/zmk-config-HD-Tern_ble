@@ -15,25 +15,30 @@ include:
     shield: bad_wings_slim
   - board: corneish_zen_v1_left
   - board: corneish_zen_v1_right
-  - board: nice_nano_v2
-    shield: kyria_left
+#  - board: nice_nano_v2
+#    shield: kyria_left
 #  - board: nice_nano_v2
 #    shield: kyria_right
   - board: nice_nano_v2
     shield: microdox_left
-#  - board: nice_nano_v2
-#    shield: microdox_right
+  - board: nice_nano_v2
+    shield: microdox_right
+
+#  - board: seeeduino_xiao_ble
+#    shield: dust
+#  - board: seeeduino_xiao_ble
+#    shield: dust
 
 ## boards I'm working to bring online
-#  - board: seeeduino_xiao_ble
-#    shield: dust
-#  - board: seeeduino_xiao_ble
-#    shield: dust
+#  - board: nice_nano_v2
+#    shield: klor_left
+#  - board: nice_nano_v2
+#    shield: klor_right
 
 #  - board: nice_nano_v2
 #    shield: rollow
 
-#  - board: sparkfun_pro_micro_rp2040
+#  - board: nice_nano_v2
 #    shield: ffkb
 
 #    - board: seeeduino_xiao_ble
@@ -41,11 +46,6 @@ include:
 
 #  - board: seeeduino_xiao_ble
 #    shield: midge
-
-#  - board: nice_nano_v2
-#    shield: klor_left
-#  - board: nice_nano_v2
-#    shield: klor_right
 
 # Zen uses calsoylar's fork for display enhancements (see west.yml)
 # Building will fail on ZMK main because the modules aren't there.
