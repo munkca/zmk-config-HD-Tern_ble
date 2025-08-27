@@ -122,6 +122,10 @@
             my_lt_config;
             bindings = <&mo>, <&ak_R>;
         };
+        lt_BSPC: lt_BSPC {
+            my_lt_config;
+            bindings = <&mo>, <&mm_BspcDel>;
+        };
 
 /*
  * modmorph behaviors
@@ -336,19 +340,36 @@
  * end of Single Quote key behaviors
  */
 
-        lt_BspcDel: lt_BspcDel { // layer-tap mod-morph
+        mm_BspcDel: mm_BspcDel { // layer-tap mod-morph
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&lt l_fun BACKSPACE>, <&kp DELETE>;
+            bindings = <&ak_BSPC>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        
+        ak_BSPC: ak_BSPC {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>;
+
+            ak_BSPC_U { trigger-keys = <A>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; };
+            ak_BSPC_A { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp A>; };
+            ak_BSPC_O { trigger-keys = <E>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp O>; };
+            ak_BSPC_E { trigger-keys = <O>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; };
+        };
+
         ak_DOT: ak_DOT {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&sl_dot>;
 
-            ak_CMMA_E { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp EXCL>; };
+            ak_DOT_EXCL { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp EXCL>; };
+        };
+        ak_FSLH: ak_FSLH {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH>;
+
+            ak_FSLH_U { trigger-keys = <A>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; };
         };
         ak_DQT: ak_DQT {
             compatible = "zmk,behavior-adaptive-key";
@@ -363,6 +384,8 @@
             bindings = <&kp SQT>;
 
             ak_SQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp S_INVQ>; };
+            ak_SQT_A { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp A>; };
+            ak_SQT_U { trigger-keys = <A>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; };
         };
         ak_HASH: ak_HASH {
             compatible = "zmk,behavior-adaptive-key";
@@ -392,6 +415,8 @@
             bindings = <&kp CMMA>;
 
             ak_CMMA_cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC  &caps_word>; };
+            ak_CMMA_O { trigger-keys = <E>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp O>; };
+            ak_CMMA_E { trigger-keys = <O>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; };
         };
         CmmaMgc: CmmaMgc {              // Hold for CAPSLOCK, tap for COMMA
             my_lk_config;
@@ -489,6 +514,7 @@
             my_lk_config;
             bindings = <&t_ght>, <&t_Gh>;
         };
+
 
 /*
  *

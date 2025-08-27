@@ -15,9 +15,22 @@
  * H-digraphs (Th, Ch, Wh, Sh, Gh, Ph)
  *
  */
+
+#define my_digraph_speed (my_tapping_speed / 4) // treat these as one very fast letter
+
+// linguistically, "Qu" behaves 'is almost a digraph
+    ZMK_MACRO(t_Qu,
+        tap-ms = <my_digraph_speed>;
+        bindings = <&ak_Q>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_tap &kp U>
+                ;
+        )
+
 #ifdef H_DIGRAPH_COMBOS
     ZMK_MACRO(t_Th,
-        tap-ms = <my_tapping_speed>;
+        tap-ms = <my_digraph_speed>;
         bindings = <&ak_T>
             , <&macro_release &kp LSHFT>
             , <&macro_release &kp RSHFT>
@@ -25,12 +38,12 @@
             ;
         )
     ZMK_MACRO(t_tion,
-        tap-ms = <my_tapping_speed>;
+        tap-ms = <my_digraph_speed>;
         bindings = <&kp T &kp I &kp O &kp N>
                 ;
         )
     ZMK_MACRO(t_Ch,
-        tap-ms = <my_tapping_speed>;
+        tap-ms = <my_digraph_speed>;
         bindings = <&ak_C>
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
@@ -38,7 +51,7 @@
                 ;
         )
     ZMK_MACRO(t_Wh,
-        tap-ms = <my_tapping_speed>;
+        tap-ms = <my_digraph_speed>;
         bindings = <&ak_W>
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
@@ -46,7 +59,7 @@
                 ;
         )
     ZMK_MACRO(t_Sh,
-        tap-ms = <my_tapping_speed>;
+        tap-ms = <my_digraph_speed>;
         bindings = <&ak_S>
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
@@ -54,12 +67,12 @@
                 ;
         )
     ZMK_MACRO(t_sion,
-        tap-ms = <my_tapping_speed>;
+        tap-ms = <my_digraph_speed>;
         bindings = <&kp S &kp I &kp O &kp N>
                 ;
         )
     ZMK_MACRO(t_Gh,
-        tap-ms = <my_tapping_speed>;
+        tap-ms = <my_digraph_speed>;
         bindings = <&ak_G>
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
@@ -68,12 +81,12 @@
                 ;
         )
     ZMK_MACRO(t_ght,
-        tap-ms = <my_tapping_speed>;
+        tap-ms = <my_digraph_speed>;
         bindings = <&kp G &kp H &kp T>
                 ;
         )
     ZMK_MACRO(t_Ph,
-        tap-ms = <my_tapping_speed>;
+        tap-ms = <my_digraph_speed>;
         bindings = <&ak_P>
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
@@ -82,7 +95,7 @@
         )
 
     ZMK_MACRO(t_Sch,
-        tap-ms = <my_tapping_speed>;
+        tap-ms = <my_digraph_speed>;
         bindings = <&ak_S>
                     , <&macro_release &kp LSHFT>
                     , <&macro_release &kp RSHFT>
@@ -90,7 +103,7 @@
                 ;
         )
     ZMK_MACRO(t_Tch,
-        tap-ms = <my_tapping_speed>;
+        tap-ms = <my_digraph_speed>;
         bindings = <&ak_T>
                     , <&macro_release &kp LSHFT>
                     , <&macro_release &kp RSHFT>
