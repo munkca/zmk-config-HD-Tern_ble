@@ -12,7 +12,7 @@
 
 */
 
-#include "layers_def.h" // layer def common core (3x5+2)
+#include "layers_def.h" // layer def common core (30)--check this is updated
 
     keymap {
         compatible = "zmk,keymap";
