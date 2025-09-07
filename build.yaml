@@ -5,6 +5,5 @@
 # the `include` property, e.g:
 #
 #
-
 board: [ "seeeduino_xiao_ble" ]
 shield: [ "tern" ]
