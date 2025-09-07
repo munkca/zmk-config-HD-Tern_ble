@@ -3,7 +3,7 @@
  *  Core/common layer defs for tern (30) keys.
  *
  * extended keycodes found in "hosts" folder
- *
+ *MUCH TO DO
  */
 
 //                                                Symbol & math
@@ -16,14 +16,14 @@
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_sym_label "l_sym"
 
-#define l_sym_LT &kp Z              &kp Q               &kp S_PARA          &kp S_CROS          &kp S_DCRS
-#define l_sym_RT &kp C_CENT         &kp DLLR            &kp C_EURO          &kp C_BPND          &kp C_JPY
+#define l_sym_LT                    &kp Q               &kp S_PARA          &kp S_CROS          &kp S_DCRS
+#define l_sym_RT &kp C_CENT         &kp DLLR            &kp C_EURO          &kp C_BPND         
 
 #define l_sym_LM &kp S_SECT         &lk_LRbkt           &lk_LRpar           &lk_LRbrc           &kp S_BBLT
 #define l_sym_RM &kp FSLH           &mt RSHFT EQUAL     &mt RGUI STAR       &mt RALT PLUS       &mt LCTRL MINUS
 
-#define l_sym_LB &kp S_DEGR         &kp RBKT            &kp RPAR            &kp RBRC            &kp S_SBLT
-#define l_sym_RB &kp CARET          &kp PIPE            &kp AMPS            &lk_LRltgt          &kp GT
+#define l_sym_LB &kp S_DEGR         &kp RBKT            &kp RPAR            &kp RBRC            
+#define l_sym_RB                    &kp PIPE            &kp AMPS            &lk_LRltgt          &kp GT
 
 #define l_sym_LH &kp S_DWRDL        &kp S_DWRDR
 #define l_sym_RH &none              &kp S_INVX
@@ -37,14 +37,14 @@
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_fun_label "l_fn"
 
-#define l_fun_LT &kp F9             &kp F10             &kp F11             &kp F12             &kp F13
-#define l_fun_RT &kp FSLH           &kp N7              &kp N8              &kp N9              &kp MINUS
+#define l_fun_LT                    &kp F10             &kp F11             &kp F12             &kp F13
+#define l_fun_RT &kp FSLH           &kp N7              &kp N8              &kp N9              
 
 #define l_fun_LM &mt LCTRL F5       &mt LALT F6         &mt LGUI F7         &mt LSHFT F8        &kp F14
 #define l_fun_RM &kp STAR           &mt RSHFT N1        &mt RGUI N2         &mt RALT N3         &mt LCTRL PLUS
 
-#define l_fun_LB &kp F1             &kp F2              &kp F3              &kp F4              &kp F15
-#define l_fun_RB &kp CMMA           &kp N4              &kp N5              &kp N6              &kp EQUAL
+#define l_fun_LB &kp F1             &kp F2              &kp F3              &kp F4              
+#define l_fun_RB                    &kp N4              &kp N5              &kp N6              &kp EQUAL
 
 #define l_fun_LH &kp BSPC           &kp DEL
 #define l_fun_RH &kp N0             &kp DOT
