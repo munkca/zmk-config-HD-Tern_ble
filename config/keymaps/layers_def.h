@@ -1,6 +1,6 @@
 /*
  *
- *  Core/common layer defs for 3x5_2 (34) keys.
+ *  Core/common layer defs for tern (30) keys.
  *
  * extended keycodes found in "hosts" folder
  *
@@ -9,9 +9,9 @@
 //                                                Symbol & math
 //  * left paired symbols are "linger keys" via hold taps. Tap for left, hold for pair with insertion point between
 //╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮
-//|    Z   |    Q   |   ¶    |   †    |    ‡    |                |   ¢    |    $   |    €   |    £   |   ¥    |
+//|        |    Q   |   ¶    |   †    |    ‡    |                |   ¢    |    $   |    €   |    £   |        |
 //|    §   |    [   |   (    |   {    |    •    |                |   /    |    =   |    *   |    +   |   -    |
-//|    °   |    ]   |   )    |   }    |    ·    |                |   ^    |    |   |    &   |    <   |   >    |
+//|    °   |    ]   |   )    |   }    |         |                |        |    |   |    &   |    <   |   >    |
 //╰──────────────────────────╮ dwdlt  |  dwdr   |                | &none  |    ¡   ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_sym_label "l_sym"
