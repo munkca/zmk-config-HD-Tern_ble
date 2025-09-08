@@ -13,7 +13,7 @@
 
 #include "moutis/moutis_config.dtsi"    // my add-on feature defs
 
-#include "keymaps/keynames_3x5_2.h"     // key name defs for this board topology
+#include "keymaps/keynames_tern.h"     // key name defs for this board topology
 #include "layouts/hd/vf-config.h"       // HD alpha keymap, adapt, and combo definitions
 
 
@@ -51,6 +51,6 @@
  * Keymap (all layers w/references to all the above)
  */
 
-#include "keymaps/keymap_3x5_2.dtsi"    // consolidated keymap
+#include "keymaps/keymap_tern.dtsi"    // consolidated keymap
 
 };
