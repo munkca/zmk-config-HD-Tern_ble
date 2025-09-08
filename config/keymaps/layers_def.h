@@ -72,21 +72,21 @@
 
 //                                           Shorcuts & Navigation
 //╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮
-//|  close |   quit  | ScrCp | SelCp |  pstmtch |                |   Top   |  HOME  |   UP   |  PG_UP | ¶up   |
+//|        |   quit  | ScrCp | SelCp |  pstmtch |                |   Top   |  HOME  |   UP   |  PG_UP |       |
 //|  ctrl  |   alt   |  gui  |  shft |   Find   |                |  Lword  |  LEFT  |  DOWN  |   RGT  | Rword |
-//|  undo  |   cut   |  copy |  pste |  findAgn |                |   Botm  |   END  |  DOWN  |  PG_DN | ¶dn   |
+//|  undo  |   cut   |  copy |  pste |          |                |         |   END  |  DOWN  |  PG_DN | ¶dn   |
 //╰──────────────────────────╮ APPSW |   APPSW  |                |   back  |   fwd  ╭─────────────────────────╯
 //                           ╰──────────────────╯                ╰──────────────────╯
 #define l_nav_label "l_nav"
 
-#define l_nav_LT &kp S_QUIT         &kp S_CLOSE         &kp S_ScrCp         &kp S_SelCp         &kp S_PSTM
-#define l_nav_RT &kp S_DTOP         &kp HOME            &kp UP              &kp PG_UP           &kp S_PARU
+#define l_nav_LT                    &kp S_QUIT          &kp S_ScrCp         &kp S_SelCp         &kp S_PSTM
+#define l_nav_RT &kp S_DTOP         &kp HOME            &kp UP              &kp PG_UP          
 
 #define l_nav_LM &kp LCTRL          &kp LALT            &kp LGUI            &kp LSHFT           &kp S_FIND
 #define l_nav_RM &kp S_WRDL         &kp LEFT            &kp DOWN            &kp RIGHT           &kp S_WRDR
 
-#define l_nav_LB &kp UNDO           &kp CUT             &kp S_COPY          &kp S_PSTM          &kp S_FAGN
-#define l_nav_RB &kp S_DBTM         &kp END             &kp DOWN            &kp PG_DN           &kp S_PARD
+#define l_nav_LB &kp UNDO           &kp CUT             &kp S_COPY          &kp S_PSTM          
+#define l_nav_RB                    &kp END             &kp DOWN            &kp PG_DN           &kp S_PARD
 
 #define l_nav_LH &SlApBack          &SlAppy
 #define l_nav_RH &kp S_BBACK        &kp S_BFWD
