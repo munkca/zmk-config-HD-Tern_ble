@@ -30,9 +30,9 @@
 
 //                                         Fkey & Num Row (optimized)
 //╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮
-//|    F9   |  F10   |  F11   |  F12   |  F13   |                |    /   |   7    |    8   |   9    |    -   |
+//|         |  F10   |  F11   |  F12   |  F13   |                |    /   |   7    |    8   |   9    |        |
 //|   C/F5  |  A/F6  |  G/F7  |  S/F8  |  F14   |                |    *   |  S/1   |   G/2  |  A/3   |   C/+  |
-//|    F1   |   F2   |   F3   |   F4   |  F15   |                |    ,   |   4    |    5   |   6    |    =   |
+//|    F1   |   F2   |   F3   |   F4   |        |                |        |   4    |    5   |   6    |    =   |
 //╰──────────────────────────╮  BKSP   |   DEL  |                |    0   |   .    ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_fun_label "l_fn"
@@ -51,21 +51,21 @@
 
 //                                        Nav & NumPad (standard)
 //╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮
-//|   Top   |  HOME  |   UP   | PG_UP |   ¶up   |                |    /   |   7    |   8    |   9    |    -   |
+//|         |  HOME  |   UP   | PG_UP |   ¶up   |                |    /   |   7    |   8    |   9    |        |
 //|  Lword  |  LEFT  |  DOWN  |  RGT  |  Rword  |                |    *   |  S/4   |  G/5   |  A/6   |   C/+  |
-//|   Bot   |   END  |   SPC  | PG_DN |   ¶dn   |                |    ,   |   1    |   2    |   3    |    =   |
+//|   Bot   |   END  |   SPC  | PG_DN |         |                |        |   1    |   2    |   3    |    =   |
 //╰──────────────────────────╮  BSPC  |KP_ENTER |                |    0   |   .    ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_num_label "l_num"
 
-#define l_num_LT &kp S_DTOP         &kp HOME            &kp UP              &kp PG_UP           &kp S_PARU
-#define l_num_RT &kp KP_DIVIDE      &kp KP_N7           &kp KP_N8           &kp KP_N9           &kp KP_SUBTRACT
+#define l_num_LT                    &kp HOME            &kp UP              &kp PG_UP           &kp S_PARU
+#define l_num_RT &kp KP_DIVIDE      &kp KP_N7           &kp KP_N8           &kp KP_N9           
 
 #define l_num_LM &kp S_WRDL         &kp LEFT            &kp DOWN            &kp RIGHT           &kp S_WRDR
 #define l_num_RM &kp KP_MULTIPLY    &mt RSHFT KP_N4     &mt RGUI KP_N5      &mt RALT KP_N6      &mt LCTRL KP_PLUS
 
-#define l_num_LB &kp S_DBTM         &kp END             &kp SPACE           &kp PG_DN           &kp S_PARD
-#define l_num_RB &kp KP_COMMA       &kp KP_N1           &kp KP_N2           &kp KP_N3           &kp KP_EQUAL
+#define l_num_LB &kp S_DBTM         &kp END             &kp SPACE           &kp PG_DN          
+#define l_num_RB                    &kp KP_N1           &kp KP_N2           &kp KP_N3           &kp KP_EQUAL
 
 #define l_num_LH &lt l_fun BSPC     &lt l_nav KP_ENTER
 #define l_num_RH &kp KP_N0          &kp KP_DOT
