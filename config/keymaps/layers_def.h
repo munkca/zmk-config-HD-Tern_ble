@@ -16,11 +16,11 @@
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_sym_label "l_sym"
 
-#define l_sym_LT                    &kp Q               &kp S_PARA          &kp S_CROS          &kp S_DCRS
+#define l_sym_LT                    &kp Q               &kp Z               &kp S_CROS          &kp S_DCRS
 #define l_sym_RT &kp C_CENT         &kp DLLR            &kp C_EURO          &kp C_BPND         
 
 #define l_sym_LM &kp S_SECT         &lk_LRbkt           &lk_LRpar           &lk_LRbrc           &kp S_BBLT
-#define l_sym_RM &kp FSLH           &mt LCTRL EQUAL     &mt RSHFT STAR       &mt RALT PLUS       &mt RALT MINUS
+#define l_sym_RM &kp FSLH           &mt LCTRL EQUAL     &mt RSHFT STAR      &mt RALT PLUS       &mt RGUI MINUS
 
 #define l_sym_LB &kp S_DEGR         &kp RBKT            &kp RPAR            &kp RBRC            
 #define l_sym_RB                    &kp PIPE            &kp AMPS            &lk_LRltgt          &kp GT
@@ -30,21 +30,21 @@
 
 //                                         Fkey & Num Row (optimized)
 //╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮
-//|         |  F10   |  F11   |  F12   |  F13   |                |    /   |   7    |    8   |   9    |        |
-//|   C/F5  |  A/F6  |  G/F7  |  S/F8  |  F14   |                |    *   |  S/1   |   G/2  |  A/3   |   C/+  |
-//|    F1   |   F2   |   F3   |   F4   |        |                |        |   4    |    5   |   6    |    =   |
+//|         |  F10   |  F11   |  F12   |  F13   |                |    *   |   7    |    8   |   9    |        |
+//|   C/F5  |  A/F6  |  G/F7  |  S/F8  |  F14   |                |    /   |  S/1   |   G/2  |  A/3   |   C/-  |
+//|    F1   |   F2   |   F3   |   F4   |        |                |        |   4    |    5   |   6    |    +   |
 //╰──────────────────────────╮  BKSP   |   DEL  |                |    0   |   .    ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_fun_label "l_fn"
 
 #define l_fun_LT                    &kp F10             &kp F11             &kp F12             &kp F13
-#define l_fun_RT &kp FSLH           &kp N7              &kp N8              &kp N9              
+#define l_fun_RT &kp STAR           &kp N7              &kp N8              &kp N9              
 
 #define l_fun_LM &mt LGUI F5       &mt LALT F6         &mt LSHFT F7         &mt CTRL F8        &kp F14
-#define l_fun_RM &kp STAR           &mt LCTRL N1        &mt RSHFT N2         &mt RALT N3         &mt LGUI PLUS
+#define l_fun_RM &kp FSLH           &mt LCTRL N1        &mt RSHFT N2         &mt RALT N3         &mt LGUI MINUS
 
 #define l_fun_LB &kp F1             &kp F2              &kp F3              &kp F4              
-#define l_fun_RB                    &kp N4              &kp N5              &kp N6              &kp EQUAL
+#define l_fun_RB                    &kp N4              &kp N5              &kp N6              &kp PLUS
 
 #define l_fun_LH &kp BSPC           &kp DEL
 #define l_fun_RH &kp N0             &kp DOT
