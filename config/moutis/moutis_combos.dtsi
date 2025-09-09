@@ -92,14 +92,15 @@ COMBO_LAYER(t_Tilde, &kp TILDE,             RB0 RB3, l_hd)       // ~ tilde (wav
 COMBO_LAYER(ligAE,   &kp LA(APOS),          RM1 RB1, l_hd)       // ligature æ
 COMBO_LAYER(ligOE,   &kp LA(Q),             RM2 RB2, l_hd)       // ligature œ
 
-COMBO_LAYER(diacAccent, &lk_E_accent E LA(E),   RM1 RM2, l_hd)   // ´ (É if held)
-COMBO_LAYER(diacGrave,  &lk_E_grave E LA(GRAVE), RM2 RM3, l_hd)  // ` (È if held)
-COMBO_LAYER(diacAcute,  &lk_E_acute E LA(N6),   RM1 RM3, l_hd)   // ˆ (Ê if held)
-COMBO_LAYER(diacMacron, &lk_O_macron E LA(A),   RM2 RM4, l_hd)   // ¯ (ō if held)
-COMBO_LAYER(diacCirc,   &lk_A_ring A LA(K),     RM1 RM4, l_hd)   // ˚ (Å if held)
-COMBO_LAYER(diacUmlaut, &lk_U_umlaut U LA(U),   RB1 RB2, l_hd)   // ¨ (Ü if held)
-COMBO_LAYER(diacCedille, &lk_C_cedille C LA(C), LM4 LM2, l_hd)   // ¸ (ç if held)
-
+/*
+* COMBO_LAYER(diacAccent, &lk_E_accent E LA(E),   RM1 RM2, l_hd)   // ´ (É if held)
+* COMBO_LAYER(diacGrave,  &lk_E_grave E LA(GRAVE), RM2 RM3, l_hd)  // ` (È if held)
+* COMBO_LAYER(diacAcute,  &lk_E_acute E LA(N6),   RM1 RM3, l_hd)   // ˆ (Ê if held)
+* COMBO_LAYER(diacMacron, &lk_O_macron E LA(A),   RM2 RM4, l_hd)   // ¯ (ō if held)
+* COMBO_LAYER(diacCirc,   &lk_A_ring A LA(K),     RM1 RM4, l_hd)   // ˚ (Å if held)
+* COMBO_LAYER(diacUmlaut, &lk_U_umlaut U LA(U),   RB1 RB2, l_hd)   // ¨ (Ü if held)
+* COMBO_LAYER(diacCedille, &lk_C_cedille C LA(C), LM4 LM2, l_hd)   // ¸ (ç if held)
+*/
 
 /* numpad symbol combos */
 
@@ -129,8 +130,10 @@ COMBO_LAYER(numBPND,    &kp LA(N3),         RT1 RT3, l_num) // £
 COMBO_LAYER(l_hd_LText, &lk_L_textE 0 0,    LT3 LT2 LT1, l_hd)
 COMBO_LAYER(l_hd_RText, &lk_R_textE 0 0,    RT1 RT2 RT3, l_hd)
 
-#ifdef JP_MODE_ENABLE
-// On the Japanese layer it's another
-COMBO_LAYER(l_jp_LText, &lk_L_textJ 0 0,    LT3 LT2 LT1, l_jp)
-COMBO_LAYER(l_jp_RText, &lk_R_textJ 0 0,    RT1 RT2 RT3, l_jp)
-#endif
+/*
+* #ifdef JP_MODE_ENABLE
+* // On the Japanese layer it's another
+* COMBO_LAYER(l_jp_LText, &lk_L_textJ 0 0,    LT3 LT2 LT1, l_jp)
+* COMBO_LAYER(l_jp_RText, &lk_R_textJ 0 0,    RT1 RT2 RT3, l_jp)
+* #endif
+*/
