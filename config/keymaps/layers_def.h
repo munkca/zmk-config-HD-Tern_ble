@@ -20,7 +20,7 @@
 #define l_sym_RT &kp C_CENT         &kp DLLR            &kp C_EURO          &kp C_BPND         
 
 #define l_sym_LM &kp S_SECT         &lk_LRbkt           &lk_LRpar           &lk_LRbrc           &kp S_BBLT
-#define l_sym_RM &kp FSLH           &mt RSHFT EQUAL     &mt RGUI STAR       &mt RALT PLUS       &mt LCTRL MINUS
+#define l_sym_RM &kp FSLH           &mt LCTRL EQUAL     &mt RSHFT STAR       &mt RALT PLUS       &mt RALT MINUS
 
 #define l_sym_LB &kp S_DEGR         &kp RBKT            &kp RPAR            &kp RBRC            
 #define l_sym_RB                    &kp PIPE            &kp AMPS            &lk_LRltgt          &kp GT
@@ -40,8 +40,8 @@
 #define l_fun_LT                    &kp F10             &kp F11             &kp F12             &kp F13
 #define l_fun_RT &kp FSLH           &kp N7              &kp N8              &kp N9              
 
-#define l_fun_LM &mt LCTRL F5       &mt LALT F6         &mt LGUI F7         &mt LSHFT F8        &kp F14
-#define l_fun_RM &kp STAR           &mt RSHFT N1        &mt RGUI N2         &mt RALT N3         &mt LCTRL PLUS
+#define l_fun_LM &mt LGUI F5       &mt LALT F6         &mt LSHFT F7         &mt CTRL F8        &kp F14
+#define l_fun_RM &kp STAR           &mt LCTRL N1        &mt RSHFT N2         &mt RALT N3         &mt LGUI PLUS
 
 #define l_fun_LB &kp F1             &kp F2              &kp F3              &kp F4              
 #define l_fun_RB                    &kp N4              &kp N5              &kp N6              &kp EQUAL
