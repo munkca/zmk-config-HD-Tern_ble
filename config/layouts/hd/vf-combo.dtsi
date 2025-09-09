@@ -24,7 +24,7 @@
  *     ╭─────────────────────╮                  ╭─────────────────────╮
  * LT5 │     LT3 LT2 LT1 LT0 │ LTA          RTA │ RT0 RT1 RT2 RT3     │ RT5
  * LM5 │ LM4 LM3 LM2 LM1 LM0 │ LMA          RMA │ RM0 RM1 RM2 RM3 RM4 │ RM5
- * LB5 │ LB4 LB3 LB2 LB1     │ LBA LBB  RBB RBA │     RB1 RB2 RB3 RB4 │ RB5
+ * LB5 │ LB3 LB2 LB1 LB0     │ LBA LBB  RBB RBA │     RB0 RB1 RB2 RB3 │ RB5
  *     ╰────────────╮LH2 LH1 | LH0 LHA  RHA RH0 | RH1 RH2╭────────────╯
  *      LH5 LH4 LH3 ╰────────╯                  ╰────────╯ RH3 RH4 LH5
 */
