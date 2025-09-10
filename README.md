@@ -1,25 +1,16 @@
-# [**Hands Down**](http://handsdownlayout.com) on ![zen pic](images/zenlogo.png)
-My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small portable boards.
-![zen pic](images/zen.jpg)
+# [**Hands Down**](http://handsdownlayout.com) on Tern
+My adapted ZMK take on [**Hands Down**](http://handsdownlayout.com) on small portable boards.
 
 **Hands Down** *Vibranium-Vf*
 ```
 ╭─────────────────────╮ ╭──────────────────────╮
-│  X   W   M   G   J  │ │  #$  .:  /*  "<  '>  │
+│      W   M   G   J  │ │  #$  .:  /*  "<      │
 │  S   C   N   T   K  | |  ,;   A   E   I   H  │
-│  F   P   L   D   V  │ │  -+   U   O   Y   B  │
+│  F   P   L   D      │ │       U   O   Y   B  │
 ╰──────╮  App BSP  R  │ │  SPC RET nLk  ╭──────╯
        ╰──────────────╯ ╰───────────────╯
 ```
-**Hands Down** *Promethium*
-```
-╭─────────────────────╮ ╭──────────────────────╮
-│  V   W   G   M   J  │ │  #$  .:  /*  "<  '>  │
-│  S   N   T   H   K  | |  ,;   A   E   I   C  │
-│  F   P   D   L   X  │ │  -+   U   O   Y   B  │
-╰──────╮  App BSP  R  │ │  SPC RET nLk  ╭──────╯
-       ╰──────────────╯ ╰───────────────╯
-```
+
 ## [**Hands Down**](https://sites.google.com/alanreiser.com/handsdown) variations
 
 | HD variation | Thumb Alpha<sup>[1]</sup> | H-Digraphs<sup>[2]</sup> | Adaptives<sup>[3]</sup> | Vim<sup>[4]</sup> | Avail? |
