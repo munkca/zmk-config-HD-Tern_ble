@@ -12,10 +12,12 @@
  */
 #define COMMA_CAP           // , before alpha capitalizes that alpha
 #define H_DIGRAPH_COMBOS    // th, ch, sh, wh, gh, ph
-#define EN_PRONOUN_COMBOS   // I, I'm, I've I'd I'll you've you'd your you're you'll etc.
-#define JP_MODE_ENABLE      // Add a JP layer,combos, etc.
-#define JP_YOUON_COMBOS     // Major Japanese contracted sounds as combos
 
+/* 
+* #define EN_PRONOUN_COMBOS   // I, I'm, I've I'd I'll you've you'd your you're you'll etc.
+* #define JP_MODE_ENABLE      // Add a JP layer,combos, etc.
+* #define JP_YOUON_COMBOS     // Major Japanese contracted sounds as combos
+*/
 
 /*
  * global constants/configuration settings
@@ -54,11 +56,13 @@
  */
 #define l_any   -1
 #define l_hd    0 // main HD alpha layer (Mac centric)
-#define l_jp    1 // alternate Japanese base layer (XCL="-Zん", no adaptives)
-#define l_akDot 2 // funky holdover ak layer (used for comma cap/expansions)
-#define l_sym   3 // symbols, punctuation, off-map alphas
-#define l_fun   4 // function (left) number rows (right)
-#define l_num   5 // navpad (left) numpad (right)
-#define l_nav   6 // metakeys (left) navpad (right)
-#define l_cfg   7 // Keyboard settings · Media/Consumer controls
+/* 
+* #define l_jp    1 // alternate Japanese base layer (XCL="-Zん", no adaptives)
+*/
+#define l_akDot 1 // funky holdover ak layer (used for comma cap/expansions)
+#define l_sym   2 // symbols, punctuation, off-map alphas
+#define l_fun   3 // function (left) number rows (right)
+#define l_num   4 // navpad (left) numpad (right)
+#define l_nav   5 // metakeys (left) navpad (right)
+#define l_cfg   6 // Keyboard settings · Media/Consumer controls
 
