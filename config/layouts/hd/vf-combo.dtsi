@@ -35,6 +35,7 @@
 
 COMBO_LAYER(t_Q,     &lk_qu Q U,    LT3 LT1, l_hd)       // type Qu, linger deletes u
 COMBO_LAYER(t_Z,     &ak_Z,         LM3 LM1, l_hd)       // Z is typically off map
+COMBO_LAYER(t_V,     &ak_V,         LB3 LB2, l_hd)       // default V key gone. Phonetically similar to F, bottom row instead of top.
 
 #ifdef H_DIGRAPH_COMBOS
 //
@@ -43,35 +44,16 @@ COMBO_LAYER(t_Z,     &ak_Z,         LM3 LM1, l_hd)       // Z is typically off m
 COMBO_LAYER(sch,    &t_Sch,         LM4 LM3 LM2, l_hd)   // Sch
 COMBO_LAYER(tch,    &t_Tch,         LM4 LM3 LM1, l_hd)   // Tch
 COMBO_LAYER(th,     &t_Th,          LM2 LM1, l_hd)       // Th
-COMBO_LAYER(ch,     &t_Ch,          LM3 LM2, l_hd l_jp)  // Ch
+COMBO_LAYER(ch,     &t_Ch,          LM3 LM2, l_hd)       // Ch
 COMBO_LAYER(wh,     &t_Wh,          LT3 LT2, l_hd)       // Wh
-COMBO_LAYER(sh,     &lk_sh H S,     LM4 LM3, l_hd l_jp)  // Sh/sion
+COMBO_LAYER(sh,     &lk_sh H S,     LM4 LM3, l_hd)       // Sh/sion
 COMBO_LAYER(gh,     &lk_gh H G,     LT2 LT1, l_hd)       // Gh/ght
-COMBO_LAYER(ph,     &t_Ph,          LB3 LB1, l_hd)       // Ph
+COMBO_LAYER(ph,     &t_Ph,          LB2 LB0, l_hd)       // Ph
 #endif
 
-#ifdef EN_PRONOUN_COMBOS
+
 
 /* Pronoun combos macros (define paired macros in moutis_config.dtsi) */
+/* I don't need these yet. Make sure they aren't referenced in macros. */
 
-COMBO_LAYER(pnI,        &t_PnI,     RM3 RM4, l_hd)  // "I "
-COMBO_LAYER(pnIm,       &t_PnIm,    RM3 LT2, l_hd)  // "I'm "
-COMBO_LAYER(pnIll,      &t_PnIll,   RM3 LB2, l_hd)  // "I'll "
-COMBO_LAYER(pnId,       &t_PnId,    RM3 LB1, l_hd)  // "I'd "
-COMBO_LAYER(pnIve,      &t_PnIve,   RM3 LB0, l_hd)  // "I've "
 
-COMBO_LAYER(pnYou,      &t_Pnyou,   RB1 RB2  RB3, l_hd) // “You”
-COMBO_LAYER(pnYoure,    &t_PnYoure, RB3 LB4, l_hd)  // "You're "
-COMBO_LAYER(pnYour,     &t_PnYour,  RB3 LB3, l_hd)  // "Your "
-COMBO_LAYER(pnYoull,    &t_PnYoull, RB3 LB2, l_hd)  // "You'll "
-COMBO_LAYER(pnYoud,     &t_PnYoud,  RB3 LB1, l_hd)  // "You'd "
-COMBO_LAYER(pnYouve,    &t_PnYouve, RB3 LB0, l_hd)  // "You've "
-
-COMBO_LAYER(pnWere,     &t_PnWere,  LT4 RT4, l_hd)  // "We're "
-COMBO_LAYER(pnWell,     &t_PnWell,  LT4 LT2, l_hd)  // "We'll "
-COMBO_LAYER(pnWed,      &t_PnWed,   LT4 LT1, l_hd)  // "We'd "
-COMBO_LAYER(pnWeve,     &t_PnWeve,  LT4 LT0, l_hd)  // "We've "
-
-COMBO_LAYER(pnWhere,    &t_PnWhere, LT4 LH1, l_hd)  // "Where "
-
-#endif // EN_PRONOUN_COMBOS
