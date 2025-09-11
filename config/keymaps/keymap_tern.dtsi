@@ -16,7 +16,7 @@
 
     keymap {
         compatible = "zmk,keymap";
-           lbl_HD: l_alpha {
+           lbl_hd: l_alpha {
 //                label = HD_Layer_label;
                 bindings = <
                                 HD_LT               HD_RT
