@@ -29,7 +29,7 @@
 #define HD_LB &ak_F           &ak_P           &ak_L           &ak_D           
 #define HD_LH                                                 &lt_BSPC l_fun BSPC   &lt_R l_nav R
 
-#define HD_RT &MinusPlus      &DotColn        &SlshStar       &akJ          
+#define HD_RT &MinusPlus      &DotColn        &SlshStar       &ak_J          
 #define HD_RM &CommaMagic     &mt_A RSHFT A   &mt_E RGUI E    &mt_I RALT I    &mt_H RCTRL H
 #define HD_RB                 &ak_U           &ak_O           &ak_Y           &ak_B
 #define HD_RH &lt l_sym SPACE &lt l_nav RETURN
