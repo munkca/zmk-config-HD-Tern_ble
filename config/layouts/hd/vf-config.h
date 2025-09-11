@@ -38,7 +38,7 @@
 #define l_akDOT_label "l_akDOT" // adaptive grabbag sticky layer.
 #define DOT_LT                 &kp T          &kp L           &kp L           &kp L    // Shifted one right from original layout. A problem?       
 #define DOT_LM _______        _______         _______         _______         _______
-#define DOT_LB _______        _______         _______         &b_wd           
+#define DOT_LB _______        _______         _______         _______           
 #define DOT_LH                                                _______         _______
 
 #define DOT_RT &kp DLLR       &kp DOT         _______         _______       
