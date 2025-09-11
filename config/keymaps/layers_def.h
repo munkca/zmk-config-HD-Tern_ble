@@ -12,7 +12,7 @@
 //|        |    Q   |   Z    |   †    |    ‡    |                |   ¢    |    $   |    €   |    £   |        |
 //|    §   |    [   |   (    |   {    |    •    |                |   /    |    =   |    *   |    +   |   -    |
 //|    °   |    ]   |   )    |   }    |         |                |        |    |   |    &   |    <   |   >    |
-//╰──────────────────────────╮ dwdlt  |  dwdr   |                | &none  |    ¡   ╭──────────────────────────╯
+//╰──────────────────────────╮ dwdlt  |  dwdr   |                | &none  | &none  ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_sym_label "l_sym"
 
@@ -26,7 +26,7 @@
 #define l_sym_RB                    &kp PIPE            &kp AMPS            &lk_LRltgt          &kp GT
 
 #define l_sym_LH &kp S_DWRDL        &kp S_DWRDR
-#define l_sym_RH &none              &kp S_INVX
+#define l_sym_RH &none              &kp &none
 
 //                                         Fkey & Num Row (optimized)
 //╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮
