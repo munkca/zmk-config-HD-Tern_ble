@@ -26,7 +26,7 @@
                 >;
             };
        
-          l_akDOT {
+           l_akDOT {
                 label = l_akDOT_label;
                 bindings = <
                                 DOT_LT              DOT_RT
