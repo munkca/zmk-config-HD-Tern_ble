@@ -23,7 +23,7 @@
             ╰──────────╯ ╰───────────╯
 */
 
-#define lbl_hd "HD-Vf"
+#define HD_Layer_label "HD-Vf"
 #define HD_LT                 &ak_W           &ak_M           &ak_G           &ak_X
 #define HD_LM &mt_S LCTRL S   &mt_C LALT C    &mt_N LGUI N    &mt_T LSHFT T   &ak_K
 #define HD_LB &ak_F           &ak_P           &ak_L           &ak_D           
@@ -35,7 +35,7 @@
 #define HD_RH &lt l_sym SPACE &lt l_nav RETURN
 
 
-#define lbl_dot "l_akDOT" // adaptive grabbag sticky layer.
+#define l_akDOT_label "l_akDOT" // adaptive grabbag sticky layer.
 #define DOT_LT                 &kp T          &kp L           &kp L           &kp L    // Shifted one right from original layout. A problem?       
 #define DOT_LM _______        _______         _______         _______         _______
 #define DOT_LB _______        _______         _______         _______           
