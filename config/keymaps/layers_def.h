@@ -40,8 +40,8 @@
 #define l_fun_LT                    &kp F10             &kp F11             &kp F12             &kp F13
 #define l_fun_RT &kp STAR           &kp N7              &kp N8              &kp N9              
 
-#define l_fun_LM &mt LGUI F5       &mt LALT F6         &mt LSHFT F7         &mt CTRL F8        &kp F14
-#define l_fun_RM &kp FSLH           &mt LCTRL N1        &mt RSHFT N2         &mt RALT N3         &mt LGUI MINUS
+#define l_fun_LM &mt LGUI F5       &mt LALT F6         &mt LSHFT F7         &mt LCTRL F8        &kp F14
+#define l_fun_RM &kp FSLH          &mt LCTRL N1        &mt RSHFT N2         &mt RALT N3        &mt LGUI MINUS
 
 #define l_fun_LB &kp F1             &kp F2              &kp F3              &kp F4              
 #define l_fun_RB                    &kp N4              &kp N5              &kp N6              &kp PLUS
@@ -62,7 +62,7 @@
 #define l_num_RT &kp KP_DIVIDE      &kp KP_N7           &kp KP_N8           &kp KP_N9           
 
 #define l_num_LM &kp S_WRDL         &kp LEFT            &kp DOWN            &kp RIGHT           &kp S_WRDR
-#define l_num_RM &kp KP_MULTIPLY    &mt RSHFT KP_N4     &mt RGUI KP_N5      &mt RALT KP_N6      &mt LCTRL KP_PLUS
+#define l_num_RM &kp KP_MULTIPLY    &mt LCTRL KP_N4     &mt RSHFT KP_N5      &mt RALT KP_N6      &mt LGUI KP_PLUS
 
 #define l_num_LB &kp S_DBTM         &kp END             &kp SPACE           &kp PG_DN          
 #define l_num_RB                    &kp KP_N1           &kp KP_N2           &kp KP_N3           &kp KP_EQUAL
@@ -82,7 +82,7 @@
 #define l_nav_LT                    &kp S_QUIT          &kp S_ScrCp         &kp S_SelCp         &kp S_PSTM
 #define l_nav_RT &kp S_DTOP         &kp HOME            &kp UP              &kp PG_UP          
 
-#define l_nav_LM &kp LCTRL          &kp LALT            &kp LGUI            &kp LSHFT           &kp S_FIND
+#define l_nav_LM &kp LGUI           &kp LALT            &kp LSHFT            &kp LCTRL           &kp S_FIND
 #define l_nav_RM &kp S_WRDL         &kp LEFT            &kp DOWN            &kp RIGHT           &kp S_WRDR
 
 #define l_nav_LB &kp UNDO           &kp CUT             &kp S_COPY          &kp S_PSTM          
