@@ -14,7 +14,7 @@
 //|    °   |    ]   |   )    |   }    |         |                |        |    |   |    &   |    <   |   >    |
 //╰──────────────────────────╮ dwdlt  |  dwdr   |                | &none  | &none  ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
-#define lbl_sym "l_sym"
+#define l_sym_label "l_sym"
 
 #define l_sym_LT                    &kp Q               &kp Z               &kp S_CROS          &kp S_DCRS
 #define l_sym_RT &kp C_CENT         &kp DLLR            &kp C_EURO          &kp C_BPND         
@@ -35,7 +35,7 @@
 //|    F1   |   F2   |   F3   |   F4   |        |                |        |   4    |    5   |   6    |    +   |
 //╰──────────────────────────╮  BKSP   |   DEL  |                |    0   |   .    ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
-#define lbl_fun "l_fn"
+#define l_fun_label "l_fn"
 
 #define l_fun_LT                    &kp F10             &kp F11             &kp F12             &kp F13
 #define l_fun_RT &kp STAR           &kp N7              &kp N8              &kp N9              
@@ -56,7 +56,7 @@
 //|   Bot   |   END  |   SPC  | PG_DN |         |                |        |   1    |   2    |   3    |    =   |
 //╰──────────────────────────╮  BSPC  |KP_ENTER |                |    0   |   .    ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
-#define lbl_num "l_num"
+#define l_num_label "l_num"
 
 #define l_num_LT                    &kp HOME            &kp UP              &kp PG_UP           &kp S_PARU
 #define l_num_RT &kp KP_DIVIDE      &kp KP_N7           &kp KP_N8           &kp KP_N9           
@@ -77,7 +77,7 @@
 //|  undo  |   cut   |  copy |  pste |          |                |         |   END  |  DOWN  |  PG_DN | ¶dn   |
 //╰──────────────────────────╮ APPSW |   APPSW  |                |   back  |   fwd  ╭─────────────────────────╯
 //                           ╰──────────────────╯                ╰──────────────────╯
-#define lbl_nav "l_nav"
+#define l_nav_label "l_nav"
 
 #define l_nav_LT                    &kp S_QUIT          &kp S_ScrCp         &kp S_SelCp         &kp S_PSTM
 #define l_nav_RT &kp S_DTOP         &kp HOME            &kp UP              &kp PG_UP          
@@ -99,7 +99,7 @@
 //│  QK_BOOT AG_SWAP  AG_NORM  KC_VOLD          │                │         KC_MRWD KC_MPLY KC_MFFD QK_BOOT    │
 //╰──────────────────────────╮ ZOOMOUT  ZOOMIN  │                │ ZOOMIN  ZOOMOUT ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
-#define lbl_cfg "l_cfg"
+#define l_cfg_label "l_cfg"
 
 #define l_cfg_LT                     &bt BT_SEL 2        &bt BT_SEL 1        &bt BT_SEL 0       &bt BT_CLR
 #define l_cfg_RT &kp S_ZMRST         &none               &none               &kp KILL_W         
