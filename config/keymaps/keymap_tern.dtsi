@@ -16,7 +16,7 @@
 
     keymap {
         compatible = "zmk,keymap";
-           lbl0: l_alpha {
+           lbl_HD: l_alpha {
 //                label = HD_Layer_label;
                 bindings = <
                                 HD_LT               HD_RT
@@ -26,7 +26,7 @@
                 >;
             };
        
-          lbl1:  l_akDOT {
+          lbl_dot:  l_akDOT {
    //             label = l_akDOT_label;
                 bindings = <
                                 DOT_LT              DOT_RT
@@ -36,7 +36,7 @@
                 >;
             };
 
-           lbl2: l_sym {
+           lbl_sym: l_sym {
 //            label = l_sym_label;
                 bindings = <
                                 l_sym_LT            l_sym_RT
@@ -46,7 +46,7 @@
                 >;
             };
 
-           lbl3: l_fun {
+           lbl_fun: l_fun {
 //                label = l_fun_label;
                 bindings = <
                                 l_fun_LT            l_fun_RT
@@ -56,7 +56,7 @@
                 >;
             };
 
-           lbl4: l_num {
+           lbl_num: l_num {
 //                label = l_num_label;
                 bindings = <
                                 l_num_LT            l_num_RT
@@ -66,7 +66,7 @@
                 >;
             };
 
-           lbl5: l_nav {
+           lbl_nav: l_nav {
 //                label = l_nav_label;
                 bindings = <
                                 l_nav_LT            l_nav_RT
@@ -76,7 +76,7 @@
                 >;
             };
 
-           lbl6: l_cfg {
+           lbl_cfg: l_cfg {
 //                label = l_cfg_label;
                 bindings = <
                                 l_cfg_LT            l_cfg_RT
