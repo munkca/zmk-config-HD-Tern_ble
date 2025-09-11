@@ -310,45 +310,7 @@
             my_lk_config;
             bindings = <&t_pairLtGt>, <&kp>;
         };
-#define lk_LRques lk_QMARK S_INVQ QMARK // simply put &lk_LRques in the keymap
-        lk_QMARK: lk_QMARK {            // ¿ on tap, ¿|? on "linger"
-            my_lk_config;
-            bindings = <&t_pairQmark>, <&kp>;
-        };
-#define lk_LRexcl lk_EXCL S_INVX EXCL   // simply put &lk_LRexcl in the keymap
-        lk_EXCL: lk_EXCL {              // ¡ on tap, ¡|! on "linger"
-            my_lk_config;
-            bindings = <&t_pairExcl>, <&kp>;
-        };
 
-        lk_E_accent: lk_E_accent { // ´, é on "linger"
-            my_lk_config;
-            bindings = <&t_Eaccent>, <&kp>;
-        };
-        lk_E_grave: lk_E_grave { // `, è on "linger"
-            my_lk_config;
-            bindings = <&t_Egrave>, <&kp>;
-        };
-        lk_E_acute: lk_E_acute { // ˆ, ê on "linger"
-            my_lk_config;
-            bindings = <&t_Eacute>, <&kp>;
-        };
-        lk_O_macron: lk_O_macron { // ¯, ō on "linger"
-            my_lk_config;
-            bindings = <&t_Omacron>, <&kp>;
-        };
-        lk_A_ring: lk_A_ring { // ˚, å on "linger"
-            my_lk_config;
-            bindings = <&t_Aring>, <&kp>;
-        };
-        lk_U_umlaut: lk_U_umlaut { // ¨, ü on "linger"
-            my_lk_config;
-            bindings = <&t_Uumlaut>, <&kp>;
-        };
-        lk_C_cedille: lk_C_cedille { // ¸, ç on "linger"
-            my_lk_config;
-            bindings = <&t_Cedille>, <&kp>;
-        };
 
         lk_th: lk_th { // Th on tap, tion on "linger"
             my_lk_config;
