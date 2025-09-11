@@ -4,6 +4,6 @@
 if SHIELD_TERN
 
 config ZMK_KEYBOARD_NAME
-    default "Tern"
+    default "Tern HD-Vf"
 
 endif
