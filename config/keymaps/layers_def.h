@@ -8,22 +8,22 @@
 
 //                                                Symbol & math
 //  * left paired symbols are "linger keys" via hold taps. Tap for left, hold for pair with insertion point between
-//╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮e
-//|        |  deg   | leq    | geq    |   <     |                |   |    |    \   |    €   |    £   |        |
-//|    §   |    [   |   (    |   {    |    >    |                |   /    |    ~   |    %   |    ^   |   &    |
-//|    •   |    ]   |   )    |   }    |         |                |        |   'g   |    @   |    #   |   $    |
+//╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮
+//|        |    °   |   ≤    |   ≥    |    <    |                |   |    |    \   |    €   |    £   |        |
+//|    ∞   |    [   |   (    |   {    |    >    |                |   /    |    ~   |    %   |    ^   |   &    |
+//|    •   |    ]   |   )    |   }    |         |                |        |    `   |    @   |    #   |   $    |
 //╰──────────────────────────╮ dwdlt  |  dwdr   |                | &none  | &appr  ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_sym_label "l_sym"
 
-#define l_sym_LT                    &kp Q               &kp Z               &kp S_CROS          &kp S_DCRS
-#define l_sym_RT &kp C_CENT         &kp DLLR            &kp C_EURO          &kp C_BPND         
+#define l_sym_LT                    &kp S_DEGR          &kp LA(COMMA)       &kp LA(DOT)         &lk_LRltgt
+#define l_sym_RT &kp PIPE           &kp BSLH            &kp C_EURO          &kp C_BPND         
 
-#define l_sym_LM &kp S_SECT         &lk_LRbkt           &lk_LRpar           &lk_LRbrc           &kp S_BBLT
-#define l_sym_RM &kp FSLH           &mt LCTRL EQUAL     &mt RSHFT STAR      &mt RALT PLUS       &mt RGUI MINUS
+#define l_sym_LM &kp LA(N5)         &lk_LRbkt           &lk_LRpar           &lk_LRbrc           &kp GT
+#define l_sym_RM &kp FSLH           &mt LCTRL TILDE     &mt RSHFT PRCNT     &mt RALT CARET      &mt RGUI AMPS
 
-#define l_sym_LB &kp S_DEGR         &kp RBKT            &kp RPAR            &kp RBRC            
-#define l_sym_RB                    &kp PIPE            &kp AMPS            &lk_LRltgt          &kp GT
+#define l_sym_LB &kp LS(LA(9))      &kp RBKT            &kp RPAR            &kp RBRC            
+#define l_sym_RB                    &kp GRAVE           &kp AT              &kp HASH            &kp DLLR         
 
 #define l_sym_LH &kp S_DWRDL        &kp S_DWRDR
 #define l_sym_RH &none              &kp &none
