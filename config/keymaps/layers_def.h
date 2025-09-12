@@ -32,7 +32,7 @@
 //          ╭───────────────────────────────────╮                ╭───────────────────────────────────╮
 //╭─────────|        |        |        |        |                |    /*  |   7    |    8   |   9    |────────╮        
 //|   LGUI  |  LALT  |  LSHFT |  LCTRL |        |                |    -+  |  C/4   |   S/5  |  A/6   |   G/=  |
-//|  PScrl  | Sh-TAB |   TAB  |GUI-sh-4|        |                |        |   4    |    5   |   6    |    ≈   |
+//|  PScrn  | Sh-TAB |   TAB  |GUI-sh-4|        |                |        |   4    |    5   |   6    |    ≈   |
 //╰──────────────────────────╮  BKSP   |   DEL  |                |    0   |   .    ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_fun_label "l_fn"
@@ -72,21 +72,21 @@
 
 //                                           Shorcuts & Navigation
 //         ╭────────────────────────────────────╮                ╭────────────────────────────────────╮
-//╭────────|   quit  | ScrCp | SelCp |  pstmtch |                |   Top   |  HOME  |   UP   |  PG_UP |───────╮
-//|  ctrl  |   alt   |  gui  |  shft |   Find   |                |  Lword  |  LEFT  |  DOWN  |   RGT  | Rword |
-//|  undo  |   cut   |  copy |  pste |          |                |         |   END  |  DOWN  |  PG_DN | ¶dn   |
+//╭────────|   cutl  | copyl | pstel |    ESC   |                |         |  HOME  |   UP   |  PG_UP |───────╮
+//|  gui   |   alt   |  shft |  ctrl |   Find   |                |  Lword  |  LEFT  |  DOWN  |   RGT  | Rword |
+//|  undo  |   cut   |  copy |  pste |          |                |         |   END  |        |  PG_DN |       |
 //╰──────────────────────────╮ APPSW |   APPSW  |                |   back  |   fwd  ╭─────────────────────────╯
 //                           ╰──────────────────╯                ╰──────────────────╯
 #define l_nav_label "l_nav"
 
-#define l_nav_LT                    &kp S_QUIT          &kp S_ScrCp         &kp S_SelCp         &kp S_PSTM
-#define l_nav_RT &kp S_DTOP         &kp HOME            &kp UP              &kp PG_UP          
+#define l_nav_LT                    &kp LC(X)           &kp LC(C)           &kp LC(V)           &kp ESC
+#define l_nav_RT &none              &kp HOME            &kp UP              &kp PG_UP          
 
-#define l_nav_LM &kp LGUI           &kp LALT            &kp LSHFT            &kp LCTRL           &kp S_FIND
+#define l_nav_LM &kp LGUI           &kp LALT            &kp LSHFT           &kp LCTRL           &kp S_FIND
 #define l_nav_RM &kp S_WRDL         &kp LEFT            &kp DOWN            &kp RIGHT           &kp S_WRDR
 
 #define l_nav_LB &kp UNDO           &kp CUT             &kp S_COPY          &kp S_PSTM          
-#define l_nav_RB                    &kp END             &kp DOWN            &kp PG_DN           &kp S_PARD
+#define l_nav_RB                    &kp END             &none               &kp PG_DN           &none
 
 #define l_nav_LH &SlApBack          &SlAppy
 #define l_nav_RH &kp S_BBACK        &kp S_BFWD
