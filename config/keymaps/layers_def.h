@@ -8,8 +8,8 @@
 
 //                                                Symbol & math
 //  * left paired symbols are "linger keys" via hold taps. Tap for left, hold for pair with insertion point between
-//╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮
-//|        |    °   |   ≤    |   ≥    |    <    |                |   |    |    \   |    €   |    £   |        |
+//         ╭────────────────────────────────────╮                ╭───────────────────────────────────╮
+//╭────────|    °   |   ≤    |   ≥    |    <    |                |   |    |    \   |    €   |    £   |────────╮       
 //|    ∞   |    [   |   (    |   {    |    >    |                |   /    |    ~   |    %   |    ^   |   &    |
 //|    •   |    ]   |   )    |   }    |         |                |        |    `   |    @   |    #   |   $    |
 //╰──────────────────────────╮ dwdlt  |  dwdr   |                | &none  | &appr  ╭──────────────────────────╯
@@ -29,29 +29,29 @@
 #define l_sym_RH &none              &kp &none
 
 //                                         Fkey & Num Row
-//╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮
-//|         |        |        |        |        |                |    /*  |   7    |    8   |   9    |        |
+//          ╭───────────────────────────────────╮                ╭───────────────────────────────────╮
+//╭─────────|        |        |        |        |                |    /*  |   7    |    8   |   9    |────────╮        
 //|   LGUI  |  LALT  |  LSHFT |  LCTRL |        |                |    -+  |  C/4   |   S/5  |  A/6   |   G/=  |
-//|  PrtScr | Sh-TAB |   TAB  |GUI-sh-4|        |                |        |   4    |    5   |   6    |    +   |
+//|  PScrl  | Sh-TAB |   TAB  |GUI-sh-4|        |                |        |   4    |    5   |   6    |    ≈   |
 //╰──────────────────────────╮  BKSP   |   DEL  |                |    0   |   .    ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_fun_label "l_fn"
 
-#define l_fun_LT                    &kp F10             &kp F11             &kp F12             &kp F13
-#define l_fun_RT &kp STAR           &kp N7              &kp N8              &kp N9              
+#define l_fun_LT                    &none               &none               &none               &none
+#define l_fun_RT &SlshStar          &kp N7              &kp N8              &kp N9              
 
-#define l_fun_LM &mt LGUI F5       &mt LALT F6         &mt LSHFT F7         &mt LCTRL F8        &kp F14
-#define l_fun_RM &kp FSLH          &mt LCTRL N1        &mt RSHFT N2         &mt RALT N3        &mt LGUI MINUS
+#define l_fun_LM &kp LGUI          &kp LALT            &kp LSHFT            &kp LCTRL           &none
+#define l_fun_RM &MinusPlus        &mt LCTRL N4        &mt RSHFT N5         &mt RALT N6         &mt LGUI EQUAL
 
-#define l_fun_LB &kp F1             &kp F2              &kp F3              &kp F4              
-#define l_fun_RB                    &kp N4              &kp N5              &kp N6              &kp PLUS
+#define l_fun_LB &kp PSCRN          &kp LS(TAB)         &kp TAB             &kp LG(LS(4))              
+#define l_fun_RB                    &kp N4              &kp N5              &kp N6              &kp LA(X)
 
 #define l_fun_LH &kp BSPC           &kp DEL
 #define l_fun_RH &kp N0             &kp DOT
 
 //                                        Nav & NumPad (standard)
-//╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮
-//|         |  HOME  |   UP   | PG_UP |   ¶up   |                |    /   |   7    |   8    |   9    |        |
+//          ╭───────────────────────────────────╮                ╭───────────────────────────────────╮
+//╭─────────|  HOME  |   UP   | PG_UP |   ¶up   |                |    /   |   7    |   8    |   9    |────────╮
 //|  Lword  |  LEFT  |  DOWN  |  RGT  |  Rword  |                |    *   |  S/4   |  G/5   |  A/6   |   C/+  |
 //|   Bot   |   END  |   SPC  | PG_DN |         |                |        |   1    |   2    |   3    |    =   |
 //╰──────────────────────────╮  BSPC  |KP_ENTER |                |    0   |   .    ╭──────────────────────────╯
@@ -71,8 +71,8 @@
 #define l_num_RH &kp KP_N0          &kp KP_DOT
 
 //                                           Shorcuts & Navigation
-//╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮
-//|        |   quit  | ScrCp | SelCp |  pstmtch |                |   Top   |  HOME  |   UP   |  PG_UP |       |
+//         ╭────────────────────────────────────╮                ╭────────────────────────────────────╮
+//╭────────|   quit  | ScrCp | SelCp |  pstmtch |                |   Top   |  HOME  |   UP   |  PG_UP |───────╮
 //|  ctrl  |   alt   |  gui  |  shft |   Find   |                |  Lword  |  LEFT  |  DOWN  |   RGT  | Rword |
 //|  undo  |   cut   |  copy |  pste |          |                |         |   END  |  DOWN  |  PG_DN | ¶dn   |
 //╰──────────────────────────╮ APPSW |   APPSW  |                |   back  |   fwd  ╭─────────────────────────╯
@@ -93,8 +93,8 @@
 
 //                                          Keyboard & System Settings
 //                      L_CFG Keyboard Configuration (left) and Media Settings (right)
-//╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮
-//│          BT2      BT1      BT0      BT_Clr  │                │ ZOOMRST none    none    KILL-W             │
+//         ╭────────────────────────────────────╮                ╭───────────────────────────────────╮
+//╭────────| BT2      BT1      BT0      BT_Clr  │                │ ZOOMRST none    none    KILL-W     ────────╮
 //│  HD_AKTg L_0      L_1      KC_VOLU  KC_BRIU |                | ZOOMOUT KC_MPRV KC_MUTE KC_MNXT KC_NO      │
 //│  QK_BOOT AG_SWAP  AG_NORM  KC_VOLD          │                │         KC_MRWD KC_MPLY KC_MFFD QK_BOOT    │
 //╰──────────────────────────╮ ZOOMOUT  ZOOMIN  │                │ ZOOMIN  ZOOMOUT ╭──────────────────────────╯
