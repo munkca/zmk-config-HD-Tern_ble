@@ -3,7 +3,7 @@
  *  Core/common layer defs for tern (30) keys.
  *
  * extended keycodes found in "hosts" folder
- *MUCH TO DO
+ *
  */
 
 //                                                Symbol & math
