@@ -100,12 +100,12 @@
 //╰──────────────────────────╮ ZMOUT |  ZMIN   │                │  ZMIN  |  ZMOUT ╭──────────────────────────╯
 //                           ╰───────────────-─╯                ╰───────────────-─╯
 
+
+#define l_cfg_label "l_cfg"
+
+#define l_cfg_LT                    &rst_btld           &none               &none             &OUT_USB
+#define l_cfg_RT &kp C_BRI_UP       &kp C_VOL_UP        &kp C_NEXT          &none         
 /*
-*#define l_cfg_label "l_cfg"
-*
-*#define l_cfg_LT                    &rst_btld           &none               &none             &OUT_USB
-*#define l_cfg_RT &kp C_BRI_UP       &kp C_VOL_UP        &kp C_NEXT          &none         
-*
 *#define l_cfg_LM &none              &none               &none               &none             &OUT_BLE
 *#define l_cfg_RM &kp C_BRI_DN       &kp C_VOL_DN        &kp C_PP            &none             &none
 *
@@ -117,10 +117,10 @@
 */
 
 
-#define l_cfg_label "l_cfg"
+//#define l_cfg_label "l_cfg"
 
-#define l_cfg_LT                     &bt BT_SEL 2        &bt BT_SEL 1        &bt BT_SEL 0       &bt BT_CLR
-#define l_cfg_RT &kp S_ZMRST         &none               &none               &kp KILL_W        
+//#define l_cfg_LT                     &bt BT_SEL 2        &bt BT_SEL 1        &bt BT_SEL 0       &bt BT_CLR
+//#define l_cfg_RT &kp S_ZMRST         &none               &none               &kp KILL_W        
 
 #define l_cfg_LM &none              &kp C_NEXT          &kp C_PP            &kp C_VOL_UP        &kp C_BRI_UP
 #define l_cfg_RM &kp S_ZMOUT        &kp C_VOL_UP        &kp C_MUTE          &kp C_NEXT          &none
