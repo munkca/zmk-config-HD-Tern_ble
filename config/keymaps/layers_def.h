@@ -93,22 +93,25 @@
 
 //                                          Keyboard & System Settings
 //                      L_CFG Keyboard Configuration (left) and Media Settings (right)
-//         ╭────────────────────────────────────╮                ╭───────────────────────────────────╮
-//╭────────| BT2      BT1      BT0      BT_Clr  │                │ ZOOMRST none    none    KILL-W     ────────╮
-//│  HD_AKTg L_0      L_1      KC_VOLU  KC_BRIU |                | ZOOMOUT KC_MPRV KC_MUTE KC_MNXT KC_NO      │
-//│  QK_BOOT AG_SWAP  AG_NORM  KC_VOLD          │                │         KC_MRWD KC_MPLY KC_MFFD QK_BOOT    │
-//╰──────────────────────────╮ ZOOMOUT  ZOOMIN  │                │ ZOOMIN  ZOOMOUT ╭──────────────────────────╯
-//                           ╰──────────────────╯                ╰─────────────────╯
+//         ╭───────────────────────--──────────╮                ╭───────────────────────────────────╮
+//╭────────| BOOT  |       |         |   USB   │                │  BRI+  |  VOL+  |  NEXT  |        |────────╮
+//│        |       |       |         |    BT   |                |  BRI-  |  VOL-  |   PP   |        │        |
+//│  BTC   |  BT0  │  BT1  |  BT2    │         |                |        |  MUTE  |  PREV  |        │        |
+//╰──────────────────────────╮ ZMOUT |  ZMIN   │                │  ZMIN  |  ZMOUT ╭──────────────────────────╯
+//                           ╰───────────────-─╯                ╰───────────────-─╯
 #define l_cfg_label "l_cfg"
 
-#define l_cfg_LT                     &bt BT_SEL 2        &bt BT_SEL 1        &bt BT_SEL 0       &bt BT_CLR
-#define l_cfg_RT &kp S_ZMRST         &none               &none               &kp KILL_W         
+#define l_cfg_LT                    &rst_btld           &none               &none             &OUT_USB
+#define l_cfg_RT &kp C_BRI_UP       &kp C_VOL_UP        &kp C_NEXT          &none         
 
-#define l_cfg_LM &none              &kp C_NEXT          &kp C_PP            &kp C_VOL_UP        &kp C_BRI_UP
-#define l_cfg_RM &kp S_ZMOUT        &kp C_VOL_UP        &kp C_MUTE          &kp C_NEXT          &none
+#define l_cfg_LM &none              &none               &none               &none             &OUT_BLE
+#define l_cfg_RM &kp C_BRI_DN       &kp C_VOL_DN        &kp C_PP            &none             &none
 
-#define l_cfg_LB &rst_btld          &kp C_PREV          &kp C_MUTE          &kp C_VOL_DN       
-#define l_cfg_RB                    &kp C_VOL_DN        &kp C_PP            &kp C_PREV          &rst_btld
+#define l_cfg_LB &bt BT_CLR         &bt BT_SEL 0        &bt BT_SEL 1        &bt BT_SEL 2       
+#define l_cfg_RB                    &kp C_MUTE          &kp C_PREV          &none             &none
 
 #define l_cfg_LH &kp S_ZMOUT        &kp S_ZMIN
 #define l_cfg_RH &kp S_ZMIN         &kp S_ZMOUT
+
+
+
