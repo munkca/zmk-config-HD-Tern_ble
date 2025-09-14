@@ -9,9 +9,9 @@
 //                                                Symbol & math
 //  * left paired symbols are "linger keys" via hold taps. Tap for left, hold for pair with insertion point between
 //         ╭────────────────────────────────────╮                ╭───────────────────────────────────╮
-//╭────────|    °   |   ≤    |   ≥    |    <    |                |   |    |    \   |    €   |    £   |────────╮       
-//|    ∞   |    [   |   (    |   {    |    >    |                |   /    |    ~   |    %   |    ^   |   &    |
-//|    •   |    ]   |   )    |   }    |         |                |        |    `   |    @   |    #   |   $    |
+//╭────────|        |  APPSW |  APPSW |         |                |   |    |    \   |  <≤    |   >≥   |────────╮       
+//|  GUI   |   ALT  |  SHFT  |  CTRL  |    ∞    |                |   /    |    ~   |    %   |    ^   |   &    |
+//|        |        |   )    |   }    |         |                |        |    `   |    @   |    #   |   $    |
 //╰──────────────────────────╮ dwdlt  |  dwdr   |                | &none  | &appr  ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_sym_label "l_sym"
@@ -28,33 +28,14 @@
 #define l_sym_LH &kp S_DWRDL        &kp S_DWRDR
 #define l_sym_RH &none              &kp &none
 
-//                                         Fkey & Num Row
+
+
+//                                          Numbers & Math
 //          ╭───────────────────────────────────╮                ╭───────────────────────────────────╮
-//╭─────────|        |        |        |        |                |    /*  |   7    |    8   |   9    |────────╮        
-//|   LGUI  |  LALT  |  LSHFT |  LCTRL |        |                |    -+  |  C/4   |   S/5  |  A/6   |   G/=  |
-//|  PScrn  | Sh-TAB |   TAB  |GUI-sh-4|        |                |        |   4    |    5   |   6    |    ≈   |
-//╰──────────────────────────╮  BKSP   |   DEL  |                |    0   |   .    ╭──────────────────────────╯
-//                           ╰──────────────────╯                ╰─────────────────╯
-#define l_fun_label "l_fn"
-
-#define l_fun_LT                    &none               &none               &none               &none
-#define l_fun_RT &SlshStar          &kp N7              &kp N8              &kp N9              
-
-#define l_fun_LM &kp LGUI          &kp LALT            &kp LSHFT            &kp LCTRL           &none
-#define l_fun_RM &MinusPlus        &mt LCTRL N4        &mt RSHFT N5         &mt RALT N6         &mt LGUI EQUAL
-
-#define l_fun_LB &kp PSCRN          &kp LS(TAB)         &kp TAB             &kp LG(LS(4))              
-#define l_fun_RB                    &kp N4              &kp N5              &kp N6              &kp LA(X)
-
-#define l_fun_LH &kp BSPC           &kp DEL
-#define l_fun_RH &kp N0             &kp DOT
-
-//                                        Nav & NumPad (standard)
-//          ╭───────────────────────────────────╮                ╭───────────────────────────────────╮
-//╭─────────|  HOME  |   UP   | PG_UP |         |                |   /*   |   7    |   8    |   9    |────────╮
-//|  Lword  |  LEFT  |  DOWN  |  RGT  |  Rword  |                |   -+   |  C/4   |  S/5   |  A/6   |   G/=  |
-//|   SPC   |   END  |   TAB  | PG_DN |         |                |        |   1    |   2    |   3    |    ≈   |
-//╰──────────────────────────╮  BSPC  |KP_ENTER |                |    0   |   .    ╭──────────────────────────╯
+//╭─────────|    7   |    8   |   9   |    +    |                |    *   |   ≈    |  <≤    |   >≥   |────────╮
+//|    =    |    4   |    5   |   6   |    -    |                |    /   |  CTRL  |  SHFT  |  ALT   |   GUI  |
+//|    0    |    1   |    2   |   3   |         |                |        |   .    |   °    |  pi    |    ·   |
+//╰──────────────────────────╮        |         |                |        |        ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_num_label "l_num"
 
@@ -75,7 +56,7 @@
 //╭────────|   cutl  | copyl | pstel |    ESC   |                |         |  HOME  |   UP   |  PG_UP |───────╮
 //|  gui   |   alt   |  shft |  ctrl |   Find   |                |  Lword  |  LEFT  |  DOWN  |   RGT  | Rword |
 //|  undo  |   cut   |  copy |  pste |          |                |         |   END  |        |  PG_DN |       |
-//╰──────────────────────────╮ APPSW |   APPSW  |                |   back  |   fwd  ╭─────────────────────────╯
+//╰──────────────────────────╮       |          |                |         |        ╭─────────────────────────╯
 //                           ╰──────────────────╯                ╰──────────────────╯
 #define l_nav_label "l_nav"
 
