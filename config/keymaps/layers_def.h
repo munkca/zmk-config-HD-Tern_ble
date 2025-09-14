@@ -49,7 +49,7 @@
 #define l_num_RB                    &kp KP_N1           &kp KP_N2           &kp KP_N3           &kp LA(X)
 
 #define l_num_LH &trans     &trans
-#define l_num_RH &trans     &kp trans
+#define l_num_RH &trans     &trans
 
 //                                           Shorcuts & Navigation
 //         ╭────────────────────────────────────╮                ╭────────────────────────────────────╮
