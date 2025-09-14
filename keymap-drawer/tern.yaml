@@ -221,6 +221,7 @@ combos:
   k: {t: ':', h: Alt+;}
   l: [HD-Vf]
   a: top
+  o: 0.15
 - p: [13, 14]
   k: ;
   l: [HD-Vf]
