@@ -43,7 +43,6 @@ COMBO_LAYER(t_Q,     &lk_qu Q U,    LT3 LT1, l_hd)       // type Qu, linger dele
 COMBO_LAYER(t_Z,     &ak_Z,         LM3 LM1, l_hd)       // Z is typically off map
 COMBO_LAYER(t_V,     &ak_V,         LB3 LB2, l_hd)       // default V key gone. Phonetically similar to F, bottom row instead of top.
 
-
 /* control & modes */
 
 COMBO_ANY(cfg,      &mo l_cfg,     LH1 RH1)        // get the settings/media layer from anywhere
