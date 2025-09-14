@@ -39,6 +39,9 @@ parse_config:
     combo_t_Coln: {align: top, o: 0.15}
     combo_appswitch:    {align: top}
     combo_btclr:  {align: bottom}
+    combo_t_Q:    {align: top, o: 0.15}
+    combo_t_Z:    {align: top}
+    combo_t_V:    {align: bottom, o: 0.15}
     combo_docaps: {draw_separate: true}
     combo_capslk:   {draw_separate: true}
     combo_Gent:   {draw_separate: true}
