@@ -11,18 +11,18 @@
 //         ╭────────────────────────────────────╮                ╭───────────────────────────────────╮
 //╭────────|        |  APPSW |  APPSW |         |                |   |    |    \   |  <≤    |   >≥   |────────╮       
 //|  GUI   |   ALT  |  SHFT  |  CTRL  |    ∞    |                |   /    |    ~   |    %   |    ^   |   &    |
-//|        |        |   )    |   }    |         |                |        |    `   |    @   |    #   |   $    |
+//|        |        |        |        |         |                |        |    `   |    @   |    #   |   $    |
 //╰──────────────────────────╮        |         |                |        |        ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_sym_label "l_sym"
 
-#define l_sym_LT                    &kp S_DEGR          &kp LA(COMMA)       &kp LA(DOT)         &lk_LRltgt
-#define l_sym_RT &kp PIPE           &kp BSLH            &kp C_EURO          &kp C_BPND         
+#define l_sym_LT                    &none               &SlAppy             &SlApBack        &none
+#define l_sym_RT &kp PIPE           &kp BSLH            &LTLTE              &GTGTE       
 
-#define l_sym_LM &kp LA(N5)         &lk_LRbkt           &lk_LRpar           &lk_LRbrc           &kp GT
+#define l_sym_LM &kp LGUI           &kp LALT            &lkp LSHFT          &kp LCTRL           &kp LALT(5)
 #define l_sym_RM &kp FSLH           &mt LCTRL TILDE     &mt RSHFT PRCNT     &mt RALT CARET      &mt RGUI AMPS
 
-#define l_sym_LB &kp LS(LA(9))      &kp RBKT            &kp RPAR            &kp RBRC            
+#define l_sym_LB &none              &none               &none               &none            
 #define l_sym_RB                    &kp GRAVE           &kp AT              &kp HASH            &kp DLLR         
 
 #define l_sym_LH &trans            &trans
