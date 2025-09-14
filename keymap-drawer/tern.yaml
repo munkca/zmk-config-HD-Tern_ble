@@ -193,6 +193,7 @@ combos:
   k: '&num_word 3'
 - p: [2, 3]
   k: '&SlAppy'
+  a: top
 - p: [24, 25]
   k: Caps Wrd
   l: [HD-Vf]
@@ -219,6 +220,7 @@ combos:
 - p: [5, 7]
   k: {t: ':', h: Alt+;}
   l: [HD-Vf]
+  a: top
 - p: [13, 14]
   k: ;
   l: [HD-Vf]
