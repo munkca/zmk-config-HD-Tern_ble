@@ -64,8 +64,8 @@ layers:
   - {t: ▽, type: trans}
   l_sym:
   - ''
-  - '&SlAppy'
   - '&SlApBack'
+  - '&SlAppy'
   - ''
   - '|'
   - \
@@ -235,12 +235,6 @@ combos:
   l: [l_num, l_sym]
 - p: [14, 16]
   k: ':'
-  l: [l_num]
-- p: [13, 14]
-  k: <
-  l: [l_num]
-- p: [13, 17]
-  k: '>'
   l: [l_num]
 - p: [22, 13]
   k: Alt++

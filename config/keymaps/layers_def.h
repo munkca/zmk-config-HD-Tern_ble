@@ -16,7 +16,7 @@
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_sym_label "l_sym"
 
-#define l_sym_LT                    &none               &SlAppy             &SlApBack        &none
+#define l_sym_LT                    &none               &SlApBack           &SlAppy             &none
 #define l_sym_RT &kp PIPE           &kp BSLH            &LTLTE              &GTGTE       
 
 #define l_sym_LM &kp LGUI           &kp LALT            &kp LSHFT           &kp LCTRL           &kp LA(5)
