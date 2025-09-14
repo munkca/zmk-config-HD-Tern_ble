@@ -11,3 +11,6 @@ Based on Moutis's adapted ZMK take on [**Hands Down**](http://handsdownlayout.co
           ╰───────────╯ ╰────────────╯
 ```
 
+# Current layout
+![keymap](keymap-drawer/tern.svg)
+
