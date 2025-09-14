@@ -191,6 +191,8 @@ combos:
   k: l_cfg
 - p: [28, 29]
   k: '&num_word 3'
+  a: bottom
+  o: 0.15
 - p: [2, 3]
   k: '&SlAppy'
   a: top

@@ -49,7 +49,7 @@ parse_config:
     combo_spce: {draw_separate: true}
     combo_esc:   {draw_separate: true}
     combo_sall:   {draw_separate: true}
-  
+    combo_numpad:    {align: bottom, o: 0.15}
 
   zmk_keycode_map:
     # custom mappings
