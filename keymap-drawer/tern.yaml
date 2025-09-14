@@ -83,8 +83,8 @@ layers:
   - {t: '&', h: Gui}
   - ''
   - ''
-  - ''
-  - ''
+  - Print Scrn
+  - Gui+Sft+4
   - '`'
   - '@'
   - '#'
@@ -191,7 +191,7 @@ combos:
   k: {t: '&t_Qu U', h: Q}
   l: [HD-Vf]
   a: top
-  o: 0.15
+  o: 0.3
 - p: [9, 11]
   k: '&ak_Z'
   l: [HD-Vf]
