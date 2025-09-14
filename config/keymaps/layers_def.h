@@ -19,7 +19,7 @@
 #define l_sym_LT                    &none               &SlAppy             &SlApBack        &none
 #define l_sym_RT &kp PIPE           &kp BSLH            &LTLTE              &GTGTE       
 
-#define l_sym_LM &kp LGUI           &kp LALT            &lkp LSHFT          &kp LCTRL           &kp LALT(5)
+#define l_sym_LM &kp LGUI           &kp LALT            &lkp LSHFT          &kp LCTRL           &kp LA(5)
 #define l_sym_RM &kp FSLH           &mt LCTRL TILDE     &mt RSHFT PRCNT     &mt RALT CARET      &mt RGUI AMPS
 
 #define l_sym_LB &none              &none               &none               &none            
@@ -39,14 +39,14 @@
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_num_label "l_num"
 
-#define l_num_LT                    &kp HOME            &kp UP              &kp PG_UP           &none
-#define l_num_RT &SlshStar          &kp KP_N7           &kp KP_N8           &kp KP_N9           
+#define l_num_LT                    &kp N7              &kp N8              &kp N9           &kp PLUS
+#define l_num_RT &kp STAR           &kp LA(X)           &LTLTE              &GTGTE         
 
-#define l_num_LM &kp S_WRDL         &kp LEFT            &kp DOWN            &kp RIGHT           &kp S_WRDR
-#define l_num_RM &MinusPlus         &mt LCTRL KP_N4     &mt RSHFT KP_N5     &mt RALT KP_N6      &mt LGUI KP_EQUAL
+#define l_num_LM &kp EQUAL          &kp N4              &kp N5              &kp N6            &kp MINUS 
+#define l_num_RM &kp SLASH          &kp LCTRL           &kp RSHFT           &kp RALT          &kp LGUI
 
-#define l_num_LB &kp S_DBTM         &kp END             &kp SPACE           &kp PG_DN          
-#define l_num_RB                    &kp KP_N1           &kp KP_N2           &kp KP_N3           &kp LA(X)
+#define l_num_LB &kp N0             &kp N1              &kp N2              &kp N3          
+#define l_num_RB                    &kp DOT             &kp LA(LS(8))       &kp LA(P)         &kp LA(LS((9))
 
 #define l_num_LH &trans     &trans
 #define l_num_RH &trans     &trans
