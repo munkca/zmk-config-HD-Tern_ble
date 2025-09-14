@@ -11,7 +11,7 @@
 //         ╭────────────────────────────────────╮                ╭───────────────────────────────────╮
 //╭────────|        |  APPSW |  APPSW |         |                |   |    |    \   |  <≤    |   >≥   |────────╮       
 //|  GUI   |   ALT  |  SHFT  |  CTRL  |    ∞    |                |   /    |    ~   |    %   |    ^   |   &    |
-//|        |        |        |        |         |                |        |    `   |    @   |    #   |   $    |
+//|        |        | PrtSc  | PrtSc4 |         |                |        |    `   |    @   |    #   |   $    |
 //╰──────────────────────────╮        |         |                |        |        ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_sym_label "l_sym"
@@ -22,7 +22,7 @@
 #define l_sym_LM &kp LGUI           &kp LALT            &kp LSHFT           &kp LCTRL           &kp LA(5)
 #define l_sym_RM &kp FSLH           &mt LCTRL TILDE     &mt RSHFT PRCNT     &mt RALT CARET      &mt RGUI AMPS
 
-#define l_sym_LB &none              &none               &none               &none            
+#define l_sym_LB &none              &none               &kp PSCRN           &kp LG(LS(4))            
 #define l_sym_RB                    &kp GRAVE           &kp AT              &kp HASH            &kp DLLR         
 
 #define l_sym_LH &trans            &trans
