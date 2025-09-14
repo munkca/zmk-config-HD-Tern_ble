@@ -1,0 +1,247 @@
+layout: {zmk_keyboard: tern}
+layers:
+  HD-Vf:
+  - '&ak_W'
+  - '&ak_M'
+  - '&ak_G'
+  - '&ak_X'
+  - {t: '{', h: '&t_pairDquo RBRC'}
+  - {t: '&ak_DOT', s: ':'}
+  - {t: '?', s: '!'}
+  - '&ak_J'
+  - {t: '&ak_S S', h: Gui}
+  - {t: '&ak_C C', h: Alt}
+  - {t: '&ak_N N', h: Shift}
+  - {t: '&ak_T T', h: Ctrl}
+  - '&ak_K'
+  - {t: '&ak_CMMA', h: CAPSLOCK, s: ;}
+  - {t: '&ak_A A', h: Ctrl}
+  - {t: '&ak_E E', h: Shift}
+  - {t: '&ak_I I', h: Alt}
+  - {t: '&ak_H H', h: Gui}
+  - '&ak_F'
+  - '&ak_P'
+  - '&ak_L'
+  - '&ak_D'
+  - '&ak_U'
+  - '&ak_O'
+  - '&ak_Y'
+  - '&ak_B'
+  - {t: '&ak_BSPC', h: l_sym, s: DELETE}
+  - {t: '&ak_R R', h: l_nav}
+  - ␣
+  - {t: RETURN, h: l_num}
+  l_akDOT:
+  - T
+  - L
+  - L
+  - L
+  - $
+  - .
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Caps Wrd
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_sym:
+  - ''
+  - '&SlAppy'
+  - '&SlApBack'
+  - ''
+  - '|'
+  - \
+  - {t: <, s: LALT(COMMA)}
+  - {t: '>', s: LALT(DOT)}
+  - Gui
+  - Alt
+  - Shift
+  - Ctrl
+  - Alt+5
+  - /
+  - {t: '~', h: Ctrl}
+  - {t: '%', h: Shift}
+  - {t: ^, h: Alt}
+  - {t: '&', h: Gui}
+  - ''
+  - ''
+  - ''
+  - ''
+  - '`'
+  - '@'
+  - '#'
+  - $
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_num:
+  - '7'
+  - '8'
+  - '9'
+  - +
+  - '*'
+  - Alt+X
+  - {t: <, s: LALT(COMMA)}
+  - {t: '>', s: LALT(DOT)}
+  - '='
+  - '4'
+  - '5'
+  - '6'
+  - '-'
+  - /
+  - Ctrl
+  - Shift
+  - Alt
+  - Gui
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - .
+  - Alt+Sft+8
+  - Alt+P
+  - Alt+Sft+9
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  l_nav:
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Esc
+  - ''
+  - Home
+  - ↑
+  - Page Up
+  - Gui
+  - Alt
+  - Shift
+  - Ctrl
+  - Gui+F
+  - Alt+←
+  - ←
+  - ↓
+  - →
+  - Alt+→
+  - UNDO
+  - CUT
+  - Gui+C
+  - Gui+AltGr+Sft+V
+  - End
+  - ''
+  - Page Down
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_cfg:
+  - {t: Reset, h: Boot}
+  - ''
+  - ''
+  - Out USB
+  - BRI UP
+  - Vol Up
+  - ⏭️
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Out BLE
+  - BRI DN
+  - Vol Down
+  - ⏯
+  - ''
+  - ''
+  - BT CLR
+  - BT 1
+  - BT 2
+  - BT 3
+  - MUTE
+  - ⏮️
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
+combos:
+- p: [27, 28]
+  k: l_cfg
+- p: [28, 29]
+  k: '&num_word 3'
+- p: [2, 3]
+  k: '&SlAppy'
+- p: [24, 25]
+  k: Caps Wrd
+  l: [HD-Vf]
+- p: [23, 24, 25]
+  k: Caps Lock
+  l: [HD-Vf]
+- p: [12, 20, 21]
+  k: Gui+RETURN
+- p: [12, 21]
+  k: RETURN
+- p: [11, 12]
+  k: ␣
+- p: [8, 11]
+  k: Esc
+- p: [18, 21]
+  k: Gui+A
+- p: [5, 7]
+  k: {t: ':', h: Alt+;}
+  l: [HD-Vf]
+- p: [13, 14]
+  k: ;
+  l: [HD-Vf]
+- p: [18, 19]
+  k: {t: '[', h: '&t_pairBkt RBKT'}
+  l: [l_num, l_sym]
+- p: [19, 20]
+  k: {t: (, h: '&t_pairPar RPAR'}
+  l: [l_num, l_sym]
+- p: [20, 21]
+  k: {t: '{', h: '&t_pairBrc RBRC'}
+  l: [l_num, l_sym]
+- p: [24, 25]
+  k: ']'
+  l: [l_num, l_sym]
+- p: [23, 24]
+  k: )
+  l: [l_num, l_sym]
+- p: [22, 23]
+  k: '}'
+  l: [l_num, l_sym]
+- p: [14, 16]
+  k: ':'
+  l: [l_num]
+- p: [13, 14]
+  k: <
+  l: [l_num]
+- p: [13, 17]
+  k: '>'
+  l: [l_num]
+- p: [22, 13]
+  k: Alt++
+  l: [l_num]

@@ -19,7 +19,7 @@
 #define l_sym_LT                    &none               &SlAppy             &SlApBack        &none
 #define l_sym_RT &kp PIPE           &kp BSLH            &LTLTE              &GTGTE       
 
-#define l_sym_LM &kp LGUI           &kp LALT            &lkp LSHFT          &kp LCTRL           &kp LA(5)
+#define l_sym_LM &kp LGUI           &kp LALT            &kp LSHFT           &kp LCTRL           &kp LA(5)
 #define l_sym_RM &kp FSLH           &mt LCTRL TILDE     &mt RSHFT PRCNT     &mt RALT CARET      &mt RGUI AMPS
 
 #define l_sym_LB &none              &none               &none               &none            
