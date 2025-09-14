@@ -196,19 +196,26 @@ combos:
 - p: [24, 25]
   k: Caps Wrd
   l: [HD-Vf]
+  draw_separate: true
 - p: [23, 24, 25]
   k: Caps Lock
   l: [HD-Vf]
+  draw_separate: true
 - p: [12, 20, 21]
   k: Gui+RETURN
+  draw_separate: true
 - p: [12, 21]
   k: RETURN
+  draw_separate: true
 - p: [11, 12]
   k: ␣
+  draw_separate: true
 - p: [8, 11]
   k: Esc
+  draw_separate: true
 - p: [18, 21]
   k: Gui+A
+  draw_separate: true
 - p: [5, 7]
   k: {t: ':', h: Alt+;}
   l: [HD-Vf]
