@@ -12,7 +12,7 @@
 //╭────────|        |  APPSW |  APPSW |         |                |   |    |    \   |  <≤    |   >≥   |────────╮       
 //|  GUI   |   ALT  |  SHFT  |  CTRL  |    ∞    |                |   /    |    ~   |    %   |    ^   |   &    |
 //|        |        |   )    |   }    |         |                |        |    `   |    @   |    #   |   $    |
-//╰──────────────────────────╮ dwdlt  |  dwdr   |                | &none  | &appr  ╭──────────────────────────╯
+//╰──────────────────────────╮        |         |                |        |        ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_sym_label "l_sym"
 
@@ -25,8 +25,8 @@
 #define l_sym_LB &kp LS(LA(9))      &kp RBKT            &kp RPAR            &kp RBRC            
 #define l_sym_RB                    &kp GRAVE           &kp AT              &kp HASH            &kp DLLR         
 
-#define l_sym_LH &kp S_DWRDL        &kp S_DWRDR
-#define l_sym_RH &none              &kp &none
+#define l_sym_LH &trans            &trans
+#define l_sym_RH &trans            &trans
 
 
 
@@ -48,8 +48,8 @@
 #define l_num_LB &kp S_DBTM         &kp END             &kp SPACE           &kp PG_DN          
 #define l_num_RB                    &kp KP_N1           &kp KP_N2           &kp KP_N3           &kp LA(X)
 
-#define l_num_LH &lt l_fun BSPC     &lt l_nav KP_ENTER
-#define l_num_RH &kp KP_N0          &kp KP_DOT
+#define l_num_LH &trans     &trans
+#define l_num_RH &trans     &kp trans
 
 //                                           Shorcuts & Navigation
 //         ╭────────────────────────────────────╮                ╭────────────────────────────────────╮
@@ -69,8 +69,8 @@
 #define l_nav_LB &kp UNDO           &kp CUT             &kp S_COPY          &kp S_PSTM          
 #define l_nav_RB                    &kp END             &none               &kp PG_DN           &none
 
-#define l_nav_LH &SlApBack          &SlAppy
-#define l_nav_RH &kp S_BBACK        &kp S_BFWD
+#define l_nav_LH &trans        &trans
+#define l_nav_RH &trans        &trans
 
 //                                          Keyboard & System Settings
 //                      L_CFG Keyboard Configuration (left) and Media Settings (right)
@@ -78,7 +78,7 @@
 //╭────────| BOOT  |       |         |   USB   │                │  BRI+  |  VOL+  |  NEXT  |        |────────╮
 //│        |       |       |         |    BT   |                |  BRI-  |  VOL-  |   PP   |        │        |
 //│  BTC   |  BT0  │  BT1  |  BT2    │         |                |        |  MUTE  |  PREV  |        │        |
-//╰──────────────────────────╮ ZMOUT |  ZMIN   │                │  ZMIN  |  ZMOUT ╭──────────────────────────╯
+//╰──────────────────────────╮       |         │                │        |        ╭──────────────────────────╯
 //                           ╰───────────────-─╯                ╰───────────────-─╯
 
 
@@ -93,5 +93,5 @@
 #define l_cfg_LB &bt BT_CLR         &bt BT_SEL 0        &bt BT_SEL 1        &bt BT_SEL 2       
 #define l_cfg_RB                    &kp C_MUTE          &kp C_PREV          &none             &none
 
-#define l_cfg_LH &kp S_ZMOUT        &kp S_ZMIN
-#define l_cfg_RH &kp S_ZMIN         &kp S_ZMOUT
+#define l_cfg_LH &trans       &trans
+#define l_cfg_RH &trans         &trans
