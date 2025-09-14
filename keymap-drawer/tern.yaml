@@ -187,6 +187,20 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
 combos:
+- p: [0, 2]
+  k: {t: '&t_Qu U', h: Q}
+  l: [HD-Vf]
+  a: top
+  o: 0.15
+- p: [9, 11]
+  k: '&ak_Z'
+  l: [HD-Vf]
+  a: top
+- p: [18, 19]
+  k: '&ak_V'
+  l: [HD-Vf]
+  a: bottom
+  o: 0.15
 - p: [27, 28]
   k: l_cfg
 - p: [28, 29]
