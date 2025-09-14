@@ -80,8 +80,7 @@ COMBO_LAYER(numRBRC,    &kp RBRC,           RB0 RB1, l_num l_sym)
 
 COMBO_LAYER(numCOLN,    &kp COLON,          RM1 RM3, l_num)
 
-COMBO_LAYER(numLT,      &kp LT,             RM0 RM1, l_num)
-COMBO_LAYER(numGT,      &kp GT,             RM0 RM4, l_num)
+
 COMBO_LAYER(numDASH,    &kp LA(PLUS),       RB0 RM0, l_num) // PLUS MINUS
 
 
