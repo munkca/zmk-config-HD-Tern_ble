@@ -46,15 +46,7 @@
                 >;
             };
 
-           l_fun {
-                label = l_fun_label;
-                bindings = <
-                                l_fun_LT            l_fun_RT
-                                l_fun_LM            l_fun_RM
-                                l_fun_LB            l_fun_RB
-                                l_fun_LH            l_fun_RH
-                >;
-            };
+        
 
            l_num {
                 label = l_num_label;
