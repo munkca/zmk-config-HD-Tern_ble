@@ -41,7 +41,7 @@
 
 /* control & modes */
 
-COMBO_ANY(cfg,      &mo l_cfg,     LR1 LH1)        // get the settings/media layer from anywhere
+COMBO_ANY(cfg,      &mo l_cfg,     LH1 RH1)        // get the settings/media layer from anywhere
 
 COMBO_ANY(numpad,    &num_word l_num,    RH1 RH2)
 COMBO_ANY(appswitch, &SlAppy,       LT1 LT0)        // App switch
