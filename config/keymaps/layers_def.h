@@ -46,7 +46,7 @@
 #define l_num_RM &kp SLASH          &kp LCTRL           &kp RSHFT           &kp RALT          &kp LGUI
 
 #define l_num_LB &kp N0             &kp N1              &kp N2              &kp N3          
-#define l_num_RB                    &kp DOT             &kp LA(LS(8))       &kp LA(P)         &kp LA(LS((9))
+#define l_num_RB                    &kp DOT             &kp LA(LS(8))       &kp LA(P)         &kp LA(LS(9))
 
 #define l_num_LH &trans     &trans
 #define l_num_RH &trans     &trans
