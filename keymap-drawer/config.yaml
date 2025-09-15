@@ -100,6 +100,9 @@ parse_config:
       shifted: "!"
       tap: "?"
     "&t_pairDquo": '"'
+    "&lk_qu":
+      shifted: "Q"
+      tap: "QU"
       
   # ZMK
   zmk_keycode_map: 

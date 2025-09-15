@@ -188,7 +188,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [0, 2]
-  k: {t: '&t_Qu U', h: Q}
+  k: {t: QU, s: Q}
   l: [HD-Vf]
   a: top
   o: 0.3
