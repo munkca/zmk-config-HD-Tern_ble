@@ -68,32 +68,32 @@ parse_config:
   # ZMK
   zmk_keycode_map:
     # Adaptive keys
-    &ak_A: A
-    &ak_B: B
-    &ak_C: C
-    &ak_D: D
-    &ak_E: E
-    &ak_F: F
-    &ak_G: G
-    &ak_H: H
-    &ak_I: I
-    &ak_J: J
-    &ak_K: K
-    &ak_L: L
-    &ak_M: M
-    &ak_N: N
-    &ak_O: O
-    &ak_P: P
-    &ak_Q: Q
-    &ak_R: R
-    &ak_S: S
-    &ak_T: T
-    &ak_U: U
-    &ak_V: V
-    &ak_W: W
-    &ak_X: X
-    &ak_Y: Y
-    &ak_Z: Z
+    &ak_A: "A"
+    &ak_B: "B"
+    &ak_C: "C"
+    &ak_D: "D"
+    &ak_E: "E"
+    &ak_F: "F"
+    &ak_G: "G"
+    &ak_H: "H"
+    &ak_I: "I"
+    &ak_J: "J"
+    &ak_K: "K"
+    &ak_L: "L"
+    &ak_M: "M"
+    &ak_N: "N"
+    &ak_O: "O"
+    &ak_P: "P"
+    &ak_Q: "Q"
+    &ak_R: "R"
+    &ak_S: "S"
+    &ak_T: "T"
+    &ak_U: "U"
+    &ak_V: "V"
+    &ak_W: "W"
+    &ak_X: "X"
+    &ak_Y: "Y"
+    &ak_Z: "Z"
     
     # Symbols
     EXCLAMATION: "!"
