@@ -5,7 +5,7 @@ parse_config:
     tap: $$mdi:transfer$$
     type: trans
   
-  zmk_remove_keycode_prefix: ["&ak"] 
+  zmk_remove_keycode_prefix: ["&ak_"] 
   
   raw_binding_map:
     '&SlAppy': Win Next
