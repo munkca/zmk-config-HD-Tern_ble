@@ -91,6 +91,10 @@ parse_config:
       "&ak_X": X
       "&ak_Y": Y
       "&ak_Z": Z
+      "&ak_CMMA": Magic Comma
+      "&ak_DOT": 
+        shifted: ":"
+        tap: "."
 
   # ZMK
   zmk_keycode_map:
