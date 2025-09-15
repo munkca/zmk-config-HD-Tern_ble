@@ -91,9 +91,6 @@ zmk_keycode_map:
     RETURN:
       type: enter
       tap: $$mdi:keyboard-return$$
-    ENTER:
-      type: enter
-      tap: $$mdi:keyboard-return$$
     ESC: $$mdi:keyboard-esc$$
     TAB: $$mdi:keyboard-tab$$
     LS(TAB): $$mdi:keyboard-tab-reverse$$
