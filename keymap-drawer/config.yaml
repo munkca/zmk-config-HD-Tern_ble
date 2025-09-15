@@ -103,11 +103,11 @@ parse_config:
       shifted: "Q"
       tap: "QU
     "&LTLTE":
-      shifted: "≤"
-      tap: "<"    
+      shifted: ≤
+      tap: <    
     "&GTGTE":
-      shifted: "≥"
-      tap: ">"
+      shifted: ≥
+      tap: >
       
   # ZMK
   zmk_keycode_map: 
