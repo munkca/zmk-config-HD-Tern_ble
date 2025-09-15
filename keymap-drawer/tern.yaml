@@ -70,7 +70,7 @@ layers:
   - '|'
   - {t: \, s: '|'}
   - {t: <, s: ≤}
-  - {s: ≥}
+  - {t: '>', s: ≥}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
@@ -101,7 +101,7 @@ layers:
   - '*'
   - ≈
   - {t: <, s: ≤}
-  - {s: ≥}
+  - {t: '>', s: ≥}
   - {t: '=', s: +}
   - {t: '4', s: $}
   - {t: '5', s: '%'}

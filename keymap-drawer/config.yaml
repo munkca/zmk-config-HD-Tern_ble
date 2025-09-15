@@ -105,10 +105,10 @@ parse_config:
     
     '&LTLTE':
       shifted: ≤
-      tap: <    
+      tap: "<"    
     '&GTGTE':
       shifted: ≥
-      tap: >
+      tap: ">"
       
   # ZMK
   zmk_keycode_map: 
