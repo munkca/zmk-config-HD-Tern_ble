@@ -1,34 +1,34 @@
 layout: {zmk_keyboard: tern}
 layers:
   HD-Vf:
-  - W
-  - M
-  - G
-  - X
+  - '&ak_W'
+  - '&ak_M'
+  - '&ak_G'
+  - '&ak_X'
   - {t: '{', h: '&t_pairDquo RBRC'}
   - {t: '&ak_DOT', s: ':'}
   - {t: '?', s: '!'}
-  - J
-  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: C, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: T, h: '$$mdi:apple-keyboard-control$$'}
-  - K
+  - '&ak_J'
+  - {t: '&ak_S S', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '&ak_C C', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '&ak_N N', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '&ak_T T', h: '$$mdi:apple-keyboard-control$$'}
+  - '&ak_K'
   - {t: '&ak_CMMA', h: '$$mdi:apple-keyboard-caps$$', s: ;}
-  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: E, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: H, h: '$$mdi:apple-keyboard-command$$'}
-  - F
-  - P
-  - L
-  - D
-  - U
-  - O
-  - Y
-  - B
+  - {t: '&ak_A A', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '&ak_E E', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '&ak_I I', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '&ak_H H', h: '$$mdi:apple-keyboard-command$$'}
+  - '&ak_F'
+  - '&ak_P'
+  - '&ak_L'
+  - '&ak_D'
+  - '&ak_U'
+  - '&ak_O'
+  - '&ak_Y'
+  - '&ak_B'
   - {t: '&ak_BSPC', h: l_sym, s: '$$mdi:backspace-reverse-outline$$'}
-  - {t: R, h: l_nav}
+  - {t: '&ak_R R', h: l_nav}
   - $$mdi:keyboard-space$$
   - {t: RETURN, h: l_num}
   l_akDOT:
@@ -193,11 +193,11 @@ combos:
   a: top
   o: 0.3
 - p: [9, 11]
-  k: Z
+  k: '&ak_Z'
   l: [HD-Vf]
   a: top
 - p: [18, 19]
-  k: V
+  k: '&ak_V'
   l: [HD-Vf]
   a: bottom
   o: 0.15
