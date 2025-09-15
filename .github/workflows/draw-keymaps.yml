@@ -7,7 +7,7 @@ on:
       - master
     paths:
       - 'config/*.keymap'
-      - 'config/*.dtsi'
+      - 'config/layouts/hd/*.dtsi'
       - keymap-drawer/config.yaml
       - .github/workflows/draw-keymaps.yml
 
