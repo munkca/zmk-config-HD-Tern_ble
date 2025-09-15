@@ -316,8 +316,8 @@ draw_config:
   inner_pad_h: 1.5
 
   # padding between layers
-  outer_pad_w: 0
-  outer_pad_h: 0
+  outer_pad_w: 10
+  outer_pad_h: 10
 
   # gap between two halves for ortho layout generator
   split_gap: 20 # This doesn't seem to have any effect either? 🤔
@@ -327,6 +327,6 @@ draw_config:
 
   # shrink font size for legends wider than this many chars, set to 0 to disable
   # ideal value depends on the font size defined in svg_style and width of the boxes
-  shrink_wide_legends: 3
+  shrink_wide_legends: 8
 
     
