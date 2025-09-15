@@ -99,10 +99,11 @@ parse_config:
     "&QuesExcl":
       shifted: "!"
       tap: "?"
+    "&t_pairDquo": '"'
       
   # ZMK
   zmk_keycode_map: 
-
+    LA(5): "∞"
     # Symbols
     EXCLAMATION: "!"
     EXCL: "!"

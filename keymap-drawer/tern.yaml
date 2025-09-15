@@ -5,7 +5,7 @@ layers:
   - M
   - G
   - X
-  - {t: '{', h: '&t_pairDquo RBRC'}
+  - {t: '{', h: '"'}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
   - J
@@ -75,7 +75,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
-  - Alt+5
+  - ∞
   - {t: /, s: '?'}
   - {t: '~', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '%', h: '$$mdi:apple-keyboard-shift$$'}
