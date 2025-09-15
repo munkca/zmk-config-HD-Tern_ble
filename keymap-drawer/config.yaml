@@ -112,9 +112,9 @@ parse_config:
     LA(P): "π"
     LA(LS(8)): "°"
     LA(LS(9)): "·"
-    LG(C): COPY
+    S_COPY: COPY
     S_PSTM: Paste Follow
-    LG(F): FIND
+    S_FIND: FIND
   
     LA(5): "∞"
     # Symbols
@@ -330,7 +330,7 @@ parse_config:
     combo_btclr:  {align: bottom}
     combo_t_Q:    {align: top, o: 0.5}
     combo_t_Z:    {align: top}
-    combo_t_V:    {align: bottom, o: 0.15}
+    combo_t_V:    {align: bottom, o: 0.25}
     combo_docaps: {draw_separate: true}
     combo_capslk:   {draw_separate: true}
     combo_Gent:   {draw_separate: true}

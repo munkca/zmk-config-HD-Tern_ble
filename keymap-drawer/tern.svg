@@ -374,10 +374,10 @@ path.combo {
 <text x="200" y="99" class="combo tap">Z</text>
 </g>
 <g class="combo combopos-2">
-<path d="M80,293 h-34 a6.0,6.0 0 0 1 -6.0,-6.0 v-20" class="combo"/>
-<path d="M80,293 h34 a6.0,6.0 0 0 0 6.0,-6.0 v-40" class="combo"/>
-<rect rx="4" ry="4" x="65" y="278" width="30" height="30" class="combo"/>
-<text x="80" y="293" class="combo tap">V</text>
+<path d="M80,301 h-34 a6.0,6.0 0 0 1 -6.0,-6.0 v-28" class="combo"/>
+<path d="M80,301 h34 a6.0,6.0 0 0 0 6.0,-6.0 v-48" class="combo"/>
+<rect rx="4" ry="4" x="65" y="286" width="30" height="30" class="combo"/>
+<text x="80" y="301" class="combo tap">V</text>
 </g>
 <g class="combo combopos-3">
 <path d="M520,320 l-53,0" class="combo"/>

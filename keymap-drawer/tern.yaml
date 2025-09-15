@@ -200,7 +200,7 @@ combos:
   k: V
   l: [HD-Vf]
   a: bottom
-  o: 0.15
+  o: 0.25
 - p: [27, 28]
   k: l_cfg
 - p: [28, 29]
