@@ -86,8 +86,6 @@ parse_config:
     combo_tch:   {draw_separate: true}
 
 zmk_keycode_map:
-     
-   # Whitespace
     ESC: Esc
     SPACE: ␣
     BSPC: ⌫
