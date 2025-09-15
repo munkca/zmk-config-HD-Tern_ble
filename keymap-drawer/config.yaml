@@ -124,8 +124,7 @@ zmk_keycode_map:
     # System
     C_POWER: $$mdi:power-standby$$
     C_AL_LOCK: $$mdi:lock$$
-    K_CANCEL: $$mdi:close
-    -box$$
+    K_CANCEL: $$mdi:close-box$$
 
     # custom mappings
     LC(LG(LEFT)): Desk Left
