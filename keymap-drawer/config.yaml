@@ -88,15 +88,12 @@ parse_config:
 zmk_keycode_map:
      
    # Whitespace
-    RET:  $$mdi:keyboard-return$$
-    ESC: $$mdi:keyboard-esc$$
-    TAB: $$mdi:keyboard-tab$$
-    LS(TAB): $$mdi:keyboard-tab-reverse$$
-    SPACE: $$mdi:keyboard-space$$
-    BACKSPACE: $$mdi:backspace$$
-    BSPC: $$mdi:backspace$$
-    DELETE: $$mdi:backspace-reverse-outline$$
-    DEL: $$mdi:backspace-reverse-outline$$
+    ESC: Esc
+    SPACE: ␣
+    BSPC: ⌫
+    RET: ⏎
+    TAB: ↹
+    DEL: ⌦
 
     # Locks
     CAPSLOCK: $$mdi:apple-keyboard-caps$$
