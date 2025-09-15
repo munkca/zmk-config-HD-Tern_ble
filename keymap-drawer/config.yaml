@@ -102,10 +102,11 @@ parse_config:
     "&t_Qu":
       shifted: "Q"
       tap: "QU
-    "&LTLTE":
+    
+    '&LTLTE':
       shifted: ≤
       tap: <    
-    "&GTGTE":
+    '&GTGTE':
       shifted: ≥
       tap: >
       
