@@ -100,7 +100,7 @@ parse_config:
       shifted: "!"
       tap: "?"
     "&t_pairDquo": '"'
-    "&lk_qu":
+    "&t_Qu":
       shifted: "Q"
       tap: "QU"
       

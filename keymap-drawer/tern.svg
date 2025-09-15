@@ -364,6 +364,7 @@ path.combo {
 <path d="M200,-5 h74 a6.0,6.0 0 0 1 6.0,6.0 v32" class="combo"/>
 <rect rx="4" ry="4" x="185" y="-20" width="30" height="30" class="combo"/>
 <text x="200" y="-5" class="combo tap">QU</text>
+<text x="200" y="6" class="combo hold">Q</text>
 <text x="200" y="-16" class="combo shifted">Q</text>
 </g>
 <g class="combo combopos-1">
