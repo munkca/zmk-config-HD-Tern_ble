@@ -14,7 +14,12 @@ parse_config:
     '&SlApBack': Win Prev
     '&caps_word': Caps Wrd
     '&inv_qm': ¿
-
+    
+    # Empty
+    "&none":
+      tap: $$mdi:minus-circle-outline$$
+      type: none
+      
     '&out OUT_USB': Out USB
     '&out OUT_BLE': Out BLE
 
@@ -81,9 +86,14 @@ parse_config:
     combo_tch:   {draw_separate: true}
 
 zmk_keycode_map:
-
+     
    # Whitespace
-    RETURN: $$mdi:keyboard-return$$
+    RETURN:
+      type: enter
+      tap: $$mdi:keyboard-return$$
+    ENTER:
+      type: enter
+      tap: $$mdi:keyboard-return$$
     ESC: $$mdi:keyboard-esc$$
     TAB: $$mdi:keyboard-tab$$
     LS(TAB): $$mdi:keyboard-tab-reverse$$
