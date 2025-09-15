@@ -1,6 +1,3 @@
-    '&SlAppy': Win Next
-    '&SlApBack': Win Prev
-
 parse_config:
   mark_alternate_layer_activators: true
   sticky_label: $$mdi:gesture-tap-hold$$

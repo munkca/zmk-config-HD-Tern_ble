@@ -9,16 +9,16 @@ layers:
   - {t: '&ak_DOT', s: ':'}
   - {t: '?', s: '!'}
   - '&ak_J'
-  - {t: '&ak_S S', h: Gui}
-  - {t: '&ak_C C', h: Alt}
-  - {t: '&ak_N N', h: Shift}
-  - {t: '&ak_T T', h: Ctrl}
+  - {t: '&ak_S S', h: LGUI}
+  - {t: '&ak_C C', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '&ak_N N', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '&ak_T T', h: '$$mdi:apple-keyboard-control$$'}
   - '&ak_K'
-  - {t: '&ak_CMMA', h: CAPSLOCK, s: ;}
-  - {t: '&ak_A A', h: Ctrl}
-  - {t: '&ak_E E', h: Shift}
-  - {t: '&ak_I I', h: Alt}
-  - {t: '&ak_H H', h: Gui}
+  - {t: '&ak_CMMA', h: '$$mdi:apple-keyboard-caps$$', s: ;}
+  - {t: '&ak_A A', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '&ak_E E', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '&ak_I I', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '&ak_H H', h: LGUI}
   - '&ak_F'
   - '&ak_P'
   - '&ak_L'
@@ -27,9 +27,9 @@ layers:
   - '&ak_O'
   - '&ak_Y'
   - '&ak_B'
-  - {t: '&ak_BSPC', h: l_sym, s: DELETE}
+  - {t: '&ak_BSPC', h: l_sym, s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '&ak_R R', h: l_nav}
-  - ␣
+  - $$mdi:keyboard-space$$
   - {t: RETURN, h: l_num}
   l_akDOT:
   - T
@@ -37,7 +37,7 @@ layers:
   - L
   - L
   - $
-  - .
+  - {t: ., s: '>'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -45,7 +45,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Caps Wrd
+  - $$mdi:alpha-w-box$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -63,29 +63,29 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   l_sym:
-  - ''
-  - '&SlApBack'
-  - '&SlAppy'
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Win Prev
+  - Win Next
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '|'
-  - \
+  - {t: \, s: '|'}
   - {t: <, s: LALT(COMMA)}
   - {t: '>', s: LALT(DOT)}
-  - Gui
-  - Alt
-  - Shift
-  - Ctrl
+  - LGUI
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - Alt+5
-  - /
-  - {t: '~', h: Ctrl}
-  - {t: '%', h: Shift}
-  - {t: ^, h: Alt}
-  - {t: '&', h: Gui}
-  - ''
-  - ''
-  - Print Scrn
+  - {t: /, s: '?'}
+  - {t: '~', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '%', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: ^, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '&', h: RGUI}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PSCRN
   - Gui+Sft+4
-  - '`'
+  - {t: '`', s: '~'}
   - '@'
   - '#'
   - $
@@ -94,29 +94,29 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   l_num:
-  - '7'
-  - '8'
-  - '9'
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
   - +
   - '*'
   - Alt+X
   - {t: <, s: LALT(COMMA)}
   - {t: '>', s: LALT(DOT)}
-  - '='
-  - '4'
-  - '5'
-  - '6'
-  - '-'
-  - /
-  - Ctrl
-  - Shift
-  - Alt
-  - Gui
-  - '0'
-  - '1'
-  - '2'
-  - '3'
-  - .
+  - {t: '=', s: +}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: '-', s: _}
+  - {t: /, s: '?'}
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-option$$
+  - LGUI
+  - {t: '0', s: )}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: ., s: '>'}
   - Alt+Sft+8
   - Alt+P
   - Alt+Sft+9
@@ -128,60 +128,60 @@ layers:
   - Ctl+X
   - Ctl+C
   - Ctl+V
-  - Esc
-  - ''
-  - Home
-  - ↑
-  - Page Up
-  - Gui
-  - Alt
-  - Shift
-  - Ctrl
+  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - HOME
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:transfer-up$$
+  - LGUI
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - Gui+F
-  - Alt+←
-  - ←
-  - ↓
-  - →
-  - Alt+→
+  - Alt+$$mdi:arrow-left-bold$$
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - Alt+$$mdi:arrow-right-bold$$
   - UNDO
   - CUT
   - Gui+C
   - Gui+AltGr+Sft+V
-  - End
-  - ''
-  - Page Down
-  - ''
+  - END
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:transfer-down$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   l_cfg:
-  - {t: Reset, h: Boot}
-  - ''
-  - ''
-  - Out USB
-  - BRI UP
-  - Vol Up
-  - ⏭️
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Out BLE
-  - BRI DN
-  - Vol Down
-  - ⏯
-  - ''
-  - ''
-  - BT CLR
+  - {t: '$$mdi:backup-restore$$', h: '$$mdi:progress-download$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - OUT USB
+  - $$mdi:brightness-5$$
+  - $$mdi:volume-high$$
+  - $$mdi:skip-next$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - OUT BLE
+  - $$mdi:brightness-7$$
+  - $$mdi:volume-low$$
+  - $$mdi:play-pause$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:bluetooth-off$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - MUTE
-  - ⏮️
-  - ''
-  - ''
+  - $$mdi:volume-off$$
+  - $$mdi:skip-previous$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {type: held}
@@ -208,14 +208,14 @@ combos:
   a: bottom
   o: 0.15
 - p: [2, 3]
-  k: '&SlAppy'
+  k: Win Next
   a: top
 - p: [24, 25]
-  k: Caps Wrd
+  k: $$mdi:alpha-w-box$$
   l: [HD-Vf]
   draw_separate: true
 - p: [23, 24, 25]
-  k: Caps Lock
+  k: $$mdi:apple-keyboard-caps$$
   l: [HD-Vf]
   draw_separate: true
 - p: [12, 20, 21]
@@ -225,10 +225,10 @@ combos:
   k: RETURN
   draw_separate: true
 - p: [11, 12]
-  k: ␣
+  k: $$mdi:keyboard-space$$
   draw_separate: true
 - p: [8, 11]
-  k: Esc
+  k: $$mdi:keyboard-esc$$
   draw_separate: true
 - p: [18, 21]
   k: Gui+A
@@ -239,10 +239,10 @@ combos:
   a: top
   o: 0.25
 - p: [13, 14]
-  k: ;
+  k: {t: ;, s: ':'}
   l: [HD-Vf]
 - p: [18, 19]
-  k: {t: '[', h: '&t_pairBkt RBKT'}
+  k: {t: '[', h: '&t_pairBkt RBKT', s: '{'}
   l: [l_num, l_sym]
 - p: [19, 20]
   k: {t: (, h: '&t_pairPar RPAR'}
@@ -251,7 +251,7 @@ combos:
   k: {t: '{', h: '&t_pairBrc RBRC'}
   l: [l_num, l_sym]
 - p: [24, 25]
-  k: ']'
+  k: {t: ']', s: '}'}
   l: [l_num, l_sym]
 - p: [23, 24]
   k: )
