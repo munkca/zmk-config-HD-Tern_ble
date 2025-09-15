@@ -86,13 +86,6 @@ parse_config:
     combo_tch:   {draw_separate: true}
 
 zmk_keycode_map:
-    ESC: Esc
-    SPACE: ␣
-    BSPC: ⌫
-    RET: ⏎
-    TAB: ↹
-    DEL: ⌦
-
     # Locks
     CAPSLOCK: $$mdi:apple-keyboard-caps$$
     CAPS: $$mdi:apple-keyboard-caps$$
