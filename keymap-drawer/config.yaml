@@ -68,15 +68,15 @@ parse_config:
   # ZMK
   zmk_keycode_map:
     # Adaptive keys
-    "&ak_A": "A"
+    "&ak_A": A
     "&ak_B": "B"
     "&ak_C": "C"
     "&ak_D": "D"
-    "&ak_E": "E"
+    "&ak_E": E
     "&ak_F": "F"
     "&ak_G": "G"
     "&ak_H": "H"
-    "&ak_I": "I"
+    "&ak_I": I
     "&ak_J": "J"
     "&ak_K": "K"
     "&ak_L": "L"
