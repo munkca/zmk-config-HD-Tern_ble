@@ -9,7 +9,7 @@ layers:
   - {t: '&ak_DOT', s: ':'}
   - {t: '?', s: '!'}
   - '&ak_J'
-  - {t: '&ak_S S', h: LGUI}
+  - {t: '&ak_S S', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '&ak_C C', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '&ak_N N', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '&ak_T T', h: '$$mdi:apple-keyboard-control$$'}
@@ -18,7 +18,7 @@ layers:
   - {t: '&ak_A A', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '&ak_E E', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '&ak_I I', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '&ak_H H', h: LGUI}
+  - {t: '&ak_H H', h: '$$mdi:apple-keyboard-command$$'}
   - '&ak_F'
   - '&ak_P'
   - '&ak_L'
@@ -71,7 +71,7 @@ layers:
   - {t: \, s: '|'}
   - {t: <, s: LALT(COMMA)}
   - {t: '>', s: LALT(DOT)}
-  - LGUI
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
@@ -80,7 +80,7 @@ layers:
   - {t: '~', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '%', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: ^, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '&', h: RGUI}
+  - {t: '&', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PSCRN
@@ -111,7 +111,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-option$$
-  - LGUI
+  - $$mdi:apple-keyboard-command$$
   - {t: '0', s: )}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -133,7 +133,7 @@ layers:
   - HOME
   - $$mdi:arrow-up-bold$$
   - $$mdi:transfer-up$$
-  - LGUI
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
