@@ -93,14 +93,7 @@ parse_config:
       "&ak_Z": Z
       
   # ZMK
-  zmk_keycode_map:
-    "CommaMagic": Magic Comma
-    "DotColn": 
-      shifted: ":"
-      tap: "."
-    "mm_BspcDel": 
-      shifted: $$mdi:backspace-reverse-outline$$
-      tap: $$mdi:backspace$$  
+  zmk_keycode_map: 
 
     # Symbols
     EXCLAMATION: "!"
