@@ -92,7 +92,13 @@ parse_config:
     "&ak_Y": Y
     "&ak_Z": Z
     "&ak_CMMA": ","
-    "&ak_DOT": "."
+    "&ak_DOT":
+      shifted: ":"
+      tap: "."
+    "&ak_BSPC": $$mdi:backspace$$
+    "&QuesExcl":
+      shifted: "!"
+      tap: "?"
       
   # ZMK
   zmk_keycode_map: 

@@ -27,7 +27,7 @@ layers:
   - O
   - Y
   - B
-  - {t: '&ak_BSPC', h: l_sym, s: '$$mdi:backspace-reverse-outline$$'}
+  - {t: '$$mdi:backspace$$', h: l_sym, s: '$$mdi:backspace-reverse-outline$$'}
   - {t: R, h: l_nav}
   - $$mdi:keyboard-space$$
   - {t: RETURN, h: l_num}
