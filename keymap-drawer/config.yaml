@@ -83,9 +83,7 @@ parse_config:
 zmk_keycode_map:
 
    # Whitespace
-    ENTER:
-      type: enter
-      tap: $$mdi:keyboard-return$$
+    RETURN: $$mdi:keyboard-return$$
     ESC: $$mdi:keyboard-esc$$
     TAB: $$mdi:keyboard-tab$$
     LS(TAB): $$mdi:keyboard-tab-reverse$$
