@@ -84,7 +84,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PSCRN
-  - Gui+Sft+4
+  - Print Sel
   - {t: '`', s: '~'}
   - '@'
   - '#'
@@ -99,7 +99,7 @@ layers:
   - {t: '9', s: (}
   - +
   - '*'
-  - Alt+X
+  - ≈
   - {t: <, s: LALT(COMMA)}
   - {t: '>', s: LALT(DOT)}
   - {t: '=', s: +}
@@ -117,9 +117,9 @@ layers:
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: ., s: '>'}
-  - Alt+Sft+8
-  - Alt+P
-  - Alt+Sft+9
+  - °
+  - π
+  - ·
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -175,9 +175,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:bluetooth-off$$
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '1'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
   - $$mdi:volume-off$$
   - $$mdi:skip-previous$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -191,7 +191,7 @@ combos:
   k: {t: QU, h: Q, s: Q}
   l: [HD-Vf]
   a: top
-  o: 0.3
+  o: 0.5
 - p: [9, 11]
   k: Z
   l: [HD-Vf]
@@ -237,7 +237,7 @@ combos:
   k: {t: ':', h: Alt+;}
   l: [HD-Vf]
   a: top
-  o: 0.25
+  o: 0.5
 - p: [13, 14]
   k: {t: ;, s: ':'}
   l: [HD-Vf]
