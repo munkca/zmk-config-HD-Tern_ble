@@ -69,8 +69,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '|'
   - {t: \, s: '|'}
-  - {t: <, s: LALT(COMMA)}
-  - {t: '>', s: LALT(DOT)}
+  - {t: <, s: ≤}
+  - {s: ≥}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
@@ -100,8 +100,8 @@ layers:
   - +
   - '*'
   - ≈
-  - {t: <, s: LALT(COMMA)}
-  - {t: '>', s: LALT(DOT)}
+  - {t: <, s: ≤}
+  - {s: ≥}
   - {t: '=', s: +}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
@@ -196,11 +196,12 @@ combos:
   k: Z
   l: [HD-Vf]
   a: top
+  o: 0.15
 - p: [18, 19]
   k: V
   l: [HD-Vf]
   a: bottom
-  o: 0.25
+  o: 0.15
 - p: [27, 28]
   k: l_cfg
 - p: [28, 29]

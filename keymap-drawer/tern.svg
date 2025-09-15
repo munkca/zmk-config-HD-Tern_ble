@@ -368,16 +368,16 @@ path.combo {
 <text x="200" y="-32" class="combo shifted">Q</text>
 </g>
 <g class="combo combopos-1">
-<path d="M200,99 h-74 a6.0,6.0 0 0 0 -6.0,6.0 v8" class="combo"/>
-<path d="M200,99 h74 a6.0,6.0 0 0 1 6.0,6.0 v8" class="combo"/>
-<rect rx="4" ry="4" x="185" y="84" width="30" height="30" class="combo"/>
-<text x="200" y="99" class="combo tap">Z</text>
+<path d="M200,87 h-74 a6.0,6.0 0 0 0 -6.0,6.0 v20" class="combo"/>
+<path d="M200,87 h74 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="4" ry="4" x="185" y="72" width="30" height="30" class="combo"/>
+<text x="200" y="87" class="combo tap">Z</text>
 </g>
 <g class="combo combopos-2">
-<path d="M80,301 h-34 a6.0,6.0 0 0 1 -6.0,-6.0 v-28" class="combo"/>
-<path d="M80,301 h34 a6.0,6.0 0 0 0 6.0,-6.0 v-48" class="combo"/>
-<rect rx="4" ry="4" x="65" y="286" width="30" height="30" class="combo"/>
-<text x="80" y="301" class="combo tap">V</text>
+<path d="M80,293 h-34 a6.0,6.0 0 0 1 -6.0,-6.0 v-20" class="combo"/>
+<path d="M80,293 h34 a6.0,6.0 0 0 0 6.0,-6.0 v-40" class="combo"/>
+<rect rx="4" ry="4" x="65" y="278" width="30" height="30" class="combo"/>
+<text x="80" y="293" class="combo tap">V</text>
 </g>
 <g class="combo combopos-3">
 <path d="M520,320 l-53,0" class="combo"/>
@@ -600,12 +600,11 @@ path.combo {
 <g transform="translate(840, 40)" class="key keypos-6">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">&lt;</text>
-<text x="0" y="-34" class="key shifted"><tspan style="font-size: 73%">LALT(COMMA)</tspan></text>
+<text x="0" y="-34" class="key shifted">≤</text>
 </g>
 <g transform="translate(920, 60)" class="key keypos-7">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">&gt;</text>
-<text x="0" y="-34" class="key shifted"><tspan style="font-size: 89%">LALT(DOT)</tspan></text>
+<text x="0" y="-34" class="key shifted">≥</text>
 </g>
 <g transform="translate(40, 160)" class="key keypos-8">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -789,12 +788,11 @@ path.combo {
 <g transform="translate(840, 40)" class="key keypos-6">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">&lt;</text>
-<text x="0" y="-34" class="key shifted"><tspan style="font-size: 73%">LALT(COMMA)</tspan></text>
+<text x="0" y="-34" class="key shifted">≤</text>
 </g>
 <g transform="translate(920, 60)" class="key keypos-7">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">&gt;</text>
-<text x="0" y="-34" class="key shifted"><tspan style="font-size: 89%">LALT(DOT)</tspan></text>
+<text x="0" y="-34" class="key shifted">≥</text>
 </g>
 <g transform="translate(40, 160)" class="key keypos-8">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
