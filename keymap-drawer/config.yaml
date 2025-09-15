@@ -101,7 +101,13 @@ parse_config:
     "&t_pairDquo": '"'
     "&t_Qu":
       shifted: "Q"
-      tap: "QU"
+      tap: "QU
+    "&LTLTE":
+      shifted: "≤"
+      tap: "<"    
+    "&GTGTE":
+      shifted: "≥"
+      tap: ">"
       
   # ZMK
   zmk_keycode_map: 
@@ -329,8 +335,8 @@ parse_config:
     combo_appswitch:    {align: top}
     combo_btclr:  {align: bottom}
     combo_t_Q:    {align: top, o: 0.5}
-    combo_t_Z:    {align: top}
-    combo_t_V:    {align: bottom, o: 0.25}
+    combo_t_Z:    {align: top, o: 0.15}
+    combo_t_V:    {align: bottom, o: 0.15}
     combo_docaps: {draw_separate: true}
     combo_capslk:   {draw_separate: true}
     combo_Gent:   {draw_separate: true}
