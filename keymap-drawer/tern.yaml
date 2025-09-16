@@ -145,8 +145,8 @@ layers:
   - Alt+$$mdi:arrow-right-bold$$
   - UNDO
   - CUT
-  - Gui+C
-  - Gui+AltGr+Sft+V
+  - COPY
+  - Paste Follow
   - END
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:transfer-down$$

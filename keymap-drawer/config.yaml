@@ -120,8 +120,9 @@ parse_config:
     LA(LS(8)): "°"
     LA(LS(9)): "·"
     S_COPY: COPY
-    LG(C): COPY
+    RG(C): COPY
     S_PSTM: Paste Follow
+    RG(RA(RS(V))): Paste Follow
     S_FIND: FIND
   
     LA(5): "∞"
