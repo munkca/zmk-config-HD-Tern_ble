@@ -395,7 +395,7 @@ draw_config:
   inner_pad_h: 1.5
 
   # padding between layers
-  outer_pad_w: 35
+  outer_pad_w: 40
   outer_pad_h: 15
 
   # gap between two halves for ortho layout generator
@@ -591,10 +591,10 @@ draw_config:
         text-anchor: middle;
         paint-order: stroke;
         fill: var(--color--layer--text);
-        translate: 530px 126px;
+        translate: 533px 126px;
     }
     .layer-Fn text.label {
-        translate: 530px 126px;
+        translate: 533px 126px;
     }
 
 
