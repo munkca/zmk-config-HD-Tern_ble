@@ -135,6 +135,7 @@ parse_config:
     RG(A): SELECT ALL
     LG(A): SELECT ALL
     RG(F): FIND
+    LA(SEMI): '...'
   
     LA(5): "∞"
     # Symbols

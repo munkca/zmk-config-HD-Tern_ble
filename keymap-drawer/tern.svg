@@ -545,7 +545,7 @@ rect.held, rect.combo.held {
 <path d="M840,-21 h74 a6.0,6.0 0 0 1 6.0,6.0 v48" class="combo"/>
 <rect rx="4" ry="4" x="825" y="-36" width="30" height="30" class="combo"/>
 <text x="840" y="-21" class="combo tap">:</text>
-<text x="840" y="-10" class="combo hold">Alt+;</text>
+<text x="840" y="-10" class="combo hold">...</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="4" ry="4" x="705" y="145" width="30" height="30" class="combo"/>

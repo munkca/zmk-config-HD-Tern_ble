@@ -235,7 +235,7 @@ combos:
   k: SELECT ALL
   draw_separate: true
 - p: [5, 7]
-  k: {t: ':', h: Alt+;}
+  k: {t: ':', h: '...'}
   l: [HD-Vf]
   a: top
   o: 0.5
