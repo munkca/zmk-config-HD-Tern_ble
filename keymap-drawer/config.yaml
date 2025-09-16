@@ -102,7 +102,7 @@ parse_config:
     "&t_Qu":
       shifted: "Q"
       tap: "QU"
-    "&lk_LRDquote":'"'
+    "&lk_LRDquote": '"'
 
     '&LTLTE':
       shifted: ≤
