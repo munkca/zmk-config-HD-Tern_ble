@@ -128,8 +128,8 @@ layers:
   - Ctl+X
   - Ctl+C
   - Ctl+V
+  - $$mdi:keyboard-tab-reverse$$
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - HOME
   - $$mdi:arrow-up-bold$$
   - $$mdi:transfer-up$$
@@ -137,7 +137,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
-  - FIND
+  - $$mdi:keyboard-tab$$
   - Alt+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$

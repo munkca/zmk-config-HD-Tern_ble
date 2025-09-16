@@ -53,17 +53,17 @@
 
 //                                           Shorcuts & Navigation
 //         ╭────────────────────────────────────╮                ╭────────────────────────────────────╮
-//╭────────|   cutl  | copyl | pstel |    ESC   |                |         |  HOME  |   UP   |  PG_UP |───────╮
-//|  gui   |   alt   |  shft |  ctrl |   Find   |                |  Lword  |  LEFT  |  DOWN  |   RGT  | Rword |
+//╭────────|   cutl  | copyl | pstel |  SH-TAB  |                |   ESC   |  HOME  |   UP   |  PG_UP |───────╮
+//|  gui   |   alt   |  shft |  ctrl |    TAB   |                |  Lword  |  LEFT  |  DOWN  |   RGT  | Rword |
 //|  undo  |   cut   |  copy |  pste |          |                |         |   END  |        |  PG_DN |       |
 //╰──────────────────────────╮       |          |                |         |        ╭─────────────────────────╯
 //                           ╰──────────────────╯                ╰──────────────────╯
 #define l_nav_label "l_nav"
 
-#define l_nav_LT                    &kp LC(X)           &kp LC(C)           &kp LC(V)           &kp ESC
-#define l_nav_RT &none              &kp HOME            &kp UP              &kp PG_UP          
+#define l_nav_LT                    &kp LC(X)           &kp LC(C)           &kp LC(V)           &kp LS(TAB)
+#define l_nav_RT &kp ESC            &kp HOME            &kp UP              &kp PG_UP          
 
-#define l_nav_LM &kp LGUI           &kp LALT            &kp LSHFT           &kp LCTRL           &kp S_FIND
+#define l_nav_LM &kp LGUI           &kp LALT            &kp LSHFT           &kp LCTRL           &kp TAB
 #define l_nav_RM &kp S_WRDL         &kp LEFT            &kp DOWN            &kp RIGHT           &kp S_WRDR
 
 #define l_nav_LB &kp UNDO           &kp CUT             &kp S_COPY          &kp S_PSTM          
