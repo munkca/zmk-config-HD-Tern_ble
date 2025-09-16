@@ -130,6 +130,10 @@ parse_config:
     S_PSTM: Paste Match
     RG(RA(RS(V))): Paste Match
     S_FIND: FIND
+    LG(RETURN): CMD ENTER
+    LA(PLUS): "±"
+    LG(A): SELECT ALL
+    LG(F): FIND
   
     LA(5): "∞"
     # Symbols

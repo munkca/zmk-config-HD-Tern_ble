@@ -220,7 +220,7 @@ combos:
   l: [HD-Vf]
   draw_separate: true
 - p: [12, 20, 21]
-  k: Gui+RETURN
+  k: CMD ENTER
   draw_separate: true
 - p: [12, 21]
   k: RETURN
@@ -232,7 +232,7 @@ combos:
   k: $$mdi:keyboard-esc$$
   draw_separate: true
 - p: [18, 21]
-  k: Gui+A
+  k: SELECT ALL
   draw_separate: true
 - p: [5, 7]
   k: {t: ':', h: Alt+;}
@@ -264,5 +264,5 @@ combos:
   k: ':'
   l: [l_num]
 - p: [22, 13]
-  k: Alt++
+  k: ±
   l: [l_num]

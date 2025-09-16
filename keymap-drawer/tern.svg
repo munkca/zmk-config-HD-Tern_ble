@@ -1086,7 +1086,7 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-10">
 <rect rx="4" ry="4" x="705" y="185" width="30" height="30" class="combo"/>
-<text x="720" y="200" class="combo tap">Alt++</text>
+<text x="720" y="200" class="combo tap">±</text>
 </g>
 </g>
 </g>
@@ -1595,7 +1595,7 @@ rect.held, rect.combo.held {
 <g transform="translate(40, 40)" class="key  combo-separate keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key  combo-separate"/>
 <text x="0" y="0" class="key  combo-separate tap">
-<tspan x="0" dy="-0.5em">Gui+</tspan><tspan x="0" dy="1.0em">RETURN</tspan>
+<tspan x="0" dy="-0.5em">CMD</tspan><tspan x="0" dy="1.0em">ENTER</tspan>
 </text>
 </g>
 <g transform="translate(60, 112)" class="key keypos-1">
@@ -1988,7 +1988,9 @@ rect.held, rect.combo.held {
 <g transform="translate(0, 7)">
 <g transform="translate(40, 40)" class="key  combo-separate keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key  combo-separate"/>
-<text x="0" y="0" class="key  combo-separate tap">Gui+A</text>
+<text x="0" y="0" class="key  combo-separate tap">
+<tspan x="0" dy="-0.5em">SELECT</tspan><tspan x="0" dy="1.0em">ALL</tspan>
+</text>
 </g>
 <g transform="translate(60, 112)" class="key keypos-1">
 <rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key"/>
