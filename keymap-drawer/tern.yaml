@@ -146,7 +146,7 @@ layers:
   - UNDO
   - CUT
   - COPY
-  - Paste Follow
+  - Paste Match
   - END
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:transfer-down$$
@@ -188,7 +188,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [0, 2]
-  k: {t: QU, h: Q}
+  k: {t: QU, s: Q}
   l: [HD-Vf]
   a: top
   o: 0.5
@@ -243,13 +243,13 @@ combos:
   k: {t: ;, s: ':'}
   l: [HD-Vf]
 - p: [18, 19]
-  k: {t: '[', h: '&t_pairBkt RBKT', s: '{'}
+  k: {t: '[', s: '{'}
   l: [l_num, l_sym]
 - p: [19, 20]
-  k: {t: (, h: '&t_pairPar RPAR'}
+  k: (
   l: [l_num, l_sym]
 - p: [20, 21]
-  k: {t: '{', h: '&t_pairBrc RBRC'}
+  k: '{'
   l: [l_num, l_sym]
 - p: [24, 25]
   k: {t: ']', s: '}'}

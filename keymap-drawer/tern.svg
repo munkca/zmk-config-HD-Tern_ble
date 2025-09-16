@@ -503,7 +503,7 @@ rect.held, rect.combo.held {
 <path d="M200,-21 h74 a6.0,6.0 0 0 1 6.0,6.0 v48" class="combo"/>
 <rect rx="4" ry="4" x="185" y="-36" width="30" height="30" class="combo"/>
 <text x="200" y="-21" class="combo tap">QU</text>
-<text x="200" y="-10" class="combo hold">Q</text>
+<text x="200" y="-32" class="combo shifted">Q</text>
 </g>
 <g class="combo combopos-1">
 <path d="M200,87 h-74 a6.0,6.0 0 0 0 -6.0,6.0 v20" class="combo"/>
@@ -866,18 +866,15 @@ rect.held, rect.combo.held {
 <g class="combo combopos-3">
 <rect rx="4" ry="4" x="65" y="215" width="30" height="30" class="combo"/>
 <text x="80" y="230" class="combo tap">[</text>
-<text x="80" y="241" class="combo hold"><tspan style="font-size: 60%">&amp;t_pairBk…</tspan></text>
 <text x="80" y="219" class="combo shifted">{</text>
 </g>
 <g class="combo combopos-4">
 <rect rx="4" ry="4" x="145" y="195" width="30" height="30" class="combo"/>
 <text x="160" y="210" class="combo tap">(</text>
-<text x="160" y="221" class="combo hold"><tspan style="font-size: 60%">&amp;t_pairPa…</tspan></text>
 </g>
 <g class="combo combopos-5">
 <rect rx="4" ry="4" x="225" y="195" width="30" height="30" class="combo"/>
 <text x="240" y="210" class="combo tap">{</text>
-<text x="240" y="221" class="combo hold"><tspan style="font-size: 60%">&amp;t_pairBr…</tspan></text>
 </g>
 <g class="combo combopos-6">
 <rect rx="4" ry="4" x="945" y="215" width="30" height="30" class="combo"/>
@@ -1058,18 +1055,15 @@ rect.held, rect.combo.held {
 <g class="combo combopos-3">
 <rect rx="4" ry="4" x="65" y="215" width="30" height="30" class="combo"/>
 <text x="80" y="230" class="combo tap">[</text>
-<text x="80" y="241" class="combo hold"><tspan style="font-size: 60%">&amp;t_pairBk…</tspan></text>
 <text x="80" y="219" class="combo shifted">{</text>
 </g>
 <g class="combo combopos-4">
 <rect rx="4" ry="4" x="145" y="195" width="30" height="30" class="combo"/>
 <text x="160" y="210" class="combo tap">(</text>
-<text x="160" y="221" class="combo hold"><tspan style="font-size: 60%">&amp;t_pairPa…</tspan></text>
 </g>
 <g class="combo combopos-5">
 <rect rx="4" ry="4" x="225" y="195" width="30" height="30" class="combo"/>
 <text x="240" y="210" class="combo tap">{</text>
-<text x="240" y="221" class="combo hold"><tspan style="font-size: 60%">&amp;t_pairBr…</tspan></text>
 </g>
 <g class="combo combopos-6">
 <rect rx="4" ry="4" x="945" y="215" width="30" height="30" class="combo"/>
@@ -1186,7 +1180,7 @@ rect.held, rect.combo.held {
 <g transform="translate(280, 220)" class="key keypos-21">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em">Paste</tspan><tspan x="0" dy="1.0em">Follow</tspan>
+<tspan x="0" dy="-0.5em">Paste</tspan><tspan x="0" dy="1.0em">Match</tspan>
 </text>
 </g>
 <g transform="translate(760, 220)" class="key keypos-22">

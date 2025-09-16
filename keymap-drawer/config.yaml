@@ -101,6 +101,7 @@ parse_config:
     "&t_pairDquo": '"'
     "&t_Qu":
       tap: "QU"
+      shifted: "Q"
     "&lk_LRDquote": '"'
 
     '&LTLTE':
@@ -109,9 +110,14 @@ parse_config:
     '&GTGTE':
       shifted: ≥
       tap: ">"
+
+    '&t_pairBkt': ''
+    '&t_pairBrc': ''
+    '&t_pairPar': ''
       
   # ZMK
   zmk_keycode_map: 
+    Q: ''
     LA(COMMA): "≤"
     LA(DOT): "≥"
     LG(LS(4)): Print Sel
