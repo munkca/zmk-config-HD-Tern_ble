@@ -612,3 +612,46 @@ draw_config:
     }
 
 
+    /*
+     * Combos
+     */
+    .combo {
+      --color--key--bg: var(--color--combo--bg);
+      --color--key--border: var(--color--combo--border);
+      --color--key--text--tap: var(--color--combo--text--tap);
+      --color--key--text--shifted: var(--color--combo--text--shifted);
+      --color--key--text--hold: var(--color--combo--text--hold);
+    }
+    rect.combo {
+      opacity: 0.8;
+      stroke-width: 0;
+    }
+    path.combo {
+      stroke-width: 1;
+      stroke: var(--color--combo--dendron);
+      fill: none;
+    }
+    .combo.tap {
+      font-size: 16px;
+    }
+    .combo.shifted {
+      font-size: 13px;
+      translate: -9px -2px;
+    }
+    .combo.shifted.glyph {
+      translate: -9px -3px;
+    }
+    .combo.hold {
+      font-size: 16px;
+      translate: 0 0;
+    }
+
+    /*
+     * Transparent, None, and Ghost Keys
+     */
+    .trans,
+    .none,
+    .ghost {
+      opacity: 0.4;
+    }
+
