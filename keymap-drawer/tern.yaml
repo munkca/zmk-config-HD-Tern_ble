@@ -30,7 +30,7 @@ layers:
   - {t: '$$mdi:backspace$$', h: 2-Sym, s: '$$mdi:backspace-reverse-outline$$'}
   - {t: R, h: 4-Nav}
   - $$mdi:keyboard-space$$
-  - {t: RETURN, h: 3-Num}
+  - {t: '$$mdi:keyboard-return$$', h: 3-Num}
   Adaptive:
   - T
   - L
@@ -223,7 +223,7 @@ combos:
   k: CMD ENTER
   draw_separate: true
 - p: [12, 21]
-  k: RETURN
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
   draw_separate: true
 - p: [11, 12]
   k: $$mdi:keyboard-space$$
