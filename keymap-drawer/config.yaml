@@ -386,7 +386,7 @@ draw_config:
 
   # shrink font size for legends wider than this many chars, set to 0 to disable
   # ideal value depends on the font size defined in svg_style and width of the boxes
-  shrink_wide_legends: 8
+  shrink_wide_legends: 6
   
   # Glyphs dimensions
   glyph_tap_size: 22
