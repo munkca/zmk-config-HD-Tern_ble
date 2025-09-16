@@ -121,8 +121,8 @@ parse_config:
     LA(LS(9)): "·"
     S_COPY: COPY
     RG(C): COPY
-    S_PSTM: Paste Follow
-    RG(RA(RS(V))): Paste Follow
+    S_PSTM: Paste Match
+    RG(RA(RS(V))): Paste Match
     S_FIND: FIND
   
     LA(5): "∞"
