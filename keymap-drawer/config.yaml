@@ -406,7 +406,7 @@ draw_config:
 
   # shrink font size for legends wider than this many chars, set to 0 to disable
   # ideal value depends on the font size defined in svg_style and width of the boxes
-  shrink_wide_legends: 6
+  shrink_wide_legends: 5
   
   # Glyphs dimensions
   glyph_tap_size: 22
@@ -588,7 +588,7 @@ draw_config:
     /* Layer labels */
     text.label {
         font-size: 32px;
-        text-anchor: start;
+        text-anchor: middle;
         paint-order: stroke;
         fill: var(--color--layer--text);
         translate: 481px 146px;
