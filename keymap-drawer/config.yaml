@@ -571,10 +571,10 @@ draw_config:
         text-anchor: start;
         paint-order: stroke;
         fill: var(--color--layer--text);
-        translate: 581px 146px;
+        translate: 381px 146px;
     }
     .layer-Fn text.label {
-        translate: 581px 164px;
+        translate: 381px 164px;
     }
 
 
