@@ -5,7 +5,7 @@ parse_config:
     tap: $$mdi:transfer$$
     type: trans
   layer_legend_map:
-    {'lak_DOT': 'Adapt', 'l_sym': 'Symbols', 'l_num': 'Numbers','l_nav': 'Navigation', 'l_cfg': 'System/Media'}
+    {'lak_DOT': 'Adapt', 'l_sym': '2-Sym', 'l_num': '3-Num','l_nav': '4-Nav', 'l_cfg': '5-Sys'}
     
   
   raw_binding_map:
