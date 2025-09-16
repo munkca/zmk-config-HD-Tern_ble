@@ -4,8 +4,8 @@ parse_config:
   trans_legend:
     tap: $$mdi:transfer$$
     type: trans
-  layer_legend_map:
-    {'lak_DOT': 'Adapt', 'l_sym': '2-Sym', 'l_num': '3-Num','l_nav': '4-Nav', 'l_cfg': '5-Sys'}
+ # layer_legend_map:
+ #   {'lak_DOT': 'Adapt', 'l_sym': '2-Sym', 'l_num': '3-Num','l_nav': '4-Nav', 'l_cfg': '5-Sys'}
     
   
   raw_binding_map:
