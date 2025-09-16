@@ -648,7 +648,7 @@ draw_config:
 
     /* Color accent for held keys */
     rect.held, rect.combo.held {
-        fill: #ffc;
+        fill: var(--color--material--teal--100);
     }
 
     /*
