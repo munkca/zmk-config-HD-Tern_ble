@@ -11,7 +11,9 @@ parse_config:
   raw_binding_map:
     '&SlAppy': Win Next
     '&SlApBack': Win Prev
-    
+    '&num_word':
+      tap: Num Word
+      hold: '(3)'
 
     # Modifiers
     "&caps_word": $$mdi:alpha-w-box$$
