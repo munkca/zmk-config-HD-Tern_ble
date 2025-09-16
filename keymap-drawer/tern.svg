@@ -1086,7 +1086,7 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-10">
 <rect rx="4" ry="4" x="705" y="185" width="30" height="30" class="combo"/>
-<text x="720" y="200" class="combo tap">Alt++</text>
+<text x="720" y="200" class="combo tap">±</text>
 </g>
 </g>
 </g>

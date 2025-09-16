@@ -264,5 +264,5 @@ combos:
   k: ':'
   l: [l_num]
 - p: [22, 13]
-  k: Alt++
+  k: ±
   l: [l_num]
