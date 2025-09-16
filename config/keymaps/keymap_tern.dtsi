@@ -28,6 +28,7 @@
        
            l_akDOT {
                 label = l_akDOT_label;
+                display-name = "Adaptive";
                 bindings = <
                                 DOT_LT              DOT_RT
                                 DOT_LM              DOT_RM
@@ -38,6 +39,7 @@
 
            l_sym {
             label = l_sym_label;
+            display-name = "Sym";
                 bindings = <
                                 l_sym_LT            l_sym_RT
                                 l_sym_LM            l_sym_RM
@@ -50,6 +52,7 @@
 
            l_num {
                 label = l_num_label;
+                display-name = "Num";
                 bindings = <
                                 l_num_LT            l_num_RT
                                 l_num_LM            l_num_RM
@@ -60,6 +63,7 @@
 
            l_nav {
                 label = l_nav_label;
+                display-name = "Nav";
                 bindings = <
                                 l_nav_LT            l_nav_RT
                                 l_nav_LM            l_nav_RM
@@ -70,6 +74,7 @@
 
            l_cfg {
                 label = l_cfg_label;
+                display-name = "Sys";
                 bindings = <
                                 l_cfg_LT            l_cfg_RT
                                 l_cfg_LM            l_cfg_RM
