@@ -526,7 +526,7 @@ draw_config:
         --color--key--border: white;
         --color--key--text--tap: var(--color--text);
         --color--key--text--shifted: var(--color--material--blue-gray--400);
-        --color--key--text--hold: var(--color--material--blue-gray--400);
+        --color--key--text--hold: var(--color--material--red--400);
 
         --color--combo--bg: var(--color--material--blue-gray--100);
         --color--combo--border: var(--color--combo--bg);
