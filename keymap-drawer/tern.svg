@@ -337,17 +337,17 @@ path.combo {
   fill: none;
 }
 .combo.tap {
-  font-size: 16px;
+  font-size: 14px;
 }
 .combo.shifted {
-  font-size: 13px;
+  font-size: 11px;
   translate: -9px -2px;
 }
 .combo.shifted.glyph {
   translate: -9px -3px;
 }
 .combo.hold {
-  font-size: 16px;
+  font-size: 14px;
   translate: 0 0;
 }
 
