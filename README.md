@@ -1,6 +1,10 @@
 # [**Hands Down**](http://handsdownlayout.com) on Tern
 Based on Moutis's adapted ZMK take on [**Hands Down**](http://handsdownlayout.com) on small portable boards.  Thanks!
 
+Thanks also to Jorge Villalobos, who has a great keymap-drawer configuration, which helped me to clean mine up. See: https://github.com/minusfive/knucklehead
+
+And thanks to Cem Aksoylar for his amazing keymap-drawer! What a labour-saver. https://github.com/caksoylar/keymap-drawer
+
 **Warning:** This repository is quite messy, as I copied much over, tried to simplify things down to make it more understandable（I'm very new to ZMK), and stopped cleaning up partway. I have only remapped the vf keymap and required extra files for 30 keys. The rest still are set up for 34.
 
 **Hands Down** *Vibranium-Vf*
