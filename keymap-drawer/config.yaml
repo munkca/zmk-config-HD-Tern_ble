@@ -4,7 +4,9 @@ parse_config:
   trans_legend:
     tap: $$mdi:transfer$$
     type: trans
-  
+  layer_legend_map:
+    {'lak_DOT': 'Adapt', 'l_sym': 'Symbols', 'l_num': 'Numbers','l_nav': 'Navigation', 'l_cfg': 'System/Media'}
+    
   
   raw_binding_map:
     '&SlAppy': Win Next

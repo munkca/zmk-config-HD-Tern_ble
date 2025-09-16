@@ -27,10 +27,10 @@ layers:
   - O
   - Y
   - B
-  - {t: '$$mdi:backspace$$', h: l_sym, s: '$$mdi:backspace-reverse-outline$$'}
-  - {t: R, h: l_nav}
+  - {t: '$$mdi:backspace$$', h: Symbols, s: '$$mdi:backspace-reverse-outline$$'}
+  - {t: R, h: Navigation}
   - $$mdi:keyboard-space$$
-  - {t: RETURN, h: l_num}
+  - {t: RETURN, h: Numbers}
   l_akDOT:
   - T
   - L
@@ -203,7 +203,7 @@ combos:
   a: bottom
   o: 0.15
 - p: [27, 28]
-  k: l_cfg
+  k: System/Media
 - p: [28, 29]
   k: '&num_word 3'
   a: bottom
