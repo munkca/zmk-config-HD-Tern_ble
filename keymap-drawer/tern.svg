@@ -504,7 +504,6 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="185" y="-36" width="30" height="30" class="combo"/>
 <text x="200" y="-21" class="combo tap">QU</text>
 <text x="200" y="-10" class="combo hold">Q</text>
-<text x="200" y="-32" class="combo shifted">Q</text>
 </g>
 <g class="combo combopos-1">
 <path d="M200,87 h-74 a6.0,6.0 0 0 0 -6.0,6.0 v20" class="combo"/>

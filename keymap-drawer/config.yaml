@@ -100,7 +100,6 @@ parse_config:
       tap: "?"
     "&t_pairDquo": '"'
     "&t_Qu":
-      shifted: "Q"
       tap: "QU"
     "&lk_LRDquote": '"'
 
@@ -121,6 +120,7 @@ parse_config:
     LA(LS(8)): "°"
     LA(LS(9)): "·"
     S_COPY: COPY
+    LG(C): COPY
     S_PSTM: Paste Follow
     S_FIND: FIND
   
