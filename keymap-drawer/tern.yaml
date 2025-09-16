@@ -31,7 +31,7 @@ layers:
   - {t: R, h: 4-Nav}
   - $$mdi:keyboard-space$$
   - {t: RETURN, h: 3-Num}
-  l_akDOT:
+  Adaptive:
   - T
   - L
   - L
@@ -62,7 +62,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  l_sym:
+  2-Sym:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Win Prev
   - Win Next
@@ -93,7 +93,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  l_num:
+  3-Num:
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
@@ -124,7 +124,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  l_nav:
+  4-Nav:
   - Ctl+X
   - Ctl+C
   - Ctl+V
@@ -155,7 +155,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  l_cfg:
+  5-Sys:
   - {t: '$$mdi:backup-restore$$', h: '$$mdi:progress-download$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -244,25 +244,25 @@ combos:
   l: [HD-Vf]
 - p: [18, 19]
   k: {t: '[', s: '{'}
-  l: [l_num, l_sym]
+  l: [3-Num, 2-Sym]
 - p: [19, 20]
   k: (
-  l: [l_num, l_sym]
+  l: [3-Num, 2-Sym]
 - p: [20, 21]
   k: '{'
-  l: [l_num, l_sym]
+  l: [3-Num, 2-Sym]
 - p: [24, 25]
   k: {t: ']', s: '}'}
-  l: [l_num, l_sym]
+  l: [3-Num, 2-Sym]
 - p: [23, 24]
   k: )
-  l: [l_num, l_sym]
+  l: [3-Num, 2-Sym]
 - p: [22, 23]
   k: '}'
-  l: [l_num, l_sym]
+  l: [3-Num, 2-Sym]
 - p: [14, 16]
   k: ':'
-  l: [l_num]
+  l: [3-Num]
 - p: [3, 12]
   k: ±
-  l: [l_num]
+  l: [3-Num]
