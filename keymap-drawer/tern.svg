@@ -267,10 +267,10 @@ text.label {
     text-anchor: start;
     paint-order: stroke;
     fill: var(--color--layer--text);
-    translate: 581px 146px;
+    translate: 481px 146px;
 }
 .layer-Fn text.label {
-    translate: 581px 164px;
+    translate: 481px 164px;
 }
 
 
