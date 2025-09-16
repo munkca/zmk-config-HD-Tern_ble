@@ -131,9 +131,10 @@ parse_config:
     RG(RA(RS(V))): Paste Match
     S_FIND: FIND
     LG(RETURN): CMD ENTER
-    LA(PLUS): "±"
+    LA(LS(MINUS)): "±"
+    RG(A): SELECT ALL
     LG(A): SELECT ALL
-    LG(F): FIND
+    RG(F): FIND
   
     LA(5): "∞"
     # Symbols
