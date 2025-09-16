@@ -567,11 +567,11 @@ draw_config:
 
     /* Layer labels */
     text.label {
-        font-size: 36px;
+        font-size: 32px;
         text-anchor: start;
         paint-order: stroke;
         fill: var(--color--layer--text);
-        translate: 500px 146px;
+        translate: 581px 146px;
     }
     .layer-Fn text.label {
         translate: 581px 164px;
