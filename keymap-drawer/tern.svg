@@ -342,6 +342,11 @@ path.combo {
   translate: 0 0;
 }
 
+/* Color accent for held keys */
+rect.held, rect.combo.held {
+    fill: #ffc;
+}
+
 /*
  * Transparent, None, and Ghost Keys
  */
