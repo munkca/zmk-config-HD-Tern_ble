@@ -14,7 +14,13 @@ parse_config:
     '&num_word':
       tap: Num Word
       hold: '(3)'
-
+    combo_t_Sch: sch  {draw_separate: true}
+    combo_t_Tch: tch  {draw_separate: true}
+    combo_t_Ch: ch  {draw_separate: true}
+    combo_t_Wh: wh  {draw_separate: true}
+    combo_t_Th: th  {draw_separate: true}
+    combo_t_Ph: ph  {draw_separate: true}
+    
     # Modifiers
     "&caps_word": $$mdi:alpha-w-box$$
     "&kt RSHIFT":
@@ -367,9 +373,6 @@ parse_config:
     combo_esc:   {draw_separate: true}
     combo_sall:   {draw_separate: true}
     combo_numpad:    {align: bottom, o: 0.15}
-    combo_sch:   {draw_separate: true}
-    combo_tch:   {draw_separate: true}
-    
 
 draw_config:
   # key dimensions, non-ortho layouts use key_h for width as well
