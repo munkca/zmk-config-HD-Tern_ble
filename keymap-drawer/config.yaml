@@ -367,12 +367,12 @@ parse_config:
     combo_esc:   {draw_separate: true}
     combo_sall:   {draw_separate: true}
     combo_numpad:    {align: bottom, o: 0.15}
-    combo_sch: sch  {draw_separate: true}
-    combo_tch: tch  {draw_separate: true}
-    combo_ch: ch  {draw_separate: true}
-    combo_wh: wh  {draw_separate: true}
-    combo_th: th  {draw_separate: true}
-    combo_ph: ph  {draw_separate: true}
+    combo_sch:  {draw_separate: true}
+    combo_tch:  {draw_separate: true}
+    combo_ch:   {draw_separate: true}
+    combo_wh:   {draw_separate: true}
+    combo_th:   {draw_separate: true}
+    combo_ph:   {draw_separate: true}
     
 
 draw_config:
