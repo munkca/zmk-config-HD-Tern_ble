@@ -13,7 +13,6 @@ parse_config:
     '&SlApBack': Win Prev
     '&num_word':
       tap: Num Word
-      hold: '(3)'
     
     # Modifiers
     "&caps_word": $$mdi:alpha-w-box$$

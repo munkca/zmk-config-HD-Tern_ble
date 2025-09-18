@@ -541,7 +541,6 @@ rect.held, rect.combo.held {
 <text x="640" y="373" class="combo tap">
 <tspan x="640" dy="-0.5em">Num</tspan><tspan x="640" dy="1.0em">Word</tspan>
 </text>
-<text x="640" y="384" class="combo hold">(3)</text>
 </g>
 <g class="combo combopos-5">
 <path d="M320,19 h-34 a6.0,6.0 0 0 0 -6.0,6.0 v8" class="combo"/>
@@ -703,7 +702,6 @@ rect.held, rect.combo.held {
 <text x="640" y="373" class="combo tap">
 <tspan x="640" dy="-0.5em">Num</tspan><tspan x="640" dy="1.0em">Word</tspan>
 </text>
-<text x="640" y="384" class="combo hold">(3)</text>
 </g>
 <g class="combo combopos-2">
 <path d="M320,19 h-34 a6.0,6.0 0 0 0 -6.0,6.0 v8" class="combo"/>
@@ -866,7 +864,6 @@ rect.held, rect.combo.held {
 <text x="640" y="373" class="combo tap">
 <tspan x="640" dy="-0.5em">Num</tspan><tspan x="640" dy="1.0em">Word</tspan>
 </text>
-<text x="640" y="384" class="combo hold">(3)</text>
 </g>
 <g class="combo combopos-2">
 <path d="M320,19 h-34 a6.0,6.0 0 0 0 -6.0,6.0 v8" class="combo"/>
@@ -1056,7 +1053,6 @@ rect.held, rect.combo.held {
 <text x="640" y="373" class="combo tap">
 <tspan x="640" dy="-0.5em">Num</tspan><tspan x="640" dy="1.0em">Word</tspan>
 </text>
-<text x="640" y="384" class="combo hold">(3)</text>
 </g>
 <g class="combo combopos-2">
 <path d="M320,19 h-34 a6.0,6.0 0 0 0 -6.0,6.0 v8" class="combo"/>
@@ -1242,7 +1238,6 @@ rect.held, rect.combo.held {
 <text x="640" y="373" class="combo tap">
 <tspan x="640" dy="-0.5em">Num</tspan><tspan x="640" dy="1.0em">Word</tspan>
 </text>
-<text x="640" y="384" class="combo hold">(3)</text>
 </g>
 <g class="combo combopos-2">
 <path d="M320,19 h-34 a6.0,6.0 0 0 0 -6.0,6.0 v8" class="combo"/>
@@ -1397,7 +1392,6 @@ rect.held, rect.combo.held {
 <text x="640" y="373" class="combo tap">
 <tspan x="640" dy="-0.5em">Num</tspan><tspan x="640" dy="1.0em">Word</tspan>
 </text>
-<text x="640" y="384" class="combo hold">(3)</text>
 </g>
 <g class="combo combopos-2">
 <path d="M320,19 h-34 a6.0,6.0 0 0 0 -6.0,6.0 v8" class="combo"/>
