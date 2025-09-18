@@ -630,7 +630,7 @@ draw_config:
         dominant-baseline: ideographic;
         fill: var(--color--key--text--hold);
         translate: 26px 4px;
-        text-anchor: right;
+        text-anchor: end;
     }
     .hold.glyph {
         translate: 26px 2px;
