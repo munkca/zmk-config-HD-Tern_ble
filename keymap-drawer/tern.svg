@@ -311,6 +311,7 @@ rect.combo {
     dominant-baseline: ideographic;
     fill: var(--color--key--text--hold);
     translate: 26px 4px;
+    text-anchor: right;
 }
 .hold.glyph {
     translate: 26px 2px;
