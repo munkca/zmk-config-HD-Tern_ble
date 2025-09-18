@@ -1,7 +1,8 @@
 
 # [**Hands Down**](http://handsdownlayout.com) on [**Tern_BLE**](https://gitlab.com/gleb_sexy/tern-ble/)
+
 a wireless 30-key descendent of the [**Hummingbird**](https://github.com/PJE66/hummingbird), via Ryan Schenk's [**Tern**](https://github.com/rschenk/tern/).
-Keymap based on Moutis's adapted ZMK take on [**Hands Down**](http://handsdownlayout.com) on small portable boards.  Thanks!
+Keymap based on [Moutis's](https://github.com/moutis/zmk-config) adapted ZMK take on [**Hands Down**](http://handsdownlayout.com) on small portable boards.  Thanks!
 
 And thanks to Cem Aksoylar for his amazing [**keymap-drawer!**](https://github.com/caksoylar/keymap-drawer) What a labour-saver!
 
