@@ -188,13 +188,13 @@
         LTLTE: LTLTE {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp LT>, <&kp LALT(COMMA)>;
+            bindings = <&kp LT>, <&kp RALT(COMMA)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         GTGTE: GTGTE{
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp GT>, <&kp LALT(DOT)>;
+            bindings = <&kp GT>, <&kp RALT(DOT)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
