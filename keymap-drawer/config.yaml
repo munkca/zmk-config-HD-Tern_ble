@@ -121,13 +121,13 @@ parse_config:
   # ZMK
   zmk_keycode_map: 
     Q: ''
-    LA(COMMA): "≤"
-    LA(DOT): "≥"
+    RA(COMMA): "≤"
+    RA(DOT): "≥"
     LG(LS(4)): Print Sel
     LA(X): "≈"
-    LA(P): "π"
-    LA(LS(8)): "°"
-    LA(LS(9)): "·"
+    RA(P): "π"
+    RA(RS(8)): "°"
+    RA(RS(9)): "·"
     S_COPY: COPY
     RG(C): COPY
     S_PSTM: Paste Match

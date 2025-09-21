@@ -102,10 +102,10 @@ layers:
   - ≈
   - {t: <, s: ≤}
   - {t: '>', s: ≥}
-  - {t: '=', s: +}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
+  - {t: '=', h: '$$mdi:apple-keyboard-command$$', s: +}
+  - {t: '4', h: '$$mdi:apple-keyboard-option$$', s: $}
+  - {t: '5', h: '$$mdi:apple-keyboard-shift$$', s: '%'}
+  - {t: '6', h: '$$mdi:apple-keyboard-control$$', s: ^}
   - {t: '-', s: _}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-control$$
