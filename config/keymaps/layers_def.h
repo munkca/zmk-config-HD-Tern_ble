@@ -42,11 +42,12 @@
 #define l_num_LT                    &kp N7              &kp N8              &kp N9           &kp PLUS
 #define l_num_RT &kp STAR           &kp LA(X)           &LTLTE              &GTGTE         
 
-#define l_num_LM &kp EQUAL          &kp N4              &kp N5              &kp N6            &kp MINUS 
+#define l_num_LM &kp EQUAL          &kp N4              &kp N5              &kp N6            &kp MINUS
+#define l_num_LM &mt LGUI EQUAL     &mt LALT N4         &mt LSHFT N5        &mt LCTRL N6      &kp MINUS
 #define l_num_RM &kp SLASH          &kp LCTRL           &kp RSHFT           &kp RALT          &kp LGUI
 
 #define l_num_LB &kp N0             &kp N1              &kp N2              &kp N3          
-#define l_num_RB                    &kp DOT             &kp LA(LS(8))       &kp LA(P)         &kp LA(LS(9))
+#define l_num_RB                    &kp DOT             &kp RA(RS(8))       &kp RA(P)         &kp RA(RS(9))
 
 #define l_num_LH &trans     &trans
 #define l_num_RH &trans     &trans
