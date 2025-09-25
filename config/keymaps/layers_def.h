@@ -22,7 +22,7 @@
 #define l_sym_LM &kp LGUI           &kp LALT            &kp LSHFT           &kp LCTRL           &kp LA(5)
 #define l_sym_RM &kp FSLH           &mt LCTRL TILDE     &mt RSHFT PRCNT     &mt RALT CARET      &mt RGUI AMPS
 
-#define l_sym_LB &kp SQT            &DQT                &kp PSCRN           &kp RG(RS(4))            
+#define l_sym_LB &kp SQT            &kp DQT                &kp PSCRN           &kp RG(RS(4))            
 #define l_sym_RB                    &kp GRAVE           &kp AT              &kp HASH            &kp DLLR         
 
 #define l_sym_LH &trans            &trans

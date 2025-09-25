@@ -800,13 +800,14 @@ rect.held, rect.combo.held {
 <text x="0" y="0" class="key tap">&amp;</text>
 <use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="-8" y="18" height="16" width="16.0" class="key hold glyph mdi:apple-keyboard-command"/>
 </g>
-<g transform="translate(40, 240)" class="key none keypos-18">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key none"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-11" y="-11" height="22" width="22.0" class="key none tap glyph mdi:minus-circle-outline"/>
+<g transform="translate(40, 240)" class="key keypos-18">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
+<text x="0" y="0" class="key tap">&#x27;</text>
+<text x="0" y="-34" class="key shifted">&quot;</text>
 </g>
-<g transform="translate(120, 220)" class="key none keypos-19">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key none"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-11" y="-11" height="22" width="22.0" class="key none tap glyph mdi:minus-circle-outline"/>
+<g transform="translate(120, 220)" class="key keypos-19">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
+<text x="0" y="0" class="key tap">&quot;</text>
 </g>
 <g transform="translate(200, 200)" class="key keypos-20">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -815,7 +816,7 @@ rect.held, rect.combo.held {
 <g transform="translate(280, 220)" class="key keypos-21">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em">Print</tspan><tspan x="0" dy="1.0em">Sel</tspan>
+<tspan x="0" dy="-0.5em">Gui+</tspan><tspan x="0" dy="1.0em">Sft+4</tspan>
 </text>
 </g>
 <g transform="translate(760, 220)" class="key keypos-22">

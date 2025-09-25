@@ -81,10 +81,10 @@ layers:
   - {t: '%', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: ^, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '&', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '''', s: '"'}
+  - '"'
   - PSCRN
-  - Print Sel
+  - Gui+Sft+4
   - {t: '`', s: '~'}
   - '@'
   - '#'
