@@ -19,10 +19,10 @@
 #define l_sym_LT                    &none               &SlApBack           &SlAppy             &none
 #define l_sym_RT &kp PIPE           &kp BSLH            &LTLTE              &GTGTE       
 
-#define l_sym_LM &kp LGUI           &kp LALT            &kp LSHFT           &kp LCTRL           &kp LA(5)
+#define l_sym_LM &kp LGUI           &kp LALT            &kp LSHFT           &kp LCTRL           &kp LA(N5)
 #define l_sym_RM &kp FSLH           &mt LCTRL TILDE     &mt RSHFT PRCNT     &mt RALT CARET      &mt RGUI AMPS
 
-#define l_sym_LB &kp SQT            &kp DQT                &kp PSCRN           &kp RG(RS(4))            
+#define l_sym_LB &kp SQT            &kp DQT             &kp PSCRN           &kp RG(RS(N4))            
 #define l_sym_RB                    &kp GRAVE           &kp AT              &kp HASH            &kp DLLR         
 
 #define l_sym_LH &trans            &trans
@@ -47,7 +47,7 @@
 #define l_num_RM &kp SLASH          &kp LCTRL           &kp RSHFT           &kp RALT          &kp LGUI
 
 #define l_num_LB &kp N0             &kp N1              &kp N2              &kp N3          
-#define l_num_RB                    &kp DOT             &kp RA(RS(8))       &kp RA(P)         &kp RA(RS(9))
+#define l_num_RB                    &kp DOT             &kp RA(RS(N8))      &kp RA(P)         &kp RA(RS(N9))
 
 #define l_num_LH &trans     &trans
 #define l_num_RH &trans     &trans
