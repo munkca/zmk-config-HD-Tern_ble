@@ -123,11 +123,11 @@ parse_config:
     Q: ''
     RA(COMMA): "≤"
     RA(DOT): "≥"
-    RG(RS(4)): Print Sel
+    RG(RS(N4)): Print Sel
     LA(X): "≈"
     RA(P): "π"
-    RA(RS(8)): "°"
-    RA(RS(9)): "·"
+    RA(RS(N8)): "°"
+    RA(RS(N9)): "·"
     S_COPY: COPY
     RG(C): COPY
     S_PSTM: Paste Match
