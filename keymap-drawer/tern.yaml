@@ -84,7 +84,7 @@ layers:
   - {t: '''', s: '"'}
   - '"'
   - PSCRN
-  - Gui+Sft+4
+  - Print Sel
   - {t: '`', s: '~'}
   - '@'
   - '#'

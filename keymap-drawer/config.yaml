@@ -123,7 +123,7 @@ parse_config:
     Q: ''
     RA(COMMA): "≤"
     RA(DOT): "≥"
-    LG(LS(4)): Print Sel
+    RG(RS(4)): Print Sel
     LA(X): "≈"
     RA(P): "π"
     RA(RS(8)): "°"

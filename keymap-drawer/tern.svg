@@ -816,7 +816,7 @@ rect.held, rect.combo.held {
 <g transform="translate(280, 220)" class="key keypos-21">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em">Gui+</tspan><tspan x="0" dy="1.0em">Sft+4</tspan>
+<tspan x="0" dy="-0.5em">Print</tspan><tspan x="0" dy="1.0em">Sel</tspan>
 </text>
 </g>
 <g transform="translate(760, 220)" class="key keypos-22">
