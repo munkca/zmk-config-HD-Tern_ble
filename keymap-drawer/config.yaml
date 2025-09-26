@@ -125,6 +125,7 @@ parse_config:
     RA(DOT): "≥"
     RG(RS(N4)): Print Sel
     LA(X): "≈"
+    LA(N5): "∞"
     RA(P): "π"
     RA(RS(N8)): "°"
     RA(RS(N9)): "·"
