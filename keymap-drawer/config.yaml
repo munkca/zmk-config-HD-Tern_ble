@@ -130,6 +130,7 @@ parse_config:
     RA(RS(N9)): "·"
     S_COPY: COPY
     RG(C): COPY
+    LG(Z): UNDO
     S_PSTM: Paste Match
     RG(RA(RS(V))): Paste Match
     S_FIND: FIND
