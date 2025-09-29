@@ -42,7 +42,6 @@
 #define l_num_LT                    &kp N7              &kp N8              &kp N9           &kp PLUS
 #define l_num_RT &kp STAR           &kp LA(X)           &LTLTE              &GTGTE         
 
-#define l_num_LM &kp EQUAL          &kp N4              &kp N5              &kp N6            &kp MINUS
 #define l_num_LM &mt LGUI EQUAL     &mt LALT N4         &mt LSHFT N5        &mt LCTRL N6      &kp MINUS
 #define l_num_RM &kp SLASH          &kp LCTRL           &kp RSHFT           &kp RALT          &kp LGUI
 
