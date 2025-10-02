@@ -45,7 +45,7 @@ COMBO_LAYER(ch,     &t_Ch,          LM3 LM2, l_hd)       // Ch
 COMBO_LAYER(wh,     &t_Wh,          LT3 LT2, l_hd)       // Wh
 COMBO_LAYER(sh,     &lk_sh H S,     LM4 LM3, l_hd)       // Sh/sion
 COMBO_LAYER(gh,     &lk_gh H G,     LT2 LT1, l_hd)       // Gh/ght
-COMBO_LAYER(ph,     &t_Ph,          LB2 LB1, l_hd)       // Ph
+COMBO_LAYER(ph,     &t_Ph,          LB2 LB0, l_hd)       // Ph
 #endif
 
 
