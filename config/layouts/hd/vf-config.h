@@ -34,7 +34,7 @@
 #define HD_RB                 &ak_U           &ak_O           &ak_Y           &ak_B
 #define HD_RH &kp SPACE       &lt l_num RETURN
 
-
+// aim to delete this layer, replacing it with better adaptive keys.
 #define l_akDOT_label "l_akDOT" // adaptive grabbag sticky layer.
 #define DOT_LT                 &kp T          &kp L           &kp L           &kp L    // Shifted one right from original layout. A problem?       
 #define DOT_LM _______        _______         _______         _______         _______
