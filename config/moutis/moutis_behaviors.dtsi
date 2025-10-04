@@ -134,7 +134,7 @@
         DotColn: DotColn {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&ak_DOT>, <&kp COLON>;
+            bindings = <&kp DOT>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         DotColnJ: DotColnJ { // no adaptive Japanese
@@ -164,7 +164,7 @@
         HashDllr: HashDllr {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&ak_HASH>, <&kp DLLR>;
+            bindings = <&kp HASH>, <&kp DLLR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         MinusPlus: MinusPlus {
@@ -209,7 +209,7 @@
             ak_BSPC_O { trigger-keys = <E>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp O>; };
             ak_BSPC_E { trigger-keys = <O>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; };
         };
-
+/*
         ak_DOT: ak_DOT {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
@@ -217,6 +217,8 @@
 
             ak_DOT_EXCL { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp EXCL>; };
         };
+*/
+
         ak_FSLH: ak_FSLH {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
