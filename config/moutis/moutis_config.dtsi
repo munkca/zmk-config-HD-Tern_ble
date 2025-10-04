@@ -56,9 +56,9 @@
  */
 #define l_any   -1
 #define l_hd    0 // main HD alpha layer (Mac centric)
-#define l_akDot 1 // funky holdover ak layer (used for comma cap/expansions)
-#define l_sym   2 // symbols, punctuation
-#define l_num   3 // numpad
-#define l_nav   4 // metakeys (left) navpad (right)
-#define l_cfg   5 // Keyboard settings · Media/Consumer controls
+// #define l_akDot 1 // funky holdover ak layer (used for comma cap/expansions)
+#define l_sym   1 // symbols, punctuation
+#define l_num   2 // numpad
+#define l_nav   3 // metakeys (left) navpad (right)
+#define l_cfg   4 // Keyboard settings · Media/Consumer controls
 
