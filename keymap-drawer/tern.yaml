@@ -5,7 +5,7 @@ layers:
   - M
   - G
   - X
-  - '"'
+  - {t: '''', s: '"'}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
   - J
@@ -27,11 +27,11 @@ layers:
   - O
   - Y
   - B
-  - {t: '$$mdi:backspace$$', h: 2-Sym, s: '$$mdi:backspace-reverse-outline$$'}
-  - {t: R, h: 4-Nav}
+  - {t: '$$mdi:backspace$$', h: 1-Sym, s: '$$mdi:backspace-reverse-outline$$'}
+  - {t: R, h: 3-Nav}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', h: 3-Num}
-  2-Sym:
+  - {t: '$$mdi:keyboard-return$$', h: 2-Num}
+  1-Sym:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Win Prev
   - Win Next
@@ -62,7 +62,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  3-Num:
+  2-Num:
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
@@ -93,7 +93,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  4-Nav:
+  3-Nav:
   - Ctl+X
   - Ctl+C
   - Ctl+V
@@ -124,7 +124,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  5-Sys:
+  4-Sys:
   - {t: '$$mdi:backup-restore$$', h: '$$mdi:progress-download$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -172,7 +172,7 @@ combos:
   a: bottom
   o: 0.15
 - p: [27, 28]
-  k: 5-Sys
+  k: 4-Sys
 - p: [28, 29]
   k: Num Word
   a: bottom
@@ -213,25 +213,25 @@ combos:
   l: [HD-Vf]
 - p: [18, 19]
   k: {t: '[', s: '{'}
-  l: [3-Num, 2-Sym]
+  l: [2-Num, 1-Sym]
 - p: [19, 20]
   k: (
-  l: [3-Num, 2-Sym]
+  l: [2-Num, 1-Sym]
 - p: [20, 21]
   k: '{'
-  l: [3-Num, 2-Sym]
+  l: [2-Num, 1-Sym]
 - p: [24, 25]
   k: {t: ']', s: '}'}
-  l: [3-Num, 2-Sym]
+  l: [2-Num, 1-Sym]
 - p: [23, 24]
   k: )
-  l: [3-Num, 2-Sym]
+  l: [2-Num, 1-Sym]
 - p: [22, 23]
   k: '}'
-  l: [3-Num, 2-Sym]
+  l: [2-Num, 1-Sym]
 - p: [14, 16]
   k: ':'
-  l: [3-Num]
+  l: [2-Num]
 - p: [3, 12]
   k: ±
-  l: [3-Num]
+  l: [2-Num]

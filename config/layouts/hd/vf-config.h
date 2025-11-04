@@ -16,7 +16,7 @@
 /*      Base (alpha) Layer Hands Down Vibranium-vf
                     34 keys (core)
  ╭─────────────────────╮ ╭──────────────────────╮
- │      W   M   G   X  │ │   "  .:  ?!   J      │
+ │      W   M   G   X  │ │  '"  .:  ?!   J      │
  │  S   C   N   T   K  | |  ,;   A   E   I   H  │
  │  F   P   L   D      │ │       U   O   Y   B  │
  ╰──────────╮  BSP  R  │ │  SPC RET  ╭──────────╯
@@ -29,7 +29,7 @@
 #define HD_LB &ak_F           &ak_P           &ak_L           &ak_D           
 #define HD_LH                                                 &lt_BSPC l_sym BSPC   &lt_R l_nav R
 
-#define HD_RT &lk_LRDquote    &DotColn        &QuesExcl       &ak_J          
+#define HD_RT &kp SQT         &DotColn        &QuesExcl       &ak_J          
 #define HD_RM &CommaMagic     &mt_A RCTRL A   &mt_E RSHFT E   &mt_I RALT I    &mt_H LGUI H
 #define HD_RB                 &ak_U           &ak_O           &ak_Y           &ak_B
 #define HD_RH &kp SPACE       &lt l_num RETURN
