@@ -76,7 +76,7 @@
 //                      L_CFG Keyboard Configuration (left) and Media Settings (right)
 //         ╭───────────────────────--──────────╮                ╭───────────────────────────────────╮
 //╭────────| BOOT  |       |         |   USB   │                │  BRI+  |  VOL+  |  NEXT  |        |────────╮
-//│        |       |       |         |    BT   |                |  BRI-  |  VOL-  |   PP   |        │        |
+//│        |       |       |         |    BT   |                |  BRI-  |  VOL-  |   PP   |        │soft_off|
 //│  BTC   |  BT0  │  BT1  |  BT2    │         |                |        |  MUTE  |  PREV  |        │        |
 //╰──────────────────────────╮       |         │                │        |        ╭──────────────────────────╯
 //                           ╰───────────────-─╯                ╰───────────────-─╯
@@ -88,7 +88,7 @@
 #define l_cfg_RT &kp C_BRI_UP       &kp C_VOL_UP        &kp C_NEXT          &none         
 
 #define l_cfg_LM &none              &none               &none               &none             &out OUT_BLE
-#define l_cfg_RM &kp C_BRI_DN       &kp C_VOL_DN        &kp C_PP            &none             &none
+#define l_cfg_RM &kp C_BRI_DN       &kp C_VOL_DN        &kp C_PP            &none             &soft_off
 
 #define l_cfg_LB &bt BT_CLR         &bt BT_SEL 0        &bt BT_SEL 1        &bt BT_SEL 2       
 #define l_cfg_RB                    &kp C_MUTE          &kp C_PREV          &none             &none
