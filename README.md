@@ -10,6 +10,9 @@ Thanks also to Jorge Villalobos, who has a great keymap-drawer [**configuration*
 
 **Warning:** This repository is quite messy, as I copied much over, tried to simplify things down to make it more understandable（I'm very new to ZMK), and is still a work in progress. I have only remapped the vf keymap and required extra files for 30 keys. The rest still are set up for 34.
 
+## Case 
+I have redesigned the case, but note that I have not yet tested it out to confirm how well it fits, so beware! It is sized to include a 1.5mm acrylic top plate and a 0.7mm gasket between the top plate and pcb.
+
 **Hands Down** *Vibranium-Vf*
 ```
      ╭────────────────╮ ╭─────────────────╮
